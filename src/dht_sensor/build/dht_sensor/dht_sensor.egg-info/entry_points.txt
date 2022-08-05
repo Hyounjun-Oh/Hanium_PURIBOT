@@ -1,0 +1,4 @@
+[console_scripts]
+dht_fake_pub = dht_sensor.dht_fake_pub:main
+dht_pub = dht_sensor.dht_pub:main
+

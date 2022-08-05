@@ -1,0 +1,41 @@
+running egg_info
+creating build/dht_sensor/dht_sensor.egg-info
+writing build/dht_sensor/dht_sensor.egg-info/PKG-INFO
+writing dependency_links to build/dht_sensor/dht_sensor.egg-info/dependency_links.txt
+writing entry points to build/dht_sensor/dht_sensor.egg-info/entry_points.txt
+writing requirements to build/dht_sensor/dht_sensor.egg-info/requires.txt
+writing top-level names to build/dht_sensor/dht_sensor.egg-info/top_level.txt
+writing manifest file 'build/dht_sensor/dht_sensor.egg-info/SOURCES.txt'
+reading manifest file 'build/dht_sensor/dht_sensor.egg-info/SOURCES.txt'
+writing manifest file 'build/dht_sensor/dht_sensor.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ohj/hanium/src/dht_sensor/build/dht_sensor/build
+creating /home/ohj/hanium/src/dht_sensor/build/dht_sensor/build/lib
+creating /home/ohj/hanium/src/dht_sensor/build/dht_sensor/build/lib/dht_sensor
+copying dht_sensor/dht_fake_pub.py -> /home/ohj/hanium/src/dht_sensor/build/dht_sensor/build/lib/dht_sensor
+copying dht_sensor/__init__.py -> /home/ohj/hanium/src/dht_sensor/build/dht_sensor/build/lib/dht_sensor
+copying dht_sensor/dht_pub.py -> /home/ohj/hanium/src/dht_sensor/build/dht_sensor/build/lib/dht_sensor
+running install
+running install_lib
+creating /home/ohj/hanium/src/dht_sensor/install/dht_sensor/lib/python3.8/site-packages/dht_sensor
+copying /home/ohj/hanium/src/dht_sensor/build/dht_sensor/build/lib/dht_sensor/dht_fake_pub.py -> /home/ohj/hanium/src/dht_sensor/install/dht_sensor/lib/python3.8/site-packages/dht_sensor
+copying /home/ohj/hanium/src/dht_sensor/build/dht_sensor/build/lib/dht_sensor/__init__.py -> /home/ohj/hanium/src/dht_sensor/install/dht_sensor/lib/python3.8/site-packages/dht_sensor
+copying /home/ohj/hanium/src/dht_sensor/build/dht_sensor/build/lib/dht_sensor/dht_pub.py -> /home/ohj/hanium/src/dht_sensor/install/dht_sensor/lib/python3.8/site-packages/dht_sensor
+byte-compiling /home/ohj/hanium/src/dht_sensor/install/dht_sensor/lib/python3.8/site-packages/dht_sensor/dht_fake_pub.py to dht_fake_pub.cpython-38.pyc
+byte-compiling /home/ohj/hanium/src/dht_sensor/install/dht_sensor/lib/python3.8/site-packages/dht_sensor/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/ohj/hanium/src/dht_sensor/install/dht_sensor/lib/python3.8/site-packages/dht_sensor/dht_pub.py to dht_pub.cpython-38.pyc
+running install_data
+creating /home/ohj/hanium/src/dht_sensor/install/dht_sensor/share
+creating /home/ohj/hanium/src/dht_sensor/install/dht_sensor/share/ament_index
+creating /home/ohj/hanium/src/dht_sensor/install/dht_sensor/share/ament_index/resource_index
+creating /home/ohj/hanium/src/dht_sensor/install/dht_sensor/share/ament_index/resource_index/packages
+copying resource/dht_sensor -> /home/ohj/hanium/src/dht_sensor/install/dht_sensor/share/ament_index/resource_index/packages
+creating /home/ohj/hanium/src/dht_sensor/install/dht_sensor/share/dht_sensor
+copying package.xml -> /home/ohj/hanium/src/dht_sensor/install/dht_sensor/share/dht_sensor
+running install_egg_info
+Copying build/dht_sensor/dht_sensor.egg-info to /home/ohj/hanium/src/dht_sensor/install/dht_sensor/lib/python3.8/site-packages/dht_sensor-0.0.1-py3.8.egg-info
+running install_scripts
+Installing dht_fake_pub script to /home/ohj/hanium/src/dht_sensor/install/dht_sensor/bin
+Installing dht_pub script to /home/ohj/hanium/src/dht_sensor/install/dht_sensor/bin
+writing list of installed files to '/home/ohj/hanium/src/dht_sensor/build/dht_sensor/install.log'

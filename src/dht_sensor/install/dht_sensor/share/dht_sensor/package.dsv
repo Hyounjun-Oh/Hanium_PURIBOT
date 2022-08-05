@@ -1,0 +1,9 @@
+source;share/dht_sensor/hook/path.ps1
+source;share/dht_sensor/hook/path.dsv
+source;share/dht_sensor/hook/path.sh
+source;share/dht_sensor/hook/pythonpath.ps1
+source;share/dht_sensor/hook/pythonpath.dsv
+source;share/dht_sensor/hook/pythonpath.sh
+source;share/dht_sensor/hook/pythonscriptspath.ps1
+source;share/dht_sensor/hook/pythonscriptspath.dsv
+source;share/dht_sensor/hook/pythonscriptspath.sh

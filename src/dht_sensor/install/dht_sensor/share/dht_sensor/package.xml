@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>dht_sensor</name>
+  <version>0.0.1</version>
+  <description>DHT_sensor 데이터 받아오기</description>
+  <maintainer email="ohj_980918@naver.com">ohj</maintainer>
+  <license>TODO: License declaration</license>
+
+  <depend>rclpy</depend>
+  <depend>std_msg</depend>
+  <depend>Adafruit_DHT</depend>
+  <depend>hanium_interface<depend>
+
+  <export>
+    <build_type>ament_cmake_python</build_type>
+  </export>
+</package>
