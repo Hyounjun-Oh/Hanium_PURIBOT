@@ -1,5 +1,5 @@
 import sys
-import adafruit_dht as A
+import Adafruit_DHT as A
 import rclpy
 from rclpy.node import Node
 from rclpy.parameter import Parameter
