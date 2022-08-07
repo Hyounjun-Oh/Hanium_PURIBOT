@@ -1,13 +1,16 @@
+#!/usr/bin/env python3
+
 import serial
 import struct
 import time
+import rclpy
 from rclpy.node import Node
 from rclpy.qos import QoSDurabilityPolicy
 from rclpy.qos import QoSHistoryPolicy
 from rclpy.qos import QoSProfile
 from rclpy.qos import QoSReliabilityPolicy
 from rclpy.callback_groups import ReentrantCallbackGroup
-from std_msgs.msg import Int16
+from std_msgs.msg import Float32
 
 class PMS7003(object):
 
@@ -137,11 +140,11 @@ class PMS7003(object):
 class PolluPub(Node, PMS7003):
     
     def __init__(self):
-        super().__init__("pollu_pub")
+        super().__init__("pollu_publisher")
         
         self.dust_2_5 = 0.0
         self.dust_10_0 = 0.0
-        self.UART = '/dev/ttyAMA0'
+        self.UART = '/dev/ttyAMA1'
         self.SERIAL_PORT = self.UART
         self.Speed = 9600
         
@@ -152,39 +155,44 @@ class PolluPub(Node, PMS7003):
             durability=QoSDurabilityPolicy.VOLATILE)
             
         self.publish_pollu = self.create_publisher(
-            Float16,
+            Float32,
             'pollu_pub',
             QOS_RKL10V
         )
-        
+       
+        self.timer = self.create_timer(1.0, self.publish_pollu)
+ 
     def publish_pollu(self):
+
+        msg = Float32()
         #serial setting 
-        self.ser = serial.Serial(self.SERIAL_PORT, self.Speed, timeout = 1)
-        self.dust = PMS7003()
+        ser = serial.Serial(self.SERIAL_PORT, self.Speed, timeout = 1)
         
-        self.ser.flushInput()
+        ser.flushInput()
         
-        self.buffer = self.ser.read(1024)
+        self.buffer = ser.read(1024)
     
-        if(dust.protocol_chk(buffer)):
-        
+        if(self.protocol_chk(self.buffer)):
+            self.data = self.unpack_data(self.buffer) 
             self.get_logger().info("DATA read success")
         
-            # print data
-            self.get_logger().info(self.dust.print_serial(buffer))
+            msg.data = int(self.data[self.DUST_AIR_10_0])
             
+            self.get_logger().info("10miro 미세먼지 값 : {0}".format(msg.data))
         else:
 
             self.get_logger().info("DATA read fail...")
-    
-    
-    
         
+        self.publish_pollu.publish(msg)
+
+
+
 def main(args=None):
-    
+    rclpy.init(args=args)
+
     pollu = PolluPub()
     try:
-        rclpy.spin(Pollu) # 콜백함수 실행 
+        rclpy.spin(pollu) # 콜백함수 실행 
     except KeyboardInterrupt: # 'Ctrl+c'와 같은 인터럽트 시그널 예외 상황 
         pollu.get_logger().info('Keyboard Interrupt (SIGINT)')
     finally: 
@@ -192,11 +200,4 @@ def main(args=None):
         rclpy.shutdown() # 함수 종료
 
 if __name__ == '__main__':
-    main()    
-    
-    
-    
-    
-    
-    
-    
+    main()
