@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import glob
 import os
 
@@ -5,6 +7,8 @@ from setuptools import find_packages
 from setuptools import setup
 
 package_name = 'dht_sensor'
+share_dir = 'share/' + package_name
+
 
 setup(
     name=package_name,
@@ -14,7 +18,8 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        ('share/' + package_name + '/launch', glob.glob(os.path.join('launch', '*.launch.py')))
+        (share_dir + '/launch', glob.glob(os.path.join('launch', '*.launch.py'))),
+        (share_dir + '/param', glob.glob(os.path.join('param', '*.yaml'))),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
