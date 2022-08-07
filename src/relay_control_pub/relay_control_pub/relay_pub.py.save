@@ -1,6 +1,5 @@
 import rclpy
 import RPi.GPIO as GPIO
-import time
 from rclpy.node import Node
 from rclpy.qos import QoSDurabilityPolicy
 from rclpy.qos import QoSHistoryPolicy
@@ -14,10 +13,10 @@ class RelayControl(Node):
     def __init__(self):
         super().__init__('relay_operation')
         self.hum = 0.0
+        self.gpio_num = 5
         GPIO.setmode(GPIO.BCM)
-        GPIO.setup(19, GPIO.OUT, initial=GPIO.LOW)
+        pull_up_down=GPIO.PUD_DOWN
         GPIO.setwarnings(False)
-
         QOS_RKL10V = QoSProfile(
             reliability=QoSReliabilityPolicy.RELIABLE,
             history=QoSHistoryPolicy.KEEP_LAST,
@@ -37,39 +36,39 @@ class RelayControl(Node):
         self.command = self.commander(self.hum)
         self.get_logger().info('습도 값은 : {0}, 릴레이 조작값은 : {1}'.format(self.hum,self.command))
         
-        if self.command == 1: 
+        msg2 = Int16()
+        msg2.data = int(self.command)
+        self.publisher_relay.publish(msg2)
+        if msg2.data == 1: 
             self.get_logger().info("가습을 시작합니다.")
-            GPIO.setmode(GPIO.BCM)
-            GPIO.setup(19, GPIO.OUT, initial=GPIO.LOW)
-            GPIO.setwarnings(False)
-            GPIO.output(19, GPIO.LOW)
         else:
             self.get_logger().info("가습을 중단합니다.")
-            GPIO.cleanup()
 
     def commander(self, hum):
         if 50.0 <= hum:
             self.command = 0
+            GPIO.output(self.gpio_num, GPIO.LOW)
         else:
             self.command = 1
-        return self.command
+            GPIO.output(self.gpio_num, GPIO.HIGH)
+            
+        command = self.command
+        return command
          
     
 def main(args=None):
     rclpy.init(args=args)
 
     try:
-        relay_control = RelayControl()
+        sub_hum = RelayControl()
         try:
-            rclpy.spin(relay_control)
+            rclpy.spin(sub_hum)
         except KeyboardInterrupt:
-            relay_control.get_logger().info('Keyboard Interrupt (SIGINT)')
-            GPIO.cleanup()
+            sub_hum.get_logger().info('Keyboard Interrupt (SIGINT)')
         finally:
-            relay_control.destroy_node()
+            sub_hum.destroy_node()
     finally:
         rclpy.shutdown()
-        GPIO.cleanup()
 
 
 if __name__ == '__main__':
