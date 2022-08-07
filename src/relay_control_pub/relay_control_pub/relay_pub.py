@@ -1,20 +1,21 @@
 import rclpy
+import RPi.GPIO as GPIO
 from rclpy.node import Node
 from rclpy.qos import QoSDurabilityPolicy
 from rclpy.qos import QoSHistoryPolicy
 from rclpy.qos import QoSProfile
 from rclpy.qos import QoSReliabilityPolicy
 from rclpy.callback_groups import ReentrantCallbackGroup
-from std_msgs.msg import Int16
-from std_msgs.msg import Float32
 from hanium_interface.msg import GetDht
 
-class HumSubscriber(Node):
-    command = 0
+class RelayControl(Node):
+
     def __init__(self):
         super().__init__('relay_operation')
         self.hum = 0.0
-        self.gas = 0
+        self.gpio_num = 5
+        GPIO.setmode(GPIO.BCM)
+        GPIO.setup(self.gpio_num, GPIO.IN)
         
         QOS_RKL10V = QoSProfile(
             reliability=QoSReliabilityPolicy.RELIABLE,
@@ -28,26 +29,6 @@ class HumSubscriber(Node):
              self.get_hum_value,
              QOS_RKL10V
              )
-             
-        self.subscribe_gas = self.create_subscription(
-             Int16,
-             'gas_sensor_pub',
-             self.get_gas_value,
-             QOS_RKL10V
-             )
-        
-        self.publisher_relay = self.create_publisher(
-            Int16,
-            'relay_state',
-            QOS_RKL10V
-        )
-        
-        self.publisher_gas = self.create_publisher(
-            Int16,
-            'gas_state',
-            QOS_RKL10V
-        )
-        
 
     def get_hum_value(self, msg):
         
@@ -62,29 +43,24 @@ class HumSubscriber(Node):
             self.get_logger().info("가습을 시작합니다.")
         else:
             self.get_logger().info("가습을 중단합니다.")
-        
-    def get_gas_value(self, msg):
-    
-        self.gas = msg.data
-        
-        msg3 = Int16()
-        msg3.data = self.gas
-        self.publisher_gas.publish(msg3)
-        self.get_logger().info("받은 가스 상태값은 : {0}".format(msg2.data))
-        
+
     def commander(self, hum):
         if 50.0 <= hum:
             self.command = 0
+            GPIO.output(self.gpio_num, GPIO.LOW)
         else:
             self.command = 1
+            GPIO.output(self.gpio_num, GPIO.HIGH)
+            
         command = self.command
         return command
          
     
 def main(args=None):
     rclpy.init(args=args)
+
     try:
-        sub_hum = HumSubscriber()
+        sub_hum = RelayControl()
         try:
             rclpy.spin(sub_hum)
         except KeyboardInterrupt:
