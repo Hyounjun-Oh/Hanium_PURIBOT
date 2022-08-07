@@ -16,9 +16,9 @@ class dht_pub(Node): # Node 클래스 상속
         super().__init__('dht_publisher') 
         self.sensor = sensor
         self.pin = pin
-   	
-        self.hum, self.temp = A.read_retry(self.sensor,self.pin)
-   	
+        self.hum = 0.0
+        self.temp = 0.0
+
         QOS_RKL10V = QoSProfile(
             reliability=QoSReliabilityPolicy.RELIABLE,
             history=QoSHistoryPolicy.KEEP_LAST,
@@ -31,13 +31,13 @@ class dht_pub(Node): # Node 클래스 상속
             QOS_RKL10V) 
             
         self.timer = self.create_timer(1.0, self.publish_dht)
-				# 콜백함수 : n초마다 지정한 콜백함수 실행 
 
 
     def publish_dht(self): 
+        self.hum, self.temp = A.read_retry(self.sensor,self.pin)
         msg = GetDht() # 퍼블리시할 메시지 
-        msg.temp = self.temp
-        msg.hum = self.hum
+        msg.temp = float(self.temp)
+        msg.hum = float(self.hum)
         self.dht_publisher.publish(msg) # 메시지 퍼블리시
         self.get_logger().info('온도: {0} 습도: {1}'.format(msg.temp,msg.hum)) # 콘솔창에 출력 (==print함수) 
 
