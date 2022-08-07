@@ -1,12 +1,12 @@
-import rclpy
 import serial
 import struct
-import time 
+import time
 from rclpy.node import Node
 from rclpy.qos import QoSDurabilityPolicy
 from rclpy.qos import QoSHistoryPolicy
 from rclpy.qos import QoSProfile
 from rclpy.qos import QoSReliabilityPolicy
+from rclpy.callback_groups import ReentrantCallbackGroup
 from std_msgs.msg import Int16
 
 class PMS7003(object):
@@ -132,69 +132,59 @@ class PMS7003(object):
         print ("Reserved F : %s | Reserved B : %s" % (data[self.RESERVEDF],data[self.RESERVEDB]))
         print ("CHKSUM : %s | read CHKSUM : %s | CHKSUM result : %s" % (chksum, data[self.CHECKSUM], chksum == data[self.CHECKSUM]))
         print ("============================================================================")
-        
-    def pm10_pm25(self, buffer):
-        
-        chksum = self.chksum_cal(buffer)
-        data = self.unpack_data(buffer)
+
 
 class PolluPub(Node, PMS7003):
-
-    def __init__(self,ser):
-        super().__init__('PolluPublisher')
-        self.ser = ser
-        self.ser.flushInput()
-        self.buffer = ser.read(1024)
     
+    def __init__(self):
+        super().__init__("pollu_pub")
+        
+        self.dust_2_5 = 0.0
+        self.dust_10_0 = 0.0
+        self.UART = '/dev/ttyAMA0'
+        self.SERIAL_PORT = self.UART
+        self.Speed = 9600
+        
         QOS_RKL10V = QoSProfile(
             reliability=QoSReliabilityPolicy.RELIABLE,
             history=QoSHistoryPolicy.KEEP_LAST,
             depth=10,
             durability=QoSDurabilityPolicy.VOLATILE)
             
-        self.publisher_pollu_grade = self.create_publisher(
-            Int16,
-            'pollu_grade',
+        self.publish_pollu = self.create_publisher(
+            Float16,
+            'pollu_pub',
             QOS_RKL10V
-            )
+        )
+        
+    def publish_pollu(self):
+        #serial setting 
+        self.ser = serial.Serial(self.SERIAL_PORT, self.Speed, timeout = 1)
+        self.dust = PMS7003()
+        
+        self.ser.flushInput()
+        
+        self.buffer = self.ser.read(1024)
+    
+        if(dust.protocol_chk(buffer)):
+        
+            self.get_logger().info("DATA read success")
+        
+            # print data
+            self.get_logger().info(self.dust.print_serial(buffer))
             
-            
-    def pub_pollu_grade(self):
-        
-        msg = Int16()
-        msg.data = self.calculate_pollu()
-        self.publisher_pollu_grade.publish(msg)
-        self.get_logger().info('현재 오염도 수치는 : {0}, PM10 {1}, PM2.5 {2}'.format(msg.data,self.pm10,self.pm2_5))
-  
-    def calculate_pollu(self):
-        
-        chksum = self.chksum_cal(buffer)
-        data = self.unpack_data(buffer)
-        
-        self.pm10 = data[self.DUST_PM10_0_CF1]
-        self.pm2_5 = data[self.DUST_PM2_5_CF1]
-        
-        if self.pm10 > 70 or self.pm2_5 > 40:
-            self.pollu = 3
-        elif self.pm10 > 50 or self.pm2_5 > 30:
-            self.pollu = 2
-        elif self.pm10 > 30 or self.pm2_5 > 20:
-            self.pollu = 1
         else:
-            self.pollu = 0
-     
-        return self.pollu
+
+            self.get_logger().info("DATA read fail...")
+    
+    
+    
         
 def main(args=None):
-    rclpy.init(args=args) # 초기화 
-    UART = '/dev/ttyAMA4'
-    SERIAL_PORT = UART
-    Speed = 9600
-    ser = serial.Serial(SERIAL_PORT, Speed, timeout = 1)
-    pollu = PolluPub(ser)
     
+    pollu = PolluPub()
     try:
-        rclpy.spin(pollu) # 콜백함수 실행 
+        rclpy.spin(Pollu) # 콜백함수 실행 
     except KeyboardInterrupt: # 'Ctrl+c'와 같은 인터럽트 시그널 예외 상황 
         pollu.get_logger().info('Keyboard Interrupt (SIGINT)')
     finally: 
@@ -202,4 +192,11 @@ def main(args=None):
         rclpy.shutdown() # 함수 종료
 
 if __name__ == '__main__':
-    main()        
+    main()    
+    
+    
+    
+    
+    
+    
+    
