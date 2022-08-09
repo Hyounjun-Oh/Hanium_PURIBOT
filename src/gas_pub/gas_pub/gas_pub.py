@@ -13,7 +13,7 @@ class GasPublisher(Node):
     def __init__(self,channel):
         super().__init__('GasPub')
         self.channel = channel
-        GPIO.setmode(GPIO.BOARD)
+        GPIO.setmode(GPIO.BCM)
         GPIO.setwarnings(False)
         GPIO.setup(channel, GPIO.IN)
         
@@ -47,7 +47,7 @@ class GasPublisher(Node):
 def main(args=None):
     rclpy.init(args=args)
     try:
-        channel = 29
+        channel = 21
         gas_pub = GasPublisher(channel)
         try:
             rclpy.spin(gas_pub)
