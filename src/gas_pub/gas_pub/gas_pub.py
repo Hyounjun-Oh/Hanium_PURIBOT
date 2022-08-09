@@ -38,10 +38,10 @@ class GasPublisher(Node):
         self.get_logger().info('가스 감지 상태 : {0}'.format(msg.data))
 
     def gpio_on_off(self,channel):
-        if GPIO.input(channel) <= 1:
-            self.state = 0
-        else:
+        if GPIO.input(channel) == 1:
             self.state = 1
+        else:
+            self.state = 0
         return self.state
 
 def main(args=None):
