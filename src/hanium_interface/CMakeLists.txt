@@ -22,12 +22,11 @@ find_package(rosidl_default_generators REQUIRED)
 # Declare ROS messages, services and actions
 ################################################################################
 
-set(msg_files
-  "msg/GetDht.msg"
-)
+
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  ${msg_files}
+  "msg/GetDht.msg"
+  "msg/Pollu.msg"
   ${srv_files}
   ${action_files}
   DEPENDENCIES builtin_interfaces
