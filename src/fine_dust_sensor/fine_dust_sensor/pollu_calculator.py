@@ -9,9 +9,10 @@ from hanium_interface.msg import Pollu
 from std_msgs.msg import Int16
 
 class PolluCalculator(Node):
-    
+
     def __init__(self):
-    
+        super().__init__("pollu_calculator")
+        
         QOS_RKL10V = QoSProfile(
             reliability=QoSReliabilityPolicy.RELIABLE,
             history=QoSHistoryPolicy.KEEP_LAST,
@@ -112,6 +113,9 @@ class PolluCalculator(Node):
         
         self.pollu_grade = round(self.pollu_grade_pm2_5 * (1 - k) + self.pollu_grade_pm10 * k) 
         
+        if self.pollu_grade > 10:
+            self.pollu_grade == 10
+
         return self.pollu_grade
         
         
@@ -128,7 +132,4 @@ def main(args=None):
         rclpy.shutdown() 
 
 if __name__ == '__main__':
-    main()  
-        
-        
-        
+    main()
