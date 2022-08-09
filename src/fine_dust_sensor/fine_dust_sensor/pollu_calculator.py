@@ -36,17 +36,21 @@ class PolluCalculator(Node):
         
         self.pm10 = msg.pm10
         self.pm2_5 = msg.pm2_5
-        self.get_logger().info('pm10 값은 : {0} \n pm2.5 값은 : {1}'.format(self.pm10, self.pm2_5))
+        self.get_logger().info('\npm10 값은 : {0} \n pm2.5 값은 : {1}'.format(self.pm10, self.pm2_5))
         
         self.pollu_calculator(self.pm10, self.pm2_5)
-        
+        msg = Int16()
+        msg.data = self.pollu_grade
+        self.publish_grade.publish(msg)
+        self.get_logger().info('\n오염도 값은 : {0}'.format(self.pollu_grade))
+
     def pollu_calculator(self, pm10, pm2_5):
         
         mass_pm10 = 0.42899458272293433436
         mass_pm2_5 = 0.00207916901084834082
         
-        self.result_pm10 = mass_pm10 * 3531.5 * pm10
-        self.result_pm2_5 = mass_pm2_5 * 3531.5 * pm2_5
+        self.result_pm10 = (mass_pm10 * 3531.5 * pm10)/3
+        self.result_pm2_5 = (mass_pm2_5 * 3531.5 * pm2_5)/3
         
         self.pollu_grade_1(self.result_pm10, self.result_pm2_5)
         
@@ -109,13 +113,6 @@ class PolluCalculator(Node):
 
         return self.pollu_grade
     
-    def pub_grade(self):
-    
-        msg = Int16()
-        msg.data = self.pollu_grade
-        self.publish_grade.publish(msg)
-        self.get_logger().info('오염도 값은 : {0}'.format(self.pollu_grade))
-        
 def main(args=None):
     rclpy.init(args=args)
     
