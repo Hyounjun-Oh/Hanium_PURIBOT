@@ -10,7 +10,7 @@ from rclpy.qos import QoSHistoryPolicy
 from rclpy.qos import QoSProfile
 from rclpy.qos import QoSReliabilityPolicy
 from rclpy.callback_groups import ReentrantCallbackGroup
-from std_msgs.msg import Int16
+from hanium_interface.msg import Pollu
 
 class PMS7003(object):
 
@@ -142,9 +142,7 @@ class PolluPub(Node, PMS7003):
     def __init__(self,ser):
         super().__init__("pollu_publisher")
         self.ser = ser
-        self.dust_2_5 = 0
-        self.dust_10_0 = 0
-        
+
         QOS_RKL10V = QoSProfile(
             reliability=QoSReliabilityPolicy.RELIABLE,
             history=QoSHistoryPolicy.KEEP_LAST,
@@ -152,7 +150,7 @@ class PolluPub(Node, PMS7003):
             durability=QoSDurabilityPolicy.VOLATILE)
             
         self.publisher_pollu = self.create_publisher(
-            Int16,
+            Pollu,
             'pollu_pub',
             QOS_RKL10V
         )
@@ -161,7 +159,7 @@ class PolluPub(Node, PMS7003):
  
     def publish_pollu(self):
 
-        msg = Int16()
+        msg = Pollu()
 
         self.ser.flushInput()
         
@@ -171,9 +169,13 @@ class PolluPub(Node, PMS7003):
             self.data = self.unpack_data(self.buffer) 
             self.get_logger().info("DATA read success")
         
-            msg.data = int(self.data[self.DUST_AIR_10_0])
-            
-            self.get_logger().info("10miro 미세먼지 값 : {0}".format(msg.data))
+            msg.pm10 = int(self.data[self.DUST_AIR_10_0])
+            msg.pm5 = int(self.data[self.DUST_AIR_5_0])
+            msg.pm2_5 = int(self.data[self.DUST_AIR_2_5])
+            msg.pm0_5 = int(self.data[self.DUST_AIR_0_5])
+            msg.pm0_3 = int(self.data[self.DUST_AIR_0_3])
+
+            self.get_logger().info("\n10micro : {0}\n5micro : {1}\n2.5micro : {2}\n0.5micro : {3}\n0.3micro : {4}\n".format(msg.pm10, msg.pm5, msg.pm2_5, msg.pm0_5, msg.pm0_3))
         else:
 
             self.get_logger().info("DATA read fail...")
