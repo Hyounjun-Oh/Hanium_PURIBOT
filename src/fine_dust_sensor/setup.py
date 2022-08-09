@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'pollu_pub = fine_dust_sensor.pollu_pub:main'
+            'pollu_pub = fine_dust_sensor.pollu_pub:main',
+            'pollu_calculator = fine_dust_sensor.pollu_calculator:main'
         ],
     },
 )
