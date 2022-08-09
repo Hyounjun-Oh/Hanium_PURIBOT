@@ -10,7 +10,7 @@ from rclpy.qos import QoSHistoryPolicy
 from rclpy.qos import QoSProfile
 from rclpy.qos import QoSReliabilityPolicy
 from rclpy.callback_groups import ReentrantCallbackGroup
-from std_msgs.msg import Float32
+from std_msgs.msg import Int16
 
 class PMS7003(object):
 
@@ -139,14 +139,11 @@ class PMS7003(object):
 
 class PolluPub(Node, PMS7003):
     
-    def __init__(self):
+    def __init__(self,ser):
         super().__init__("pollu_publisher")
-        
-        self.dust_2_5 = 0.0
-        self.dust_10_0 = 0.0
-        self.UART = '/dev/ttyAMA1'
-        self.SERIAL_PORT = self.UART
-        self.Speed = 9600
+        self.ser = ser
+        self.dust_2_5 = 0
+        self.dust_10_0 = 0
         
         QOS_RKL10V = QoSProfile(
             reliability=QoSReliabilityPolicy.RELIABLE,
@@ -154,8 +151,8 @@ class PolluPub(Node, PMS7003):
             depth=10,
             durability=QoSDurabilityPolicy.VOLATILE)
             
-        self.publish_pollu = self.create_publisher(
-            Float32,
+        self.publisher_pollu = self.create_publisher(
+            Int16,
             'pollu_pub',
             QOS_RKL10V
         )
@@ -164,13 +161,11 @@ class PolluPub(Node, PMS7003):
  
     def publish_pollu(self):
 
-        msg = Float32()
-        #serial setting 
-        ser = serial.Serial(self.SERIAL_PORT, self.Speed, timeout = 1)
+        msg = Int16()
+
+        self.ser.flushInput()
         
-        ser.flushInput()
-        
-        self.buffer = ser.read(1024)
+        self.buffer = self.ser.read(1024)
     
         if(self.protocol_chk(self.buffer)):
             self.data = self.unpack_data(self.buffer) 
@@ -183,21 +178,25 @@ class PolluPub(Node, PMS7003):
 
             self.get_logger().info("DATA read fail...")
         
-        self.publish_pollu.publish(msg)
+        self.publisher_pollu.publish(msg)
 
 
 
 def main(args=None):
     rclpy.init(args=args)
-
-    pollu = PolluPub()
+    UART = '/dev/ttyAMA1'
+    SERIAL_PORT = UART
+    Speed = 9600
+    #serial setting 
+    ser = serial.Serial(SERIAL_PORT, Speed, timeout = 1)
+    pollu = PolluPub(ser)
     try:
-        rclpy.spin(pollu) # 콜백함수 실행 
-    except KeyboardInterrupt: # 'Ctrl+c'와 같은 인터럽트 시그널 예외 상황 
+        rclpy.spin(pollu)
+    except KeyboardInterrupt:
         pollu.get_logger().info('Keyboard Interrupt (SIGINT)')
     finally: 
-        pollu.destroy_node() # 노드 소멸 
-        rclpy.shutdown() # 함수 종료
+        pollu.destroy_node() 
+        rclpy.shutdown() 
 
 if __name__ == '__main__':
     main()
