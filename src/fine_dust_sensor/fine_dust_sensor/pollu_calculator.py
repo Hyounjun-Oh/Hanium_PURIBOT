@@ -18,14 +18,21 @@ class PolluCalculator(Node):
             history=QoSHistoryPolicy.KEEP_LAST,
             depth=10,
             durability=QoSDurabilityPolicy.VOLATILE)
-    
+        
+        self.subscribe_gas = self.create_subscription(
+            Int16,
+            'gas_sensor_pub',
+            self.get_gas,
+            QOS_RKL10V
+        )
+
         self.subscribe_pollu = self.create_subscription(
             Pollu,
             'pollu_pub',
             self.get_pollu,
             QOS_RKL10V
         )
-    
+        
         self.publish_grade = self.create_publisher(
             Int16,
             'pollu_grade',
@@ -36,13 +43,18 @@ class PolluCalculator(Node):
         
         self.pm10 = msg.pm10
         self.pm2_5 = msg.pm2_5
-        self.get_logger().info('\npm10 값은 : {0} \n pm2.5 값은 : {1}'.format(self.pm10, self.pm2_5))
+        self.get_logger().info('\npm10 값은 : {0}\npm2.5 값은 : {1}\n가스탐지 : {2}'.format(self.pm10, self.pm2_5, self.gas))
         
         self.pollu_calculator(self.pm10, self.pm2_5)
         msg = Int16()
         msg.data = self.pollu_grade
         self.publish_grade.publish(msg)
         self.get_logger().info('\n오염도 값은 : {0}'.format(self.pollu_grade))
+
+    def get_gas(self,msg):
+        self.gas = msg.data
+        return self.gas
+        
 
     def pollu_calculator(self, pm10, pm2_5):
         
