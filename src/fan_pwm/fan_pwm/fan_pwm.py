@@ -68,9 +68,11 @@ def main(args=None):
             rclpy.spin(fan_mode)
         except KeyboardInterrupt:
             fan_mode.get_logger().info('Keyboard Interrupt (SIGINT)')
+            GPIO.cleanup()
         finally:
             fan_mode.destroy_node()
     finally:
+        GPIO.cleanup()
         rclpy.shutdown()
 
 

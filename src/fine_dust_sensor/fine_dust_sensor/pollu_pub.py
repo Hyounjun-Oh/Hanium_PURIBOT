@@ -195,6 +195,7 @@ def main(args=None):
     try:
         rclpy.spin(pollu)
     except KeyboardInterrupt:
+        GPIO.cleanup()
         pollu.get_logger().info('Keyboard Interrupt (SIGINT)')
     finally: 
         pollu.destroy_node() 

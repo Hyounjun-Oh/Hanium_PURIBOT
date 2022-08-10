@@ -52,10 +52,12 @@ def main(args=None):
         try:
             rclpy.spin(gas_pub)
         except KeyboardInterrupt:
+            GPIO.cleanup()
             gas_pub.get_logger().info('Keyboard Interrupt (SIGINT)')
         finally:
             gas_pub.destroy_node()
     finally:
+        GPIO.cleanup()
         rclpy.shutdown()
 
 

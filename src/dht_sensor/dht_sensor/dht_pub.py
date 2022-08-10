@@ -48,10 +48,13 @@ def main(args=None):
     try:
         rclpy.spin(dht) # 콜백함수 실행 
     except KeyboardInterrupt: # 'Ctrl+c'와 같은 인터럽트 시그널 예외 상황 
+        GPIO.cleanup()
         dht.get_logger().info('Keyboard Interrupt (SIGINT)')
     finally: 
+        GPIO.cleanup()
         dht.destroy_node() # 노드 소멸 
         rclpy.shutdown() # 함수 종료
+        
 
 if __name__ == '__main__':
     main()
