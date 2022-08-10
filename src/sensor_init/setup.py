@@ -6,7 +6,7 @@ import os
 from setuptools import find_packages
 from setuptools import setup
 
-package_name = 'relay_control_pub'
+package_name = 'sensor_init'
 share_dir = 'share/' + package_name
 
 setup(
@@ -29,7 +29,6 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'relay_pub = relay_control_pub.relay_pub:main'
         ],
     },
 )

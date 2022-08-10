@@ -14,7 +14,7 @@ from hanium_interface.msg import GetDht
 class DataExport(Node):
     
     def __init__(self):
-        super().__init__("DataExport")
+        super().__init__("data_export")
         
         self.df = pd.DataFrame(columns=['year','month','day', 'hour','local' , 'temp', 'humidity', 'metter'])
         time_now = dt.datetime.now()
