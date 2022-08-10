@@ -17,8 +17,8 @@ def generate_launch_description():
 
     gas_node = Node(
         package='gas_pub',
-        executable='GasPub',
-        name='GasPub',
+        executable='gas_pub',
+        name='gas_pub',
         output='screen')
 
 

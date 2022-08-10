@@ -17,7 +17,7 @@ def generate_launch_description():
 
     relay_node = Node(
         package='relay_control_pub',
-        executable='relay_operation',
+        executable='relay_pub',
         name='relay_operation',
         output='screen')
 

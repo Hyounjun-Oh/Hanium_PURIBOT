@@ -17,14 +17,14 @@ def generate_launch_description():
 
     dust_pub_node = Node(
         package='fine_dust_sensor',
-        executable='dust_publisher',
-        name='dust_publisher',
+        executable='pollu_pub',
+        name='pollu_pub',
         output='screen')
         
     dust_cal_node = Node(
         package='fine_dust_sensor',
-        executable='dust_calculator',
-        name='dust_calculator',
+        executable='pollu_calculator',
+        name='pollu_calculator',
         output='screen')
 
 
