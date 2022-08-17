@@ -8,6 +8,9 @@ from ament_index_python.packages import get_package_share_directory
 
 
 def generate_launch_description():
+
+    ld = LaunchDescription()
+    
     use_sim_time = LaunchConfiguration('use_sim_time')
     slam_params_file = LaunchConfiguration('slam_params_file')
 
@@ -31,7 +34,6 @@ def generate_launch_description():
         name='slam_toolbox',
         output='screen')
 
-    ld = LaunchDescription()
 
     ld.add_action(declare_use_sim_time_argument)
     ld.add_action(declare_slam_params_file_cmd)
