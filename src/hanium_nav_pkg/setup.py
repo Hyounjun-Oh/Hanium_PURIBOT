@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'navigation_hanium=hanium_nav_pkg.navigation_hanium:main'
         ],
     },
 )
