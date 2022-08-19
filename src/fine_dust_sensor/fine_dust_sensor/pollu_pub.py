@@ -170,12 +170,10 @@ class PolluPub(Node, PMS7003):
             self.get_logger().info("DATA read success")
         
             msg.pm10 = int(self.data[self.DUST_PM10_0_ATM])
-            msg.pm5 = int(self.data[self.DUST_AIR_5_0_ATM])
             msg.pm2_5 = int(self.data[self.DUST_AIR_2_5_ATM])
-            msg.pm0_5 = int(self.data[self.DUST_AIR_0_5_ATM])
-            msg.pm0_3 = int(self.data[self.DUST_AIR_0_3_ATM])
+            
 
-            self.get_logger().info("\n10micro : {0}\n5micro : {1}\n2.5micro : {2}\n0.5micro : {3}\n0.3micro : {4}\n".format(msg.pm10, msg.pm5, msg.pm2_5, msg.pm0_5, msg.pm0_3))
+            self.get_logger().info("\n10micro : {0} 2.5micro : {1}".format(msg.pm10,msg.pm2_5))
         else:
 
             self.get_logger().info("DATA read fail...")

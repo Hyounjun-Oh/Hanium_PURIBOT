@@ -45,7 +45,7 @@ class PolluCalculator(Node):
         self.pm2_5 = msg.pm2_5
         self.get_logger().info('\npm10 값은 : {0}\npm2.5 값은 : {1}\n가스탐지 : {2}'.format(self.pm10, self.pm2_5, self.gas))
         
-        self.pollu_calculator(self.pm10, self.pm2_5)
+        self.pollu_grade_1(self.result_pm10, self.result_pm2_5)
         msg = Int16()
         msg.data = self.pollu_grade
         self.publish_grade.publish(msg)
@@ -55,18 +55,6 @@ class PolluCalculator(Node):
         self.gas = msg.data
         return self.gas
         
-
-    def pollu_calculator(self, pm10, pm2_5):
-        
-        mass_pm10 = 0.42899458272293433436
-        mass_pm2_5 = 0.00207916901084834082
-        
-        self.result_pm10 = (mass_pm10 * 3531.5 * pm10)/3
-        self.result_pm2_5 = (mass_pm2_5 * 3531.5 * pm2_5)/3
-        
-        self.pollu_grade_1(self.result_pm10, self.result_pm2_5)
-        
-        return self.pollu_grade
         
     def pollu_grade_1(self, result_pm10, result_pm2_5):
         
