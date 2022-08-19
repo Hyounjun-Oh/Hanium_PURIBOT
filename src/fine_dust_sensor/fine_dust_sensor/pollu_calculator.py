@@ -45,7 +45,7 @@ class PolluCalculator(Node):
         self.pm2_5 = msg.pm2_5
         self.get_logger().info('\npm10 값은 : {0}\npm2.5 값은 : {1}\n가스탐지 : {2}'.format(self.pm10, self.pm2_5, self.gas))
         
-        self.pollu_grade_1(self.result_pm10, self.result_pm2_5)
+        self.pollu_grade_1(self.pm10, self.pm2_5)
         msg = Int16()
         msg.data = self.pollu_grade
         self.publish_grade.publish(msg)
