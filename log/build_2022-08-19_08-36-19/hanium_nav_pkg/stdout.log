@@ -1,0 +1,26 @@
+running egg_info
+creating ../../build/hanium_nav_pkg/hanium_nav_pkg.egg-info
+writing manifest file '../../build/hanium_nav_pkg/hanium_nav_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/hanium_nav_pkg/hanium_nav_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ubuntu/greenai-ros/build/hanium_nav_pkg/build
+creating /home/ubuntu/greenai-ros/build/hanium_nav_pkg/build/lib
+creating /home/ubuntu/greenai-ros/build/hanium_nav_pkg/build/lib/hanium_nav_pkg
+copying hanium_nav_pkg/__init__.py -> /home/ubuntu/greenai-ros/build/hanium_nav_pkg/build/lib/hanium_nav_pkg
+copying hanium_nav_pkg/navigation_hanium.py -> /home/ubuntu/greenai-ros/build/hanium_nav_pkg/build/lib/hanium_nav_pkg
+running install
+running install_lib
+creating /home/ubuntu/greenai-ros/install/hanium_nav_pkg/lib/python3.8/site-packages/hanium_nav_pkg
+byte-compiling /home/ubuntu/greenai-ros/install/hanium_nav_pkg/lib/python3.8/site-packages/hanium_nav_pkg/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/ubuntu/greenai-ros/install/hanium_nav_pkg/lib/python3.8/site-packages/hanium_nav_pkg/navigation_hanium.py to navigation_hanium.cpython-38.pyc
+running install_data
+creating /home/ubuntu/greenai-ros/install/hanium_nav_pkg/share/ament_index
+creating /home/ubuntu/greenai-ros/install/hanium_nav_pkg/share/ament_index/resource_index
+creating /home/ubuntu/greenai-ros/install/hanium_nav_pkg/share/ament_index/resource_index/packages
+copying resource/hanium_nav_pkg -> /home/ubuntu/greenai-ros/install/hanium_nav_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/ubuntu/greenai-ros/install/hanium_nav_pkg/share/hanium_nav_pkg
+running install_egg_info
+Copying ../../build/hanium_nav_pkg/hanium_nav_pkg.egg-info to /home/ubuntu/greenai-ros/install/hanium_nav_pkg/lib/python3.8/site-packages/hanium_nav_pkg-1.0.0-py3.8.egg-info
+running install_scripts
+writing list of installed files to '/home/ubuntu/greenai-ros/build/hanium_nav_pkg/install.log'

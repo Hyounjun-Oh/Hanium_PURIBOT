@@ -1,0 +1,14 @@
+[6.260s] Invoking command in '/home/ubuntu/greenai-ros/src/sensor_init': PYTHONPATH=/home/ubuntu/greenai-ros/install/sensor_init/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/sensor_init build --build-base /home/ubuntu/greenai-ros/build/sensor_init/build install --prefix /home/ubuntu/greenai-ros/install/sensor_init --record /home/ubuntu/greenai-ros/build/sensor_init/install.log --single-version-externally-managed
+[7.895s] running egg_info
+[7.928s] writing manifest file '../../build/sensor_init/sensor_init.egg-info/SOURCES.txt'
+[7.929s] running build
+[7.930s] running build_py
+[7.932s] running install
+[7.937s] running install_lib
+[7.945s] running install_data
+[7.949s] running install_egg_info
+[7.960s] removing '/home/ubuntu/greenai-ros/install/sensor_init/lib/python3.8/site-packages/sensor_init-0.0.0-py3.8.egg-info' (and everything under it)
+[7.963s] Copying ../../build/sensor_init/sensor_init.egg-info to /home/ubuntu/greenai-ros/install/sensor_init/lib/python3.8/site-packages/sensor_init-0.0.0-py3.8.egg-info
+[7.972s] running install_scripts
+[8.091s] writing list of installed files to '/home/ubuntu/greenai-ros/build/sensor_init/install.log'
+[8.262s] Invoked command in '/home/ubuntu/greenai-ros/src/sensor_init' returned '0': PYTHONPATH=/home/ubuntu/greenai-ros/install/sensor_init/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/sensor_init build --build-base /home/ubuntu/greenai-ros/build/sensor_init/build install --prefix /home/ubuntu/greenai-ros/install/sensor_init --record /home/ubuntu/greenai-ros/build/sensor_init/install.log --single-version-externally-managed

@@ -1,0 +1,132 @@
+[0.262s] Invoking command in '/home/ubuntu/greenai-ros/build/hanium_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/greenai-ros/install/sensor_init:/home/ubuntu/greenai-ros/install/relay_control_pub:/home/ubuntu/greenai-ros/install/hanium_nav_pkg:/home/ubuntu/greenai-ros/install/nav2_simple_commander:/home/ubuntu/greenai-ros/install/fine_dust_sensor:/home/ubuntu/greenai-ros/install/dht_sensor:/home/ubuntu/greenai-ros/install/data_export:/home/ubuntu/greenai-ros/install/gas_pub:/home/ubuntu/greenai-ros/install/fan_pwm:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/greenai-ros/build/hanium_interface -- -j4 -l4
+[2.995s] [  2%] Built target hanium_interface__cpp
+[2.996s] [ 12%] Built target hanium_interface__rosidl_generator_c
+[3.001s] [ 23%] Built target hanium_interface__rosidl_typesupport_cpp
+[3.002s] [ 33%] Built target hanium_interface__rosidl_typesupport_introspection_cpp
+[3.003s] [ 43%] Built target hanium_interface__rosidl_typesupport_fastrtps_cpp
+[3.003s] [ 53%] Built target hanium_interface__rosidl_typesupport_c
+[3.004s] [ 64%] Built target hanium_interface__rosidl_typesupport_introspection_c
+[3.004s] [ 74%] Built target hanium_interface__rosidl_typesupport_fastrtps_c
+[3.005s] [ 74%] Built target hanium_interface
+[3.005s] [ 76%] Built target hanium_interface__py
+[3.006s] [ 84%] Built target hanium_interface__python
+[3.006s] [ 89%] Built target hanium_interface__rosidl_typesupport_c__pyext
+[3.006s] [ 94%] Built target hanium_interface__rosidl_typesupport_fastrtps_c__pyext
+[3.007s] [100%] Built target hanium_interface__rosidl_typesupport_introspection_c__pyext
+[4.234s] Invoked command in '/home/ubuntu/greenai-ros/build/hanium_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/greenai-ros/install/sensor_init:/home/ubuntu/greenai-ros/install/relay_control_pub:/home/ubuntu/greenai-ros/install/hanium_nav_pkg:/home/ubuntu/greenai-ros/install/nav2_simple_commander:/home/ubuntu/greenai-ros/install/fine_dust_sensor:/home/ubuntu/greenai-ros/install/dht_sensor:/home/ubuntu/greenai-ros/install/data_export:/home/ubuntu/greenai-ros/install/gas_pub:/home/ubuntu/greenai-ros/install/fan_pwm:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/greenai-ros/build/hanium_interface -- -j4 -l4
+[4.841s] Invoking command in '/home/ubuntu/greenai-ros/build/hanium_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/greenai-ros/install/sensor_init:/home/ubuntu/greenai-ros/install/relay_control_pub:/home/ubuntu/greenai-ros/install/hanium_nav_pkg:/home/ubuntu/greenai-ros/install/nav2_simple_commander:/home/ubuntu/greenai-ros/install/fine_dust_sensor:/home/ubuntu/greenai-ros/install/dht_sensor:/home/ubuntu/greenai-ros/install/data_export:/home/ubuntu/greenai-ros/install/gas_pub:/home/ubuntu/greenai-ros/install/fan_pwm:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --install /home/ubuntu/greenai-ros/build/hanium_interface
+[4.902s] -- Install configuration: ""
+[4.904s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/ament_index/resource_index/rosidl_interfaces/hanium_interface
+[4.906s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface
+[4.907s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg
+[4.909s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/pollu.h
+[4.910s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail
+[4.912s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail/pollu__type_support.h
+[4.913s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail/pollu__functions.c
+[4.915s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail/get_dht__struct.h
+[4.917s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail/get_dht__functions.c
+[4.918s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail/get_dht__functions.h
+[4.920s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail/get_dht__type_support.h
+[4.921s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail/pollu__functions.h
+[4.923s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail/pollu__struct.h
+[4.924s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/rosidl_generator_c__visibility_control.h
+[4.926s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/get_dht.h
+[4.928s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/environment/library_path.sh
+[4.929s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/environment/library_path.dsv
+[4.934s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/lib/libhanium_interface__rosidl_generator_c.so
+[4.937s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface
+[4.938s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg
+[4.940s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail
+[4.941s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail/get_dht__rosidl_typesupport_fastrtps_c.h
+[4.943s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail/pollu__rosidl_typesupport_fastrtps_c.h
+[4.944s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[4.947s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/lib/libhanium_interface__rosidl_typesupport_fastrtps_c.so
+[4.950s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface
+[4.951s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg
+[4.953s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail
+[4.954s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail/dds_fastrtps
+[4.956s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail/get_dht__rosidl_typesupport_fastrtps_cpp.hpp
+[4.957s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail/pollu__rosidl_typesupport_fastrtps_cpp.hpp
+[4.959s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[4.962s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/lib/libhanium_interface__rosidl_typesupport_fastrtps_cpp.so
+[4.965s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface
+[4.966s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg
+[4.968s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail
+[4.969s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail/pollu__type_support.c
+[4.971s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail/get_dht__type_support.c
+[4.972s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail/pollu__rosidl_typesupport_introspection_c.h
+[4.974s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail/get_dht__rosidl_typesupport_introspection_c.h
+[4.976s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[4.978s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/lib/libhanium_interface__rosidl_typesupport_introspection_c.so
+[4.982s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/lib/libhanium_interface__rosidl_typesupport_c.so
+[4.985s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface
+[4.986s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg
+[4.987s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/pollu.hpp
+[4.989s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail
+[4.990s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail/pollu__struct.hpp
+[4.991s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail/get_dht__traits.hpp
+[4.993s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail/pollu__traits.hpp
+[4.994s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail/get_dht__struct.hpp
+[4.995s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail/pollu__builder.hpp
+[4.997s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail/get_dht__builder.hpp
+[4.998s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/get_dht.hpp
+[5.000s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface
+[5.001s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg
+[5.003s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail
+[5.004s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail/pollu__type_support.cpp
+[5.006s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail/get_dht__type_support.cpp
+[5.007s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail/pollu__rosidl_typesupport_introspection_cpp.hpp
+[5.008s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/include/hanium_interface/msg/detail/get_dht__rosidl_typesupport_introspection_cpp.hpp
+[5.011s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/lib/libhanium_interface__rosidl_typesupport_introspection_cpp.so
+[5.015s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/lib/libhanium_interface__rosidl_typesupport_cpp.so
+[5.018s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/environment/pythonpath.sh
+[5.020s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/environment/pythonpath.dsv
+[5.021s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/lib/python3.8/site-packages/hanium_interface/__init__.py
+[5.309s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/lib/python3.8/site-packages/hanium_interface/msg
+[5.310s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/lib/python3.8/site-packages/hanium_interface/msg/__init__.py
+[5.311s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/lib/python3.8/site-packages/hanium_interface/msg/_get_dht.py
+[5.311s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/lib/python3.8/site-packages/hanium_interface/msg/_pollu_s.c
+[5.312s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/lib/python3.8/site-packages/hanium_interface/msg/_pollu.py
+[5.313s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/lib/python3.8/site-packages/hanium_interface/msg/_get_dht_s.c
+[5.313s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/lib/python3.8/site-packages/hanium_interface/hanium_interface_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[5.317s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/lib/python3.8/site-packages/hanium_interface/hanium_interface_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[5.321s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/lib/python3.8/site-packages/hanium_interface/hanium_interface_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[5.324s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/lib/libhanium_interface__python.so
+[5.327s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/msg/GetDht.idl
+[5.329s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/msg/Pollu.idl
+[5.330s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/msg/GetDht.msg
+[5.332s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/msg/Pollu.msg
+[5.335s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/ament_index/resource_index/package_run_dependencies/hanium_interface
+[5.337s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/ament_index/resource_index/parent_prefix_path/hanium_interface
+[5.338s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/environment/ament_prefix_path.sh
+[5.340s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/environment/ament_prefix_path.dsv
+[5.342s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/environment/path.sh
+[5.344s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/environment/path.dsv
+[5.345s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/local_setup.bash
+[5.347s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/local_setup.sh
+[5.350s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/local_setup.zsh
+[5.354s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/local_setup.dsv
+[5.357s] -- Installing: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/package.dsv
+[5.359s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/ament_index/resource_index/packages/hanium_interface
+[5.362s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/cmake/hanium_interface__rosidl_generator_cExport.cmake
+[5.364s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/cmake/hanium_interface__rosidl_generator_cExport-noconfig.cmake
+[5.366s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/cmake/hanium_interface__rosidl_typesupport_introspection_cExport.cmake
+[5.368s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/cmake/hanium_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.371s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/cmake/hanium_interface__rosidl_typesupport_cExport.cmake
+[5.372s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/cmake/hanium_interface__rosidl_typesupport_cExport-noconfig.cmake
+[5.375s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/cmake/hanium_interface__rosidl_generator_cppExport.cmake
+[5.377s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/cmake/hanium_interface__rosidl_typesupport_introspection_cppExport.cmake
+[5.380s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/cmake/hanium_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.383s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/cmake/hanium_interface__rosidl_typesupport_cppExport.cmake
+[5.386s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/cmake/hanium_interface__rosidl_typesupport_cppExport-noconfig.cmake
+[5.389s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/cmake/rosidl_cmake-extras.cmake
+[5.391s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.393s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[5.395s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/cmake/ament_cmake_export_targets-extras.cmake
+[5.397s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.399s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.401s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.402s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/cmake/hanium_interfaceConfig.cmake
+[5.404s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/cmake/hanium_interfaceConfig-version.cmake
+[5.406s] -- Up-to-date: /home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/package.xml
+[5.424s] Invoked command in '/home/ubuntu/greenai-ros/build/hanium_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/greenai-ros/install/sensor_init:/home/ubuntu/greenai-ros/install/relay_control_pub:/home/ubuntu/greenai-ros/install/hanium_nav_pkg:/home/ubuntu/greenai-ros/install/nav2_simple_commander:/home/ubuntu/greenai-ros/install/fine_dust_sensor:/home/ubuntu/greenai-ros/install/dht_sensor:/home/ubuntu/greenai-ros/install/data_export:/home/ubuntu/greenai-ros/install/gas_pub:/home/ubuntu/greenai-ros/install/fan_pwm:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --install /home/ubuntu/greenai-ros/build/hanium_interface

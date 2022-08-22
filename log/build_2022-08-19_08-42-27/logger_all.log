@@ -1,0 +1,686 @@
+[0.720s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.721s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff82932340>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff82932340>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff82932880>)
+[0.834s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.835s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.835s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.835s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.835s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.836s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.836s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/greenai-ros'
+[0.836s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.838s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.838s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.838s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.838s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.920s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.920s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.921s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.921s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.921s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.923s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.923s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.924s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.924s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.924s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.924s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.925s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.925s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.925s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.927s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.927s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.927s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.927s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.927s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.928s] Level 1:colcon.colcon_core.package_identification:_identify(src/STELLA_REMOTE_PC_ROS2_N2) by extensions ['ignore', 'ignore_ament_install']
+[0.928s] Level 1:colcon.colcon_core.package_identification:_identify(src/STELLA_REMOTE_PC_ROS2_N2) by extension 'ignore'
+[0.928s] Level 1:colcon.colcon_core.package_identification:_identify(src/STELLA_REMOTE_PC_ROS2_N2) by extension 'ignore_ament_install'
+[0.929s] Level 1:colcon.colcon_core.package_identification:_identify(src/STELLA_REMOTE_PC_ROS2_N2) by extensions ['colcon_pkg']
+[0.929s] Level 1:colcon.colcon_core.package_identification:_identify(src/STELLA_REMOTE_PC_ROS2_N2) by extension 'colcon_pkg'
+[0.929s] Level 1:colcon.colcon_core.package_identification:_identify(src/STELLA_REMOTE_PC_ROS2_N2) by extensions ['colcon_meta']
+[0.929s] Level 1:colcon.colcon_core.package_identification:_identify(src/STELLA_REMOTE_PC_ROS2_N2) by extension 'colcon_meta'
+[0.929s] Level 1:colcon.colcon_core.package_identification:_identify(src/STELLA_REMOTE_PC_ROS2_N2) by extensions ['ros']
+[0.929s] Level 1:colcon.colcon_core.package_identification:_identify(src/STELLA_REMOTE_PC_ROS2_N2) by extension 'ros'
+[0.930s] Level 1:colcon.colcon_core.package_identification:_identify(src/STELLA_REMOTE_PC_ROS2_N2) by extensions ['cmake', 'python']
+[0.930s] Level 1:colcon.colcon_core.package_identification:_identify(src/STELLA_REMOTE_PC_ROS2_N2) by extension 'cmake'
+[0.930s] Level 1:colcon.colcon_core.package_identification:_identify(src/STELLA_REMOTE_PC_ROS2_N2) by extension 'python'
+[0.930s] Level 1:colcon.colcon_core.package_identification:_identify(src/STELLA_REMOTE_PC_ROS2_N2) by extensions ['python_setup_py']
+[0.930s] Level 1:colcon.colcon_core.package_identification:_identify(src/STELLA_REMOTE_PC_ROS2_N2) by extension 'python_setup_py'
+[0.931s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_export) by extensions ['ignore', 'ignore_ament_install']
+[0.931s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_export) by extension 'ignore'
+[0.931s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_export) by extension 'ignore_ament_install'
+[0.932s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_export) by extensions ['colcon_pkg']
+[0.932s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_export) by extension 'colcon_pkg'
+[0.932s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_export) by extensions ['colcon_meta']
+[0.932s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_export) by extension 'colcon_meta'
+[0.932s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_export) by extensions ['ros']
+[0.932s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_export) by extension 'ros'
+[0.943s] DEBUG:colcon.colcon_core.package_identification:Package 'src/data_export' with type 'ros.ament_python' and name 'data_export'
+[0.944s] Level 1:colcon.colcon_core.package_identification:_identify(src/dht_sensor) by extensions ['ignore', 'ignore_ament_install']
+[0.944s] Level 1:colcon.colcon_core.package_identification:_identify(src/dht_sensor) by extension 'ignore'
+[0.944s] Level 1:colcon.colcon_core.package_identification:_identify(src/dht_sensor) by extension 'ignore_ament_install'
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(src/dht_sensor) by extensions ['colcon_pkg']
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(src/dht_sensor) by extension 'colcon_pkg'
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(src/dht_sensor) by extensions ['colcon_meta']
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(src/dht_sensor) by extension 'colcon_meta'
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(src/dht_sensor) by extensions ['ros']
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(src/dht_sensor) by extension 'ros'
+[0.949s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dht_sensor' with type 'ros.ament_python' and name 'dht_sensor'
+[0.949s] Level 1:colcon.colcon_core.package_identification:_identify(src/fan_pwm) by extensions ['ignore', 'ignore_ament_install']
+[0.950s] Level 1:colcon.colcon_core.package_identification:_identify(src/fan_pwm) by extension 'ignore'
+[0.950s] Level 1:colcon.colcon_core.package_identification:_identify(src/fan_pwm) by extension 'ignore_ament_install'
+[0.950s] Level 1:colcon.colcon_core.package_identification:_identify(src/fan_pwm) by extensions ['colcon_pkg']
+[0.950s] Level 1:colcon.colcon_core.package_identification:_identify(src/fan_pwm) by extension 'colcon_pkg'
+[0.950s] Level 1:colcon.colcon_core.package_identification:_identify(src/fan_pwm) by extensions ['colcon_meta']
+[0.951s] Level 1:colcon.colcon_core.package_identification:_identify(src/fan_pwm) by extension 'colcon_meta'
+[0.951s] Level 1:colcon.colcon_core.package_identification:_identify(src/fan_pwm) by extensions ['ros']
+[0.951s] Level 1:colcon.colcon_core.package_identification:_identify(src/fan_pwm) by extension 'ros'
+[0.953s] DEBUG:colcon.colcon_core.package_identification:Package 'src/fan_pwm' with type 'ros.ament_python' and name 'fan_pwm'
+[0.954s] Level 1:colcon.colcon_core.package_identification:_identify(src/fine_dust_sensor) by extensions ['ignore', 'ignore_ament_install']
+[0.954s] Level 1:colcon.colcon_core.package_identification:_identify(src/fine_dust_sensor) by extension 'ignore'
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(src/fine_dust_sensor) by extension 'ignore_ament_install'
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(src/fine_dust_sensor) by extensions ['colcon_pkg']
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(src/fine_dust_sensor) by extension 'colcon_pkg'
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(src/fine_dust_sensor) by extensions ['colcon_meta']
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(src/fine_dust_sensor) by extension 'colcon_meta'
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(src/fine_dust_sensor) by extensions ['ros']
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(src/fine_dust_sensor) by extension 'ros'
+[0.959s] DEBUG:colcon.colcon_core.package_identification:Package 'src/fine_dust_sensor' with type 'ros.ament_python' and name 'fine_dust_sensor'
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(src/gas_pub) by extensions ['ignore', 'ignore_ament_install']
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(src/gas_pub) by extension 'ignore'
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(src/gas_pub) by extension 'ignore_ament_install'
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(src/gas_pub) by extensions ['colcon_pkg']
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(src/gas_pub) by extension 'colcon_pkg'
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(src/gas_pub) by extensions ['colcon_meta']
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(src/gas_pub) by extension 'colcon_meta'
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(src/gas_pub) by extensions ['ros']
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(src/gas_pub) by extension 'ros'
+[0.964s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gas_pub' with type 'ros.ament_python' and name 'gas_pub'
+[0.964s] Level 1:colcon.colcon_core.package_identification:_identify(src/hanium_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(src/hanium_interface) by extension 'ignore'
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(src/hanium_interface) by extension 'ignore_ament_install'
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(src/hanium_interface) by extensions ['colcon_pkg']
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(src/hanium_interface) by extension 'colcon_pkg'
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(src/hanium_interface) by extensions ['colcon_meta']
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(src/hanium_interface) by extension 'colcon_meta'
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(src/hanium_interface) by extensions ['ros']
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(src/hanium_interface) by extension 'ros'
+[0.968s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hanium_interface' with type 'ros.ament_cmake' and name 'hanium_interface'
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(src/hanium_nav_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(src/hanium_nav_pkg) by extension 'ignore'
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(src/hanium_nav_pkg) by extension 'ignore_ament_install'
+[0.970s] Level 1:colcon.colcon_core.package_identification:_identify(src/hanium_nav_pkg) by extensions ['colcon_pkg']
+[0.970s] Level 1:colcon.colcon_core.package_identification:_identify(src/hanium_nav_pkg) by extension 'colcon_pkg'
+[0.970s] Level 1:colcon.colcon_core.package_identification:_identify(src/hanium_nav_pkg) by extensions ['colcon_meta']
+[0.970s] Level 1:colcon.colcon_core.package_identification:_identify(src/hanium_nav_pkg) by extension 'colcon_meta'
+[0.970s] Level 1:colcon.colcon_core.package_identification:_identify(src/hanium_nav_pkg) by extensions ['ros']
+[0.971s] Level 1:colcon.colcon_core.package_identification:_identify(src/hanium_nav_pkg) by extension 'ros'
+[0.974s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hanium_nav_pkg' with type 'ros.ament_python' and name 'hanium_nav_pkg'
+[0.974s] Level 1:colcon.colcon_core.package_identification:_identify(src/hanium_slam_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.975s] Level 1:colcon.colcon_core.package_identification:_identify(src/hanium_slam_pkg) by extension 'ignore'
+[0.975s] Level 1:colcon.colcon_core.package_identification:_identify(src/hanium_slam_pkg) by extension 'ignore_ament_install'
+[0.975s] Level 1:colcon.colcon_core.package_identification:_identify(src/hanium_slam_pkg) by extensions ['colcon_pkg']
+[0.975s] Level 1:colcon.colcon_core.package_identification:_identify(src/hanium_slam_pkg) by extension 'colcon_pkg'
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/hanium_slam_pkg) by extensions ['colcon_meta']
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/hanium_slam_pkg) by extension 'colcon_meta'
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/hanium_slam_pkg) by extensions ['ros']
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/hanium_slam_pkg) by extension 'ros'
+[0.978s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hanium_slam_pkg' with type 'ros.ament_cmake' and name 'hanium_slam_pkg'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_simple_commander) by extensions ['ignore', 'ignore_ament_install']
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_simple_commander) by extension 'ignore'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_simple_commander) by extension 'ignore_ament_install'
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_simple_commander) by extensions ['colcon_pkg']
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_simple_commander) by extension 'colcon_pkg'
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_simple_commander) by extensions ['colcon_meta']
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_simple_commander) by extension 'colcon_meta'
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_simple_commander) by extensions ['ros']
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_simple_commander) by extension 'ros'
+[0.983s] DEBUG:colcon.colcon_core.package_identification:Package 'src/nav2_simple_commander' with type 'ros.ament_python' and name 'nav2_simple_commander'
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(src/relay_control_pub) by extensions ['ignore', 'ignore_ament_install']
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(src/relay_control_pub) by extension 'ignore'
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(src/relay_control_pub) by extension 'ignore_ament_install'
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(src/relay_control_pub) by extensions ['colcon_pkg']
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(src/relay_control_pub) by extension 'colcon_pkg'
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(src/relay_control_pub) by extensions ['colcon_meta']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(src/relay_control_pub) by extension 'colcon_meta'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(src/relay_control_pub) by extensions ['ros']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(src/relay_control_pub) by extension 'ros'
+[0.988s] DEBUG:colcon.colcon_core.package_identification:Package 'src/relay_control_pub' with type 'ros.ament_python' and name 'relay_control_pub'
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_init) by extensions ['ignore', 'ignore_ament_install']
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_init) by extension 'ignore'
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_init) by extension 'ignore_ament_install'
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_init) by extensions ['colcon_pkg']
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_init) by extension 'colcon_pkg'
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_init) by extensions ['colcon_meta']
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_init) by extension 'colcon_meta'
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_init) by extensions ['ros']
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_init) by extension 'ros'
+[0.992s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sensor_init' with type 'ros.ament_python' and name 'sensor_init'
+[0.992s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.992s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.992s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.992s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.993s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.116s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.116s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.135s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 11 installed packages in /home/ubuntu/greenai-ros/install
+[1.141s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/ubuntu/turtlebot3_ws/install
+[1.150s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 171 installed packages in /opt/ros/foxy
+[1.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.361s] Level 5:colcon.colcon_core.verb:set package 'fan_pwm' build argument 'cmake_args' from command line to 'None'
+[1.361s] Level 5:colcon.colcon_core.verb:set package 'fan_pwm' build argument 'cmake_target' from command line to 'None'
+[1.361s] Level 5:colcon.colcon_core.verb:set package 'fan_pwm' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.361s] Level 5:colcon.colcon_core.verb:set package 'fan_pwm' build argument 'cmake_clean_cache' from command line to 'False'
+[1.361s] Level 5:colcon.colcon_core.verb:set package 'fan_pwm' build argument 'cmake_clean_first' from command line to 'False'
+[1.361s] Level 5:colcon.colcon_core.verb:set package 'fan_pwm' build argument 'cmake_force_configure' from command line to 'False'
+[1.361s] Level 5:colcon.colcon_core.verb:set package 'fan_pwm' build argument 'ament_cmake_args' from command line to 'None'
+[1.362s] Level 5:colcon.colcon_core.verb:set package 'fan_pwm' build argument 'catkin_cmake_args' from command line to 'None'
+[1.362s] Level 5:colcon.colcon_core.verb:set package 'fan_pwm' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.362s] DEBUG:colcon.colcon_core.verb:Building package 'fan_pwm' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/greenai-ros/build/fan_pwm', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/greenai-ros/install/fan_pwm', 'merge_install': False, 'path': '/home/ubuntu/greenai-ros/src/fan_pwm', 'symlink_install': False, 'test_result_base': None}
+[1.367s] Level 5:colcon.colcon_core.verb:set package 'gas_pub' build argument 'cmake_args' from command line to 'None'
+[1.367s] Level 5:colcon.colcon_core.verb:set package 'gas_pub' build argument 'cmake_target' from command line to 'None'
+[1.367s] Level 5:colcon.colcon_core.verb:set package 'gas_pub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.368s] Level 5:colcon.colcon_core.verb:set package 'gas_pub' build argument 'cmake_clean_cache' from command line to 'False'
+[1.368s] Level 5:colcon.colcon_core.verb:set package 'gas_pub' build argument 'cmake_clean_first' from command line to 'False'
+[1.368s] Level 5:colcon.colcon_core.verb:set package 'gas_pub' build argument 'cmake_force_configure' from command line to 'False'
+[1.368s] Level 5:colcon.colcon_core.verb:set package 'gas_pub' build argument 'ament_cmake_args' from command line to 'None'
+[1.368s] Level 5:colcon.colcon_core.verb:set package 'gas_pub' build argument 'catkin_cmake_args' from command line to 'None'
+[1.368s] Level 5:colcon.colcon_core.verb:set package 'gas_pub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.368s] DEBUG:colcon.colcon_core.verb:Building package 'gas_pub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/greenai-ros/build/gas_pub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/greenai-ros/install/gas_pub', 'merge_install': False, 'path': '/home/ubuntu/greenai-ros/src/gas_pub', 'symlink_install': False, 'test_result_base': None}
+[1.373s] Level 5:colcon.colcon_core.verb:set package 'hanium_interface' build argument 'cmake_args' from command line to 'None'
+[1.374s] Level 5:colcon.colcon_core.verb:set package 'hanium_interface' build argument 'cmake_target' from command line to 'None'
+[1.374s] Level 5:colcon.colcon_core.verb:set package 'hanium_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.374s] Level 5:colcon.colcon_core.verb:set package 'hanium_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[1.374s] Level 5:colcon.colcon_core.verb:set package 'hanium_interface' build argument 'cmake_clean_first' from command line to 'False'
+[1.374s] Level 5:colcon.colcon_core.verb:set package 'hanium_interface' build argument 'cmake_force_configure' from command line to 'False'
+[1.374s] Level 5:colcon.colcon_core.verb:set package 'hanium_interface' build argument 'ament_cmake_args' from command line to 'None'
+[1.374s] Level 5:colcon.colcon_core.verb:set package 'hanium_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[1.374s] Level 5:colcon.colcon_core.verb:set package 'hanium_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.375s] DEBUG:colcon.colcon_core.verb:Building package 'hanium_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/greenai-ros/build/hanium_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/greenai-ros/install/hanium_interface', 'merge_install': False, 'path': '/home/ubuntu/greenai-ros/src/hanium_interface', 'symlink_install': False, 'test_result_base': None}
+[1.380s] Level 5:colcon.colcon_core.verb:set package 'hanium_slam_pkg' build argument 'cmake_args' from command line to 'None'
+[1.380s] Level 5:colcon.colcon_core.verb:set package 'hanium_slam_pkg' build argument 'cmake_target' from command line to 'None'
+[1.380s] Level 5:colcon.colcon_core.verb:set package 'hanium_slam_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.380s] Level 5:colcon.colcon_core.verb:set package 'hanium_slam_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[1.380s] Level 5:colcon.colcon_core.verb:set package 'hanium_slam_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[1.380s] Level 5:colcon.colcon_core.verb:set package 'hanium_slam_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[1.380s] Level 5:colcon.colcon_core.verb:set package 'hanium_slam_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[1.380s] Level 5:colcon.colcon_core.verb:set package 'hanium_slam_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[1.381s] Level 5:colcon.colcon_core.verb:set package 'hanium_slam_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.381s] DEBUG:colcon.colcon_core.verb:Building package 'hanium_slam_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/greenai-ros/build/hanium_slam_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/greenai-ros/install/hanium_slam_pkg', 'merge_install': False, 'path': '/home/ubuntu/greenai-ros/src/hanium_slam_pkg', 'symlink_install': False, 'test_result_base': None}
+[1.386s] Level 5:colcon.colcon_core.verb:set package 'nav2_simple_commander' build argument 'cmake_args' from command line to 'None'
+[1.386s] Level 5:colcon.colcon_core.verb:set package 'nav2_simple_commander' build argument 'cmake_target' from command line to 'None'
+[1.386s] Level 5:colcon.colcon_core.verb:set package 'nav2_simple_commander' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.386s] Level 5:colcon.colcon_core.verb:set package 'nav2_simple_commander' build argument 'cmake_clean_cache' from command line to 'False'
+[1.386s] Level 5:colcon.colcon_core.verb:set package 'nav2_simple_commander' build argument 'cmake_clean_first' from command line to 'False'
+[1.386s] Level 5:colcon.colcon_core.verb:set package 'nav2_simple_commander' build argument 'cmake_force_configure' from command line to 'False'
+[1.387s] Level 5:colcon.colcon_core.verb:set package 'nav2_simple_commander' build argument 'ament_cmake_args' from command line to 'None'
+[1.387s] Level 5:colcon.colcon_core.verb:set package 'nav2_simple_commander' build argument 'catkin_cmake_args' from command line to 'None'
+[1.387s] Level 5:colcon.colcon_core.verb:set package 'nav2_simple_commander' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.387s] DEBUG:colcon.colcon_core.verb:Building package 'nav2_simple_commander' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/greenai-ros/build/nav2_simple_commander', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/greenai-ros/install/nav2_simple_commander', 'merge_install': False, 'path': '/home/ubuntu/greenai-ros/src/nav2_simple_commander', 'symlink_install': False, 'test_result_base': None}
+[1.392s] Level 5:colcon.colcon_core.verb:set package 'sensor_init' build argument 'cmake_args' from command line to 'None'
+[1.392s] Level 5:colcon.colcon_core.verb:set package 'sensor_init' build argument 'cmake_target' from command line to 'None'
+[1.392s] Level 5:colcon.colcon_core.verb:set package 'sensor_init' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.392s] Level 5:colcon.colcon_core.verb:set package 'sensor_init' build argument 'cmake_clean_cache' from command line to 'False'
+[1.393s] Level 5:colcon.colcon_core.verb:set package 'sensor_init' build argument 'cmake_clean_first' from command line to 'False'
+[1.393s] Level 5:colcon.colcon_core.verb:set package 'sensor_init' build argument 'cmake_force_configure' from command line to 'False'
+[1.393s] Level 5:colcon.colcon_core.verb:set package 'sensor_init' build argument 'ament_cmake_args' from command line to 'None'
+[1.393s] Level 5:colcon.colcon_core.verb:set package 'sensor_init' build argument 'catkin_cmake_args' from command line to 'None'
+[1.393s] Level 5:colcon.colcon_core.verb:set package 'sensor_init' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.393s] DEBUG:colcon.colcon_core.verb:Building package 'sensor_init' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/greenai-ros/build/sensor_init', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/greenai-ros/install/sensor_init', 'merge_install': False, 'path': '/home/ubuntu/greenai-ros/src/sensor_init', 'symlink_install': False, 'test_result_base': None}
+[1.398s] Level 5:colcon.colcon_core.verb:set package 'data_export' build argument 'cmake_args' from command line to 'None'
+[1.398s] Level 5:colcon.colcon_core.verb:set package 'data_export' build argument 'cmake_target' from command line to 'None'
+[1.398s] Level 5:colcon.colcon_core.verb:set package 'data_export' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.399s] Level 5:colcon.colcon_core.verb:set package 'data_export' build argument 'cmake_clean_cache' from command line to 'False'
+[1.399s] Level 5:colcon.colcon_core.verb:set package 'data_export' build argument 'cmake_clean_first' from command line to 'False'
+[1.399s] Level 5:colcon.colcon_core.verb:set package 'data_export' build argument 'cmake_force_configure' from command line to 'False'
+[1.399s] Level 5:colcon.colcon_core.verb:set package 'data_export' build argument 'ament_cmake_args' from command line to 'None'
+[1.399s] Level 5:colcon.colcon_core.verb:set package 'data_export' build argument 'catkin_cmake_args' from command line to 'None'
+[1.399s] Level 5:colcon.colcon_core.verb:set package 'data_export' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.399s] DEBUG:colcon.colcon_core.verb:Building package 'data_export' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/greenai-ros/build/data_export', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/greenai-ros/install/data_export', 'merge_install': False, 'path': '/home/ubuntu/greenai-ros/src/data_export', 'symlink_install': False, 'test_result_base': None}
+[1.404s] Level 5:colcon.colcon_core.verb:set package 'dht_sensor' build argument 'cmake_args' from command line to 'None'
+[1.405s] Level 5:colcon.colcon_core.verb:set package 'dht_sensor' build argument 'cmake_target' from command line to 'None'
+[1.405s] Level 5:colcon.colcon_core.verb:set package 'dht_sensor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.405s] Level 5:colcon.colcon_core.verb:set package 'dht_sensor' build argument 'cmake_clean_cache' from command line to 'False'
+[1.405s] Level 5:colcon.colcon_core.verb:set package 'dht_sensor' build argument 'cmake_clean_first' from command line to 'False'
+[1.405s] Level 5:colcon.colcon_core.verb:set package 'dht_sensor' build argument 'cmake_force_configure' from command line to 'False'
+[1.405s] Level 5:colcon.colcon_core.verb:set package 'dht_sensor' build argument 'ament_cmake_args' from command line to 'None'
+[1.405s] Level 5:colcon.colcon_core.verb:set package 'dht_sensor' build argument 'catkin_cmake_args' from command line to 'None'
+[1.405s] Level 5:colcon.colcon_core.verb:set package 'dht_sensor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.405s] DEBUG:colcon.colcon_core.verb:Building package 'dht_sensor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/greenai-ros/build/dht_sensor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/greenai-ros/install/dht_sensor', 'merge_install': False, 'path': '/home/ubuntu/greenai-ros/src/dht_sensor', 'symlink_install': False, 'test_result_base': None}
+[1.410s] Level 5:colcon.colcon_core.verb:set package 'fine_dust_sensor' build argument 'cmake_args' from command line to 'None'
+[1.411s] Level 5:colcon.colcon_core.verb:set package 'fine_dust_sensor' build argument 'cmake_target' from command line to 'None'
+[1.411s] Level 5:colcon.colcon_core.verb:set package 'fine_dust_sensor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.411s] Level 5:colcon.colcon_core.verb:set package 'fine_dust_sensor' build argument 'cmake_clean_cache' from command line to 'False'
+[1.411s] Level 5:colcon.colcon_core.verb:set package 'fine_dust_sensor' build argument 'cmake_clean_first' from command line to 'False'
+[1.411s] Level 5:colcon.colcon_core.verb:set package 'fine_dust_sensor' build argument 'cmake_force_configure' from command line to 'False'
+[1.411s] Level 5:colcon.colcon_core.verb:set package 'fine_dust_sensor' build argument 'ament_cmake_args' from command line to 'None'
+[1.411s] Level 5:colcon.colcon_core.verb:set package 'fine_dust_sensor' build argument 'catkin_cmake_args' from command line to 'None'
+[1.411s] Level 5:colcon.colcon_core.verb:set package 'fine_dust_sensor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.412s] DEBUG:colcon.colcon_core.verb:Building package 'fine_dust_sensor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/greenai-ros/build/fine_dust_sensor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/greenai-ros/install/fine_dust_sensor', 'merge_install': False, 'path': '/home/ubuntu/greenai-ros/src/fine_dust_sensor', 'symlink_install': False, 'test_result_base': None}
+[1.417s] Level 5:colcon.colcon_core.verb:set package 'hanium_nav_pkg' build argument 'cmake_args' from command line to 'None'
+[1.417s] Level 5:colcon.colcon_core.verb:set package 'hanium_nav_pkg' build argument 'cmake_target' from command line to 'None'
+[1.417s] Level 5:colcon.colcon_core.verb:set package 'hanium_nav_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.417s] Level 5:colcon.colcon_core.verb:set package 'hanium_nav_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[1.417s] Level 5:colcon.colcon_core.verb:set package 'hanium_nav_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[1.417s] Level 5:colcon.colcon_core.verb:set package 'hanium_nav_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[1.417s] Level 5:colcon.colcon_core.verb:set package 'hanium_nav_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[1.418s] Level 5:colcon.colcon_core.verb:set package 'hanium_nav_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[1.418s] Level 5:colcon.colcon_core.verb:set package 'hanium_nav_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.418s] DEBUG:colcon.colcon_core.verb:Building package 'hanium_nav_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/greenai-ros/build/hanium_nav_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/greenai-ros/install/hanium_nav_pkg', 'merge_install': False, 'path': '/home/ubuntu/greenai-ros/src/hanium_nav_pkg', 'symlink_install': False, 'test_result_base': None}
+[1.423s] Level 5:colcon.colcon_core.verb:set package 'relay_control_pub' build argument 'cmake_args' from command line to 'None'
+[1.423s] Level 5:colcon.colcon_core.verb:set package 'relay_control_pub' build argument 'cmake_target' from command line to 'None'
+[1.423s] Level 5:colcon.colcon_core.verb:set package 'relay_control_pub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.423s] Level 5:colcon.colcon_core.verb:set package 'relay_control_pub' build argument 'cmake_clean_cache' from command line to 'False'
+[1.423s] Level 5:colcon.colcon_core.verb:set package 'relay_control_pub' build argument 'cmake_clean_first' from command line to 'False'
+[1.424s] Level 5:colcon.colcon_core.verb:set package 'relay_control_pub' build argument 'cmake_force_configure' from command line to 'False'
+[1.424s] Level 5:colcon.colcon_core.verb:set package 'relay_control_pub' build argument 'ament_cmake_args' from command line to 'None'
+[1.424s] Level 5:colcon.colcon_core.verb:set package 'relay_control_pub' build argument 'catkin_cmake_args' from command line to 'None'
+[1.424s] Level 5:colcon.colcon_core.verb:set package 'relay_control_pub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.424s] DEBUG:colcon.colcon_core.verb:Building package 'relay_control_pub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/greenai-ros/build/relay_control_pub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/greenai-ros/install/relay_control_pub', 'merge_install': False, 'path': '/home/ubuntu/greenai-ros/src/relay_control_pub', 'symlink_install': False, 'test_result_base': None}
+[1.427s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.450s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.451s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/greenai-ros/src/hanium_interface' with build type 'ament_cmake'
+[1.452s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/greenai-ros/src/hanium_interface'
+[1.476s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.477s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.477s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.517s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/greenai-ros/src/nav2_simple_commander' with build type 'ament_python'
+[1.518s] Level 1:colcon.colcon_core.shell:create_environment_hook('nav2_simple_commander', 'ament_prefix_path')
+[1.527s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/nav2_simple_commander/share/nav2_simple_commander/hook/ament_prefix_path.ps1'
+[1.530s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/greenai-ros/install/nav2_simple_commander/share/nav2_simple_commander/hook/ament_prefix_path.dsv'
+[1.532s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/nav2_simple_commander/share/nav2_simple_commander/hook/ament_prefix_path.sh'
+[1.542s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.542s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.581s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/greenai-ros/src/fan_pwm' with build type 'ament_python'
+[1.582s] Level 1:colcon.colcon_core.shell:create_environment_hook('fan_pwm', 'ament_prefix_path')
+[1.591s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/fan_pwm/share/fan_pwm/hook/ament_prefix_path.ps1'
+[1.594s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/greenai-ros/install/fan_pwm/share/fan_pwm/hook/ament_prefix_path.dsv'
+[1.595s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/fan_pwm/share/fan_pwm/hook/ament_prefix_path.sh'
+[1.604s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.605s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.643s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/greenai-ros/src/gas_pub' with build type 'ament_python'
+[1.645s] Level 1:colcon.colcon_core.shell:create_environment_hook('gas_pub', 'ament_prefix_path')
+[1.654s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/gas_pub/share/gas_pub/hook/ament_prefix_path.ps1'
+[1.657s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/greenai-ros/install/gas_pub/share/gas_pub/hook/ament_prefix_path.dsv'
+[1.658s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/gas_pub/share/gas_pub/hook/ament_prefix_path.sh'
+[1.668s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.668s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.725s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/greenai-ros/build/hanium_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/greenai-ros/install/hanium_nav_pkg:/home/ubuntu/greenai-ros/install/nav2_simple_commander:/home/ubuntu/greenai-ros/install/sensor_init:/home/ubuntu/greenai-ros/install/relay_control_pub:/home/ubuntu/greenai-ros/install/fine_dust_sensor:/home/ubuntu/greenai-ros/install/dht_sensor:/home/ubuntu/greenai-ros/install/data_export:/home/ubuntu/greenai-ros/install/gas_pub:/home/ubuntu/greenai-ros/install/fan_pwm:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/greenai-ros/build/hanium_interface -- -j4 -l4
+[3.216s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/greenai-ros/src/nav2_simple_commander'
+[3.224s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.224s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.513s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/greenai-ros/src/fan_pwm'
+[4.522s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.522s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.819s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/greenai-ros/src/gas_pub'
+[5.827s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.828s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.870s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/greenai-ros/build/hanium_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/greenai-ros/install/hanium_nav_pkg:/home/ubuntu/greenai-ros/install/nav2_simple_commander:/home/ubuntu/greenai-ros/install/sensor_init:/home/ubuntu/greenai-ros/install/relay_control_pub:/home/ubuntu/greenai-ros/install/fine_dust_sensor:/home/ubuntu/greenai-ros/install/dht_sensor:/home/ubuntu/greenai-ros/install/data_export:/home/ubuntu/greenai-ros/install/gas_pub:/home/ubuntu/greenai-ros/install/fan_pwm:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/greenai-ros/build/hanium_interface -- -j4 -l4
+[6.464s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/greenai-ros/build/hanium_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/greenai-ros/install/hanium_nav_pkg:/home/ubuntu/greenai-ros/install/nav2_simple_commander:/home/ubuntu/greenai-ros/install/sensor_init:/home/ubuntu/greenai-ros/install/relay_control_pub:/home/ubuntu/greenai-ros/install/fine_dust_sensor:/home/ubuntu/greenai-ros/install/dht_sensor:/home/ubuntu/greenai-ros/install/data_export:/home/ubuntu/greenai-ros/install/gas_pub:/home/ubuntu/greenai-ros/install/fan_pwm:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --install /home/ubuntu/greenai-ros/build/hanium_interface
+[7.087s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hanium_interface)
+[7.096s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/greenai-ros/build/hanium_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/greenai-ros/install/hanium_nav_pkg:/home/ubuntu/greenai-ros/install/nav2_simple_commander:/home/ubuntu/greenai-ros/install/sensor_init:/home/ubuntu/greenai-ros/install/relay_control_pub:/home/ubuntu/greenai-ros/install/fine_dust_sensor:/home/ubuntu/greenai-ros/install/dht_sensor:/home/ubuntu/greenai-ros/install/data_export:/home/ubuntu/greenai-ros/install/gas_pub:/home/ubuntu/greenai-ros/install/fan_pwm:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --install /home/ubuntu/greenai-ros/build/hanium_interface
+[7.128s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_interface' for CMake module files
+[7.133s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_interface' for CMake config files
+[7.137s] Level 1:colcon.colcon_core.shell:create_environment_hook('hanium_interface', 'cmake_prefix_path')
+[7.147s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/hook/cmake_prefix_path.ps1'
+[7.150s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/hook/cmake_prefix_path.dsv'
+[7.153s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/hook/cmake_prefix_path.sh'
+[7.157s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_interface/lib'
+[7.158s] Level 1:colcon.colcon_core.shell:create_environment_hook('hanium_interface', 'ld_library_path_lib')
+[7.168s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/hook/ld_library_path_lib.ps1'
+[7.171s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/hook/ld_library_path_lib.dsv'
+[7.173s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/hook/ld_library_path_lib.sh'
+[7.176s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_interface/bin'
+[7.177s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_interface/lib/pkgconfig/hanium_interface.pc'
+[7.178s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_interface/lib/python3.8/site-packages'
+[7.178s] Level 1:colcon.colcon_core.shell:create_environment_hook('hanium_interface', 'pythonpath')
+[7.190s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/hook/pythonpath.ps1'
+[7.197s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/hook/pythonpath.dsv'
+[7.201s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/hook/pythonpath.sh'
+[7.205s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_interface/bin'
+[7.219s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/package.ps1'
+[7.224s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/package.dsv'
+[7.228s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/package.sh'
+[7.234s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/package.bash'
+[7.238s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/package.zsh'
+[7.242s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/greenai-ros/install/hanium_interface/share/colcon-core/packages/hanium_interface)
+[7.810s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hanium_interface)
+[7.829s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_interface' for CMake module files
+[7.834s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_interface' for CMake config files
+[7.837s] Level 1:colcon.colcon_core.shell:create_environment_hook('hanium_interface', 'cmake_prefix_path')
+[7.849s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/hook/cmake_prefix_path.ps1'
+[7.853s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/hook/cmake_prefix_path.dsv'
+[7.855s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/hook/cmake_prefix_path.sh'
+[7.859s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_interface/lib'
+[7.860s] Level 1:colcon.colcon_core.shell:create_environment_hook('hanium_interface', 'ld_library_path_lib')
+[7.871s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/hook/ld_library_path_lib.ps1'
+[7.874s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/hook/ld_library_path_lib.dsv'
+[7.878s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/hook/ld_library_path_lib.sh'
+[7.881s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_interface/bin'
+[7.882s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_interface/lib/pkgconfig/hanium_interface.pc'
+[7.883s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_interface/lib/python3.8/site-packages'
+[7.884s] Level 1:colcon.colcon_core.shell:create_environment_hook('hanium_interface', 'pythonpath')
+[7.896s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/hook/pythonpath.ps1'
+[7.898s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/hook/pythonpath.dsv'
+[7.901s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/hook/pythonpath.sh'
+[7.904s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_interface/bin'
+[7.916s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/package.ps1'
+[7.923s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/package.dsv'
+[7.926s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/package.sh'
+[7.930s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/package.bash'
+[7.933s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/hanium_interface/share/hanium_interface/package.zsh'
+[7.937s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/greenai-ros/install/hanium_interface/share/colcon-core/packages/hanium_interface)
+[7.943s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/greenai-ros/src/hanium_slam_pkg' with build type 'ament_cmake'
+[7.945s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/greenai-ros/src/hanium_slam_pkg'
+[7.955s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.956s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.066s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/greenai-ros/build/hanium_slam_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/greenai-ros/install/hanium_nav_pkg:/home/ubuntu/greenai-ros/install/nav2_simple_commander:/home/ubuntu/greenai-ros/install/sensor_init:/home/ubuntu/greenai-ros/install/relay_control_pub:/home/ubuntu/greenai-ros/install/fine_dust_sensor:/home/ubuntu/greenai-ros/install/dht_sensor:/home/ubuntu/greenai-ros/install/data_export:/home/ubuntu/greenai-ros/install/gas_pub:/home/ubuntu/greenai-ros/install/fan_pwm:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/greenai-ros/build/hanium_slam_pkg -- -j4 -l4
+[8.315s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/greenai-ros/src/fan_pwm': PYTHONPATH=/home/ubuntu/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/fan_pwm build --build-base /home/ubuntu/greenai-ros/build/fan_pwm/build install --prefix /home/ubuntu/greenai-ros/install/fan_pwm --record /home/ubuntu/greenai-ros/build/fan_pwm/install.log --single-version-externally-managed
+[8.351s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/greenai-ros/src/nav2_simple_commander': PYTHONPATH=/home/ubuntu/greenai-ros/install/nav2_simple_commander/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/nav2_simple_commander build --build-base /home/ubuntu/greenai-ros/build/nav2_simple_commander/build install --prefix /home/ubuntu/greenai-ros/install/nav2_simple_commander --record /home/ubuntu/greenai-ros/build/nav2_simple_commander/install.log --single-version-externally-managed
+[8.411s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/greenai-ros/src/gas_pub': PYTHONPATH=/home/ubuntu/greenai-ros/install/gas_pub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/gas_pub build --build-base /home/ubuntu/greenai-ros/build/gas_pub/build install --prefix /home/ubuntu/greenai-ros/install/gas_pub --record /home/ubuntu/greenai-ros/build/gas_pub/install.log --single-version-externally-managed
+[8.447s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/greenai-ros/build/hanium_slam_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/greenai-ros/install/hanium_nav_pkg:/home/ubuntu/greenai-ros/install/nav2_simple_commander:/home/ubuntu/greenai-ros/install/sensor_init:/home/ubuntu/greenai-ros/install/relay_control_pub:/home/ubuntu/greenai-ros/install/fine_dust_sensor:/home/ubuntu/greenai-ros/install/dht_sensor:/home/ubuntu/greenai-ros/install/data_export:/home/ubuntu/greenai-ros/install/gas_pub:/home/ubuntu/greenai-ros/install/fan_pwm:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/greenai-ros/build/hanium_slam_pkg -- -j4 -l4
+[8.593s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/greenai-ros/build/hanium_slam_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/greenai-ros/install/hanium_nav_pkg:/home/ubuntu/greenai-ros/install/nav2_simple_commander:/home/ubuntu/greenai-ros/install/sensor_init:/home/ubuntu/greenai-ros/install/relay_control_pub:/home/ubuntu/greenai-ros/install/fine_dust_sensor:/home/ubuntu/greenai-ros/install/dht_sensor:/home/ubuntu/greenai-ros/install/data_export:/home/ubuntu/greenai-ros/install/gas_pub:/home/ubuntu/greenai-ros/install/fan_pwm:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --install /home/ubuntu/greenai-ros/build/hanium_slam_pkg
+[8.693s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hanium_slam_pkg)
+[8.709s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/greenai-ros/build/hanium_slam_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/greenai-ros/install/hanium_nav_pkg:/home/ubuntu/greenai-ros/install/nav2_simple_commander:/home/ubuntu/greenai-ros/install/sensor_init:/home/ubuntu/greenai-ros/install/relay_control_pub:/home/ubuntu/greenai-ros/install/fine_dust_sensor:/home/ubuntu/greenai-ros/install/dht_sensor:/home/ubuntu/greenai-ros/install/data_export:/home/ubuntu/greenai-ros/install/gas_pub:/home/ubuntu/greenai-ros/install/fan_pwm:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --install /home/ubuntu/greenai-ros/build/hanium_slam_pkg
+[8.714s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_slam_pkg' for CMake module files
+[8.718s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_slam_pkg' for CMake config files
+[8.720s] Level 1:colcon.colcon_core.shell:create_environment_hook('hanium_slam_pkg', 'cmake_prefix_path')
+[8.733s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/hanium_slam_pkg/share/hanium_slam_pkg/hook/cmake_prefix_path.ps1'
+[8.737s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/greenai-ros/install/hanium_slam_pkg/share/hanium_slam_pkg/hook/cmake_prefix_path.dsv'
+[8.740s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/hanium_slam_pkg/share/hanium_slam_pkg/hook/cmake_prefix_path.sh'
+[8.744s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_slam_pkg/bin'
+[8.744s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_slam_pkg/lib/pkgconfig/hanium_slam_pkg.pc'
+[8.745s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_slam_pkg/lib/python3.8/site-packages'
+[8.747s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_slam_pkg/bin'
+[8.757s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/hanium_slam_pkg/share/hanium_slam_pkg/package.ps1'
+[8.760s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/greenai-ros/install/hanium_slam_pkg/share/hanium_slam_pkg/package.dsv'
+[8.763s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/hanium_slam_pkg/share/hanium_slam_pkg/package.sh'
+[8.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/hanium_slam_pkg/share/hanium_slam_pkg/package.bash'
+[8.769s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/hanium_slam_pkg/share/hanium_slam_pkg/package.zsh'
+[8.771s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/greenai-ros/install/hanium_slam_pkg/share/colcon-core/packages/hanium_slam_pkg)
+[8.931s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hanium_slam_pkg)
+[8.949s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_slam_pkg' for CMake module files
+[8.953s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_slam_pkg' for CMake config files
+[8.954s] Level 1:colcon.colcon_core.shell:create_environment_hook('hanium_slam_pkg', 'cmake_prefix_path')
+[8.964s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/hanium_slam_pkg/share/hanium_slam_pkg/hook/cmake_prefix_path.ps1'
+[8.968s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/greenai-ros/install/hanium_slam_pkg/share/hanium_slam_pkg/hook/cmake_prefix_path.dsv'
+[8.972s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/hanium_slam_pkg/share/hanium_slam_pkg/hook/cmake_prefix_path.sh'
+[8.977s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_slam_pkg/bin'
+[8.977s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_slam_pkg/lib/pkgconfig/hanium_slam_pkg.pc'
+[8.978s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_slam_pkg/lib/python3.8/site-packages'
+[8.979s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_slam_pkg/bin'
+[8.990s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/hanium_slam_pkg/share/hanium_slam_pkg/package.ps1'
+[8.993s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/greenai-ros/install/hanium_slam_pkg/share/hanium_slam_pkg/package.dsv'
+[8.997s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/hanium_slam_pkg/share/hanium_slam_pkg/package.sh'
+[9.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/hanium_slam_pkg/share/hanium_slam_pkg/package.bash'
+[9.003s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/hanium_slam_pkg/share/hanium_slam_pkg/package.zsh'
+[9.006s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/greenai-ros/install/hanium_slam_pkg/share/colcon-core/packages/hanium_slam_pkg)
+[9.011s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/greenai-ros/src/sensor_init' with build type 'ament_python'
+[9.013s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensor_init', 'ament_prefix_path')
+[9.023s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/sensor_init/share/sensor_init/hook/ament_prefix_path.ps1'
+[9.025s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/greenai-ros/install/sensor_init/share/sensor_init/hook/ament_prefix_path.dsv'
+[9.028s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/sensor_init/share/sensor_init/hook/ament_prefix_path.sh'
+[9.041s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.042s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.908s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/greenai-ros/src/sensor_init'
+[10.916s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.916s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.973s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/fan_pwm' for CMake module files
+[10.975s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/greenai-ros/src/fan_pwm' returned '0': PYTHONPATH=/home/ubuntu/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/fan_pwm build --build-base /home/ubuntu/greenai-ros/build/fan_pwm/build install --prefix /home/ubuntu/greenai-ros/install/fan_pwm --record /home/ubuntu/greenai-ros/build/fan_pwm/install.log --single-version-externally-managed
+[10.977s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/fan_pwm' for CMake config files
+[10.981s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/fan_pwm/lib'
+[10.981s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/fan_pwm/bin'
+[10.981s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/fan_pwm/lib/pkgconfig/fan_pwm.pc'
+[10.982s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/fan_pwm/lib/python3.8/site-packages'
+[10.982s] Level 1:colcon.colcon_core.shell:create_environment_hook('fan_pwm', 'pythonpath')
+[10.990s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/fan_pwm/share/fan_pwm/hook/pythonpath.ps1'
+[10.992s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/greenai-ros/install/fan_pwm/share/fan_pwm/hook/pythonpath.dsv'
+[10.993s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/fan_pwm/share/fan_pwm/hook/pythonpath.sh'
+[10.996s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/fan_pwm/bin'
+[10.996s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fan_pwm)
+[11.004s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/fan_pwm/share/fan_pwm/package.ps1'
+[11.006s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/greenai-ros/install/fan_pwm/share/fan_pwm/package.dsv'
+[11.008s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/fan_pwm/share/fan_pwm/package.sh'
+[11.010s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/fan_pwm/share/fan_pwm/package.bash'
+[11.012s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/fan_pwm/share/fan_pwm/package.zsh'
+[11.013s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/greenai-ros/install/fan_pwm/share/colcon-core/packages/fan_pwm)
+[11.026s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/nav2_simple_commander' for CMake module files
+[11.030s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/greenai-ros/src/nav2_simple_commander' returned '0': PYTHONPATH=/home/ubuntu/greenai-ros/install/nav2_simple_commander/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/nav2_simple_commander build --build-base /home/ubuntu/greenai-ros/build/nav2_simple_commander/build install --prefix /home/ubuntu/greenai-ros/install/nav2_simple_commander --record /home/ubuntu/greenai-ros/build/nav2_simple_commander/install.log --single-version-externally-managed
+[11.032s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/nav2_simple_commander' for CMake config files
+[11.035s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/nav2_simple_commander/lib'
+[11.036s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/nav2_simple_commander/bin'
+[11.036s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/nav2_simple_commander/lib/pkgconfig/nav2_simple_commander.pc'
+[11.037s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/nav2_simple_commander/lib/python3.8/site-packages'
+[11.037s] Level 1:colcon.colcon_core.shell:create_environment_hook('nav2_simple_commander', 'pythonpath')
+[11.044s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/nav2_simple_commander/share/nav2_simple_commander/hook/pythonpath.ps1'
+[11.046s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/greenai-ros/install/nav2_simple_commander/share/nav2_simple_commander/hook/pythonpath.dsv'
+[11.048s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/nav2_simple_commander/share/nav2_simple_commander/hook/pythonpath.sh'
+[11.050s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/nav2_simple_commander/bin'
+[11.050s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(nav2_simple_commander)
+[11.058s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/nav2_simple_commander/share/nav2_simple_commander/package.ps1'
+[11.061s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/greenai-ros/install/nav2_simple_commander/share/nav2_simple_commander/package.dsv'
+[11.063s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/nav2_simple_commander/share/nav2_simple_commander/package.sh'
+[11.065s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/nav2_simple_commander/share/nav2_simple_commander/package.bash'
+[11.067s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/nav2_simple_commander/share/nav2_simple_commander/package.zsh'
+[11.068s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/greenai-ros/install/nav2_simple_commander/share/colcon-core/packages/nav2_simple_commander)
+[11.081s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/gas_pub' for CMake module files
+[11.084s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/greenai-ros/src/gas_pub' returned '0': PYTHONPATH=/home/ubuntu/greenai-ros/install/gas_pub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/gas_pub build --build-base /home/ubuntu/greenai-ros/build/gas_pub/build install --prefix /home/ubuntu/greenai-ros/install/gas_pub --record /home/ubuntu/greenai-ros/build/gas_pub/install.log --single-version-externally-managed
+[11.085s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/gas_pub' for CMake config files
+[11.089s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/gas_pub/lib'
+[11.089s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/gas_pub/bin'
+[11.089s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/gas_pub/lib/pkgconfig/gas_pub.pc'
+[11.090s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/gas_pub/lib/python3.8/site-packages'
+[11.090s] Level 1:colcon.colcon_core.shell:create_environment_hook('gas_pub', 'pythonpath')
+[11.098s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/gas_pub/share/gas_pub/hook/pythonpath.ps1'
+[11.100s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/greenai-ros/install/gas_pub/share/gas_pub/hook/pythonpath.dsv'
+[11.101s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/gas_pub/share/gas_pub/hook/pythonpath.sh'
+[11.103s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/gas_pub/bin'
+[11.104s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gas_pub)
+[11.112s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/gas_pub/share/gas_pub/package.ps1'
+[11.114s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/greenai-ros/install/gas_pub/share/gas_pub/package.dsv'
+[11.116s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/gas_pub/share/gas_pub/package.sh'
+[11.118s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/gas_pub/share/gas_pub/package.bash'
+[11.120s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/gas_pub/share/gas_pub/package.zsh'
+[11.121s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/greenai-ros/install/gas_pub/share/colcon-core/packages/gas_pub)
+[11.125s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/greenai-ros/src/data_export' with build type 'ament_python'
+[11.126s] Level 1:colcon.colcon_core.shell:create_environment_hook('data_export', 'ament_prefix_path')
+[11.133s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/data_export/share/data_export/hook/ament_prefix_path.ps1'
+[11.135s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/greenai-ros/install/data_export/share/data_export/hook/ament_prefix_path.dsv'
+[11.137s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/data_export/share/data_export/hook/ament_prefix_path.sh'
+[11.146s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[11.146s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[11.186s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/greenai-ros/src/dht_sensor' with build type 'ament_python'
+[11.187s] Level 1:colcon.colcon_core.shell:create_environment_hook('dht_sensor', 'ament_prefix_path')
+[11.196s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/dht_sensor/share/dht_sensor/hook/ament_prefix_path.ps1'
+[11.199s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/greenai-ros/install/dht_sensor/share/dht_sensor/hook/ament_prefix_path.dsv'
+[11.201s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/dht_sensor/share/dht_sensor/hook/ament_prefix_path.sh'
+[11.210s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[11.210s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[11.250s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/greenai-ros/src/fine_dust_sensor' with build type 'ament_python'
+[11.251s] Level 1:colcon.colcon_core.shell:create_environment_hook('fine_dust_sensor', 'ament_prefix_path')
+[11.260s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/fine_dust_sensor/share/fine_dust_sensor/hook/ament_prefix_path.ps1'
+[11.264s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/greenai-ros/install/fine_dust_sensor/share/fine_dust_sensor/hook/ament_prefix_path.dsv'
+[11.265s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/fine_dust_sensor/share/fine_dust_sensor/hook/ament_prefix_path.sh'
+[11.275s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[11.275s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.734s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/greenai-ros/src/data_export'
+[12.743s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[12.743s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[14.122s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/greenai-ros/src/dht_sensor'
+[14.130s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[14.130s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[15.425s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/greenai-ros/src/fine_dust_sensor'
+[15.433s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[15.433s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[15.492s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/greenai-ros/src/sensor_init': PYTHONPATH=/home/ubuntu/greenai-ros/install/sensor_init/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/sensor_init build --build-base /home/ubuntu/greenai-ros/build/sensor_init/build install --prefix /home/ubuntu/greenai-ros/install/sensor_init --record /home/ubuntu/greenai-ros/build/sensor_init/install.log --single-version-externally-managed
+[17.514s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/greenai-ros/src/sensor_init' returned '0': PYTHONPATH=/home/ubuntu/greenai-ros/install/sensor_init/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/sensor_init build --build-base /home/ubuntu/greenai-ros/build/sensor_init/build install --prefix /home/ubuntu/greenai-ros/install/sensor_init --record /home/ubuntu/greenai-ros/build/sensor_init/install.log --single-version-externally-managed
+[17.525s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/sensor_init' for CMake module files
+[17.528s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/sensor_init' for CMake config files
+[17.535s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/sensor_init/lib'
+[17.535s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/sensor_init/bin'
+[17.536s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/sensor_init/lib/pkgconfig/sensor_init.pc'
+[17.537s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/sensor_init/lib/python3.8/site-packages'
+[17.538s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensor_init', 'pythonpath')
+[17.549s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/sensor_init/share/sensor_init/hook/pythonpath.ps1'
+[17.553s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/greenai-ros/install/sensor_init/share/sensor_init/hook/pythonpath.dsv'
+[17.555s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/sensor_init/share/sensor_init/hook/pythonpath.sh'
+[17.559s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/sensor_init/bin'
+[17.559s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sensor_init)
+[17.571s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/sensor_init/share/sensor_init/package.ps1'
+[17.574s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/greenai-ros/install/sensor_init/share/sensor_init/package.dsv'
+[17.578s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/sensor_init/share/sensor_init/package.sh'
+[17.581s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/sensor_init/share/sensor_init/package.bash'
+[17.584s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/sensor_init/share/sensor_init/package.zsh'
+[17.587s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/greenai-ros/install/sensor_init/share/colcon-core/packages/sensor_init)
+[17.593s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/greenai-ros/src/hanium_nav_pkg' with build type 'ament_python'
+[17.595s] Level 1:colcon.colcon_core.shell:create_environment_hook('hanium_nav_pkg', 'ament_prefix_path')
+[17.607s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/hanium_nav_pkg/share/hanium_nav_pkg/hook/ament_prefix_path.ps1'
+[17.610s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/greenai-ros/install/hanium_nav_pkg/share/hanium_nav_pkg/hook/ament_prefix_path.dsv'
+[17.613s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/hanium_nav_pkg/share/hanium_nav_pkg/hook/ament_prefix_path.sh'
+[17.629s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[17.631s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[19.153s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/greenai-ros/src/hanium_nav_pkg'
+[19.161s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[19.161s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[19.218s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/greenai-ros/src/dht_sensor': CMAKE_PREFIX_PATH=/home/ubuntu/greenai-ros/install/hanium_interface:/home/ubuntu/greenai-ros/install/hanium_slam_pkg:/home/ubuntu/turtlebot3_ws/install/turtlebot3:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description PYTHONPATH=/home/ubuntu/greenai-ros/install/dht_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/hanium_interface/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/build/sensor_init:/home/ubuntu/greenai-ros/build/relay_control_pub:/home/ubuntu/greenai-ros/build/hanium_nav_pkg:/home/ubuntu/greenai-ros/install/hanium_nav_pkg/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/build/nav2_simple_commander:/home/ubuntu/greenai-ros/install/nav2_simple_commander/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/build/fine_dust_sensor:/home/ubuntu/greenai-ros/build/dht_sensor:/home/ubuntu/greenai-ros/build/data_export:/home/ubuntu/greenai-ros/build/gas_pub:/home/ubuntu/greenai-ros/build/fan_pwm:/home/ubuntu/greenai-ros/install/sensor_init/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/dht_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/gas_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/dht_sensor build --build-base /home/ubuntu/greenai-ros/build/dht_sensor/build install --prefix /home/ubuntu/greenai-ros/install/dht_sensor --record /home/ubuntu/greenai-ros/build/dht_sensor/install.log --single-version-externally-managed
+[19.235s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/greenai-ros/src/data_export': CMAKE_PREFIX_PATH=/home/ubuntu/greenai-ros/install/hanium_interface:/home/ubuntu/greenai-ros/install/hanium_slam_pkg:/home/ubuntu/turtlebot3_ws/install/turtlebot3:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description PYTHONPATH=/home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/hanium_interface/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/build/sensor_init:/home/ubuntu/greenai-ros/build/relay_control_pub:/home/ubuntu/greenai-ros/build/hanium_nav_pkg:/home/ubuntu/greenai-ros/install/hanium_nav_pkg/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/build/nav2_simple_commander:/home/ubuntu/greenai-ros/install/nav2_simple_commander/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/build/fine_dust_sensor:/home/ubuntu/greenai-ros/build/dht_sensor:/home/ubuntu/greenai-ros/build/data_export:/home/ubuntu/greenai-ros/build/gas_pub:/home/ubuntu/greenai-ros/build/fan_pwm:/home/ubuntu/greenai-ros/install/sensor_init/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/dht_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/gas_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/data_export build --build-base /home/ubuntu/greenai-ros/build/data_export/build install --prefix /home/ubuntu/greenai-ros/install/data_export --record /home/ubuntu/greenai-ros/build/data_export/install.log --single-version-externally-managed
+[19.253s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/greenai-ros/src/fine_dust_sensor': CMAKE_PREFIX_PATH=/home/ubuntu/greenai-ros/install/hanium_interface:/home/ubuntu/greenai-ros/install/hanium_slam_pkg:/home/ubuntu/turtlebot3_ws/install/turtlebot3:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description PYTHONPATH=/home/ubuntu/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/hanium_interface/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/build/sensor_init:/home/ubuntu/greenai-ros/build/relay_control_pub:/home/ubuntu/greenai-ros/build/hanium_nav_pkg:/home/ubuntu/greenai-ros/install/hanium_nav_pkg/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/build/nav2_simple_commander:/home/ubuntu/greenai-ros/install/nav2_simple_commander/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/build/fine_dust_sensor:/home/ubuntu/greenai-ros/build/dht_sensor:/home/ubuntu/greenai-ros/build/data_export:/home/ubuntu/greenai-ros/build/gas_pub:/home/ubuntu/greenai-ros/build/fan_pwm:/home/ubuntu/greenai-ros/install/sensor_init/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/dht_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/gas_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/fine_dust_sensor build --build-base /home/ubuntu/greenai-ros/build/fine_dust_sensor/build install --prefix /home/ubuntu/greenai-ros/install/fine_dust_sensor --record /home/ubuntu/greenai-ros/build/fine_dust_sensor/install.log --single-version-externally-managed
+[21.324s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/greenai-ros/src/dht_sensor' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/greenai-ros/install/hanium_interface:/home/ubuntu/greenai-ros/install/hanium_slam_pkg:/home/ubuntu/turtlebot3_ws/install/turtlebot3:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description PYTHONPATH=/home/ubuntu/greenai-ros/install/dht_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/hanium_interface/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/build/sensor_init:/home/ubuntu/greenai-ros/build/relay_control_pub:/home/ubuntu/greenai-ros/build/hanium_nav_pkg:/home/ubuntu/greenai-ros/install/hanium_nav_pkg/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/build/nav2_simple_commander:/home/ubuntu/greenai-ros/install/nav2_simple_commander/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/build/fine_dust_sensor:/home/ubuntu/greenai-ros/build/dht_sensor:/home/ubuntu/greenai-ros/build/data_export:/home/ubuntu/greenai-ros/build/gas_pub:/home/ubuntu/greenai-ros/build/fan_pwm:/home/ubuntu/greenai-ros/install/sensor_init/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/dht_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/gas_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/dht_sensor build --build-base /home/ubuntu/greenai-ros/build/dht_sensor/build install --prefix /home/ubuntu/greenai-ros/install/dht_sensor --record /home/ubuntu/greenai-ros/build/dht_sensor/install.log --single-version-externally-managed
+[21.325s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/dht_sensor' for CMake module files
+[21.328s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/dht_sensor' for CMake config files
+[21.333s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/dht_sensor/lib'
+[21.333s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/dht_sensor/bin'
+[21.334s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/dht_sensor/lib/pkgconfig/dht_sensor.pc'
+[21.335s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/dht_sensor/lib/python3.8/site-packages'
+[21.335s] Level 1:colcon.colcon_core.shell:create_environment_hook('dht_sensor', 'pythonpath')
+[21.344s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/dht_sensor/share/dht_sensor/hook/pythonpath.ps1'
+[21.346s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/greenai-ros/install/dht_sensor/share/dht_sensor/hook/pythonpath.dsv'
+[21.348s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/dht_sensor/share/dht_sensor/hook/pythonpath.sh'
+[21.351s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/dht_sensor/bin'
+[21.352s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dht_sensor)
+[21.360s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/dht_sensor/share/dht_sensor/package.ps1'
+[21.363s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/greenai-ros/install/dht_sensor/share/dht_sensor/package.dsv'
+[21.365s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/dht_sensor/share/dht_sensor/package.sh'
+[21.369s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/dht_sensor/share/dht_sensor/package.bash'
+[21.372s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/dht_sensor/share/dht_sensor/package.zsh'
+[21.373s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/greenai-ros/install/dht_sensor/share/colcon-core/packages/dht_sensor)
+[21.388s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/data_export' for CMake module files
+[21.392s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/greenai-ros/src/data_export' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/greenai-ros/install/hanium_interface:/home/ubuntu/greenai-ros/install/hanium_slam_pkg:/home/ubuntu/turtlebot3_ws/install/turtlebot3:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description PYTHONPATH=/home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/hanium_interface/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/build/sensor_init:/home/ubuntu/greenai-ros/build/relay_control_pub:/home/ubuntu/greenai-ros/build/hanium_nav_pkg:/home/ubuntu/greenai-ros/install/hanium_nav_pkg/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/build/nav2_simple_commander:/home/ubuntu/greenai-ros/install/nav2_simple_commander/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/build/fine_dust_sensor:/home/ubuntu/greenai-ros/build/dht_sensor:/home/ubuntu/greenai-ros/build/data_export:/home/ubuntu/greenai-ros/build/gas_pub:/home/ubuntu/greenai-ros/build/fan_pwm:/home/ubuntu/greenai-ros/install/sensor_init/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/dht_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/gas_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/data_export build --build-base /home/ubuntu/greenai-ros/build/data_export/build install --prefix /home/ubuntu/greenai-ros/install/data_export --record /home/ubuntu/greenai-ros/build/data_export/install.log --single-version-externally-managed
+[21.394s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/data_export' for CMake config files
+[21.398s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/data_export/lib'
+[21.398s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/data_export/bin'
+[21.398s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/data_export/lib/pkgconfig/data_export.pc'
+[21.399s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages'
+[21.400s] Level 1:colcon.colcon_core.shell:create_environment_hook('data_export', 'pythonpath')
+[21.408s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/data_export/share/data_export/hook/pythonpath.ps1'
+[21.410s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/greenai-ros/install/data_export/share/data_export/hook/pythonpath.dsv'
+[21.412s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/data_export/share/data_export/hook/pythonpath.sh'
+[21.415s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/data_export/bin'
+[21.415s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(data_export)
+[21.424s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/data_export/share/data_export/package.ps1'
+[21.426s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/greenai-ros/install/data_export/share/data_export/package.dsv'
+[21.429s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/data_export/share/data_export/package.sh'
+[21.431s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/data_export/share/data_export/package.bash'
+[21.433s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/data_export/share/data_export/package.zsh'
+[21.435s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/greenai-ros/install/data_export/share/colcon-core/packages/data_export)
+[21.439s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/greenai-ros/src/relay_control_pub' with build type 'ament_python'
+[21.440s] Level 1:colcon.colcon_core.shell:create_environment_hook('relay_control_pub', 'ament_prefix_path')
+[21.449s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/relay_control_pub/share/relay_control_pub/hook/ament_prefix_path.ps1'
+[21.452s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/greenai-ros/install/relay_control_pub/share/relay_control_pub/hook/ament_prefix_path.dsv'
+[21.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/relay_control_pub/share/relay_control_pub/hook/ament_prefix_path.sh'
+[21.464s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[21.465s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[21.529s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/fine_dust_sensor' for CMake module files
+[21.531s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/greenai-ros/src/fine_dust_sensor' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/greenai-ros/install/hanium_interface:/home/ubuntu/greenai-ros/install/hanium_slam_pkg:/home/ubuntu/turtlebot3_ws/install/turtlebot3:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description PYTHONPATH=/home/ubuntu/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/hanium_interface/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/build/sensor_init:/home/ubuntu/greenai-ros/build/relay_control_pub:/home/ubuntu/greenai-ros/build/hanium_nav_pkg:/home/ubuntu/greenai-ros/install/hanium_nav_pkg/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/build/nav2_simple_commander:/home/ubuntu/greenai-ros/install/nav2_simple_commander/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/build/fine_dust_sensor:/home/ubuntu/greenai-ros/build/dht_sensor:/home/ubuntu/greenai-ros/build/data_export:/home/ubuntu/greenai-ros/build/gas_pub:/home/ubuntu/greenai-ros/build/fan_pwm:/home/ubuntu/greenai-ros/install/sensor_init/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/dht_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/gas_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/fine_dust_sensor build --build-base /home/ubuntu/greenai-ros/build/fine_dust_sensor/build install --prefix /home/ubuntu/greenai-ros/install/fine_dust_sensor --record /home/ubuntu/greenai-ros/build/fine_dust_sensor/install.log --single-version-externally-managed
+[21.533s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/fine_dust_sensor' for CMake config files
+[21.537s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/fine_dust_sensor/lib'
+[21.538s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/fine_dust_sensor/bin'
+[21.541s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/fine_dust_sensor/lib/pkgconfig/fine_dust_sensor.pc'
+[21.542s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages'
+[21.543s] Level 1:colcon.colcon_core.shell:create_environment_hook('fine_dust_sensor', 'pythonpath')
+[21.551s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/fine_dust_sensor/share/fine_dust_sensor/hook/pythonpath.ps1'
+[21.553s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/greenai-ros/install/fine_dust_sensor/share/fine_dust_sensor/hook/pythonpath.dsv'
+[21.555s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/fine_dust_sensor/share/fine_dust_sensor/hook/pythonpath.sh'
+[21.558s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/fine_dust_sensor/bin'
+[21.559s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fine_dust_sensor)
+[21.573s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/fine_dust_sensor/share/fine_dust_sensor/package.ps1'
+[21.579s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/greenai-ros/install/fine_dust_sensor/share/fine_dust_sensor/package.dsv'
+[21.583s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/fine_dust_sensor/share/fine_dust_sensor/package.sh'
+[21.587s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/fine_dust_sensor/share/fine_dust_sensor/package.bash'
+[21.590s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/fine_dust_sensor/share/fine_dust_sensor/package.zsh'
+[21.593s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/greenai-ros/install/fine_dust_sensor/share/colcon-core/packages/fine_dust_sensor)
+[22.885s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/greenai-ros/src/relay_control_pub'
+[22.893s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[22.894s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[22.950s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/greenai-ros/src/hanium_nav_pkg': AMENT_PREFIX_PATH=/home/ubuntu/greenai-ros/install/nav2_simple_commander:/home/ubuntu/greenai-ros/install/hanium_nav_pkg:/home/ubuntu/greenai-ros/install/hanium_slam_pkg:/home/ubuntu/greenai-ros/install/sensor_init:/home/ubuntu/greenai-ros/install/relay_control_pub:/home/ubuntu/greenai-ros/install/fine_dust_sensor:/home/ubuntu/greenai-ros/install/dht_sensor:/home/ubuntu/greenai-ros/install/data_export:/home/ubuntu/greenai-ros/install/hanium_interface:/home/ubuntu/greenai-ros/install/gas_pub:/home/ubuntu/greenai-ros/install/fan_pwm:/home/ubuntu/turtlebot3_ws/install/turtlebot3:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/opt/ros/foxy PYTHONPATH=/home/ubuntu/greenai-ros/install/hanium_nav_pkg/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/nav2_simple_commander/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/build/sensor_init:/home/ubuntu/greenai-ros/build/relay_control_pub:/home/ubuntu/greenai-ros/build/hanium_nav_pkg:/home/ubuntu/greenai-ros/install/hanium_nav_pkg/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/build/nav2_simple_commander:/home/ubuntu/greenai-ros/build/fine_dust_sensor:/home/ubuntu/greenai-ros/build/dht_sensor:/home/ubuntu/greenai-ros/build/data_export:/home/ubuntu/greenai-ros/build/gas_pub:/home/ubuntu/greenai-ros/build/fan_pwm:/home/ubuntu/greenai-ros/install/sensor_init/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/dht_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/hanium_interface/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/gas_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/hanium_nav_pkg build --build-base /home/ubuntu/greenai-ros/build/hanium_nav_pkg/build install --prefix /home/ubuntu/greenai-ros/install/hanium_nav_pkg --record /home/ubuntu/greenai-ros/build/hanium_nav_pkg/install.log --single-version-externally-managed
+[24.553s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_nav_pkg' for CMake module files
+[24.555s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/greenai-ros/src/hanium_nav_pkg' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/greenai-ros/install/nav2_simple_commander:/home/ubuntu/greenai-ros/install/hanium_nav_pkg:/home/ubuntu/greenai-ros/install/hanium_slam_pkg:/home/ubuntu/greenai-ros/install/sensor_init:/home/ubuntu/greenai-ros/install/relay_control_pub:/home/ubuntu/greenai-ros/install/fine_dust_sensor:/home/ubuntu/greenai-ros/install/dht_sensor:/home/ubuntu/greenai-ros/install/data_export:/home/ubuntu/greenai-ros/install/hanium_interface:/home/ubuntu/greenai-ros/install/gas_pub:/home/ubuntu/greenai-ros/install/fan_pwm:/home/ubuntu/turtlebot3_ws/install/turtlebot3:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/opt/ros/foxy PYTHONPATH=/home/ubuntu/greenai-ros/install/hanium_nav_pkg/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/nav2_simple_commander/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/build/sensor_init:/home/ubuntu/greenai-ros/build/relay_control_pub:/home/ubuntu/greenai-ros/build/hanium_nav_pkg:/home/ubuntu/greenai-ros/install/hanium_nav_pkg/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/build/nav2_simple_commander:/home/ubuntu/greenai-ros/build/fine_dust_sensor:/home/ubuntu/greenai-ros/build/dht_sensor:/home/ubuntu/greenai-ros/build/data_export:/home/ubuntu/greenai-ros/build/gas_pub:/home/ubuntu/greenai-ros/build/fan_pwm:/home/ubuntu/greenai-ros/install/sensor_init/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/dht_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/hanium_interface/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/gas_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/hanium_nav_pkg build --build-base /home/ubuntu/greenai-ros/build/hanium_nav_pkg/build install --prefix /home/ubuntu/greenai-ros/install/hanium_nav_pkg --record /home/ubuntu/greenai-ros/build/hanium_nav_pkg/install.log --single-version-externally-managed
+[24.557s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_nav_pkg' for CMake config files
+[24.561s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_nav_pkg/lib'
+[24.561s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_nav_pkg/bin'
+[24.562s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_nav_pkg/lib/pkgconfig/hanium_nav_pkg.pc'
+[24.563s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_nav_pkg/lib/python3.8/site-packages'
+[24.563s] Level 1:colcon.colcon_core.shell:create_environment_hook('hanium_nav_pkg', 'pythonpath')
+[24.572s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/hanium_nav_pkg/share/hanium_nav_pkg/hook/pythonpath.ps1'
+[24.574s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/greenai-ros/install/hanium_nav_pkg/share/hanium_nav_pkg/hook/pythonpath.dsv'
+[24.576s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/hanium_nav_pkg/share/hanium_nav_pkg/hook/pythonpath.sh'
+[24.579s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/hanium_nav_pkg/bin'
+[24.579s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hanium_nav_pkg)
+[24.588s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/hanium_nav_pkg/share/hanium_nav_pkg/package.ps1'
+[24.590s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/greenai-ros/install/hanium_nav_pkg/share/hanium_nav_pkg/package.dsv'
+[24.593s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/hanium_nav_pkg/share/hanium_nav_pkg/package.sh'
+[24.596s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/hanium_nav_pkg/share/hanium_nav_pkg/package.bash'
+[24.598s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/hanium_nav_pkg/share/hanium_nav_pkg/package.zsh'
+[24.600s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/greenai-ros/install/hanium_nav_pkg/share/colcon-core/packages/hanium_nav_pkg)
+[24.825s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/greenai-ros/src/relay_control_pub': CMAKE_PREFIX_PATH=/home/ubuntu/greenai-ros/install/hanium_interface:/home/ubuntu/greenai-ros/install/hanium_slam_pkg:/home/ubuntu/turtlebot3_ws/install/turtlebot3:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description PYTHONPATH=/home/ubuntu/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/hanium_interface/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/build/sensor_init:/home/ubuntu/greenai-ros/build/relay_control_pub:/home/ubuntu/greenai-ros/build/hanium_nav_pkg:/home/ubuntu/greenai-ros/install/hanium_nav_pkg/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/build/nav2_simple_commander:/home/ubuntu/greenai-ros/install/nav2_simple_commander/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/build/fine_dust_sensor:/home/ubuntu/greenai-ros/build/dht_sensor:/home/ubuntu/greenai-ros/build/data_export:/home/ubuntu/greenai-ros/build/gas_pub:/home/ubuntu/greenai-ros/build/fan_pwm:/home/ubuntu/greenai-ros/install/sensor_init/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/dht_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/gas_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/relay_control_pub build --build-base /home/ubuntu/greenai-ros/build/relay_control_pub/build install --prefix /home/ubuntu/greenai-ros/install/relay_control_pub --record /home/ubuntu/greenai-ros/build/relay_control_pub/install.log --single-version-externally-managed
+[26.245s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/relay_control_pub' for CMake module files
+[26.246s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/greenai-ros/src/relay_control_pub' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/greenai-ros/install/hanium_interface:/home/ubuntu/greenai-ros/install/hanium_slam_pkg:/home/ubuntu/turtlebot3_ws/install/turtlebot3:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description PYTHONPATH=/home/ubuntu/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/hanium_interface/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/build/sensor_init:/home/ubuntu/greenai-ros/build/relay_control_pub:/home/ubuntu/greenai-ros/build/hanium_nav_pkg:/home/ubuntu/greenai-ros/install/hanium_nav_pkg/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/build/nav2_simple_commander:/home/ubuntu/greenai-ros/install/nav2_simple_commander/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/build/fine_dust_sensor:/home/ubuntu/greenai-ros/build/dht_sensor:/home/ubuntu/greenai-ros/build/data_export:/home/ubuntu/greenai-ros/build/gas_pub:/home/ubuntu/greenai-ros/build/fan_pwm:/home/ubuntu/greenai-ros/install/sensor_init/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/dht_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/gas_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/relay_control_pub build --build-base /home/ubuntu/greenai-ros/build/relay_control_pub/build install --prefix /home/ubuntu/greenai-ros/install/relay_control_pub --record /home/ubuntu/greenai-ros/build/relay_control_pub/install.log --single-version-externally-managed
+[26.248s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/relay_control_pub' for CMake config files
+[26.252s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/relay_control_pub/lib'
+[26.252s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/relay_control_pub/bin'
+[26.253s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/relay_control_pub/lib/pkgconfig/relay_control_pub.pc'
+[26.253s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages'
+[26.254s] Level 1:colcon.colcon_core.shell:create_environment_hook('relay_control_pub', 'pythonpath')
+[26.261s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/relay_control_pub/share/relay_control_pub/hook/pythonpath.ps1'
+[26.263s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/greenai-ros/install/relay_control_pub/share/relay_control_pub/hook/pythonpath.dsv'
+[26.265s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/greenai-ros/install/relay_control_pub/share/relay_control_pub/hook/pythonpath.sh'
+[26.267s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/greenai-ros/install/relay_control_pub/bin'
+[26.268s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(relay_control_pub)
+[26.275s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/relay_control_pub/share/relay_control_pub/package.ps1'
+[26.278s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/greenai-ros/install/relay_control_pub/share/relay_control_pub/package.dsv'
+[26.280s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/relay_control_pub/share/relay_control_pub/package.sh'
+[26.282s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/relay_control_pub/share/relay_control_pub/package.bash'
+[26.283s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/greenai-ros/install/relay_control_pub/share/relay_control_pub/package.zsh'
+[26.285s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/greenai-ros/install/relay_control_pub/share/colcon-core/packages/relay_control_pub)
+[26.287s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[26.288s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[26.288s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[26.288s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[26.323s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[26.323s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[26.323s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[26.324s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[26.326s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[26.327s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[26.335s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/greenai-ros/install/local_setup.ps1'
+[26.338s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/greenai-ros/install/_local_setup_util_ps1.py'
+[26.344s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/greenai-ros/install/setup.ps1'
+[26.354s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/greenai-ros/install/local_setup.sh'
+[26.356s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/greenai-ros/install/_local_setup_util_sh.py'
+[26.359s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/greenai-ros/install/setup.sh'
+[26.369s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/greenai-ros/install/local_setup.bash'
+[26.371s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/greenai-ros/install/setup.bash'
+[26.381s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/greenai-ros/install/local_setup.zsh'
+[26.384s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/greenai-ros/install/setup.zsh'
