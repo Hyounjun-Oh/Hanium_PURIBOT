@@ -71,7 +71,7 @@ class DataExport(Node):
     
         self.space = msg.data
         self.df.loc[self.space] = [self.year,self.month,self.day,self.hour, self.space, self.temp, self.hum, self.pollu]
-        self.df.to_csv('/home/ohj/greenai-ros/move_data/'+'DataExport'+'_'+ str(self.year) + str(self.month) + str(self.day) +'.csv',index = False,sep=',')
+        self.df.to_csv('DataExport'+'_'+ str(self.year) + str(self.month) + str(self.day) +'.csv',index = False,sep=',')
         self.get_logger().info('구역 번호는 : {0}'.format(self.space))
         
 def main(args=None):
