@@ -35,12 +35,7 @@ def generate_launch_description():
             PythonLaunchDescriptionSource(
                 [get_package_share_directory('fine_dust_sensor'), '/launch/dust_sensor.launch.py']),
         ),
-        
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(
-                [get_package_share_directory('gas_pub'), '/launch/gas_sensor.launch.py']),
-        ),
-        
+
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
                 [get_package_share_directory('relay_control_pub'), '/launch/relay_sensor.launch.py']),
