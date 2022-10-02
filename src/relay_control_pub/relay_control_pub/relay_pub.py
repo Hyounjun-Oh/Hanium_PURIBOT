@@ -29,9 +29,9 @@ class GetDHTdata(Node):
              QOS_RKL10V
              )
         
-        def get_dht_data(self, msg):
-             new_hum = msg.hum
-             temp = msg.temp
+     def get_dht_data(self, msg):
+         new_hum = msg.hum
+         temp = msg.temp
              
 class RelayControl(Node):
     global new_hum
@@ -83,7 +83,7 @@ def main(args=None):
             old_hum = new_hum
 
     except KeyboardInterrupt:
-        get_DHTdatal.get_logger().info('Keyboard Interrupt (SIGINT)')
+        get_DHTdata.get_logger().info('Keyboard Interrupt (SIGINT)')
         get_DHTdata.destroy_node()
         GPIO.cleanup()
     finally:
