@@ -50,7 +50,7 @@ class RelayControl():
             GPIO.setup(19, GPIO.OUT, initial=False)
             GPIO.setwarnings(False)
             GPIO.output(19, True)
-            time.sleep(3)
+            time.sleep(1)
             GPIO.output(19, False)
             GPIO.cleanup()
             iter_on_off = iter_on_off + 1
@@ -59,7 +59,14 @@ class RelayControl():
             GPIO.setup(19, GPIO.OUT, initial=False)
             GPIO.setwarnings(False)
             GPIO.output(19, True)
-            time.sleep(3)
+            time.sleep(1)
+            GPIO.output(19, False)
+            GPIO.cleanup()
+            GPIO.setmode(GPIO.BCM)
+            GPIO.setup(19, GPIO.OUT, initial=False)
+            GPIO.setwarnings(False)
+            GPIO.output(19, True)
+            time.sleep(1)
             GPIO.output(19, False)
             GPIO.cleanup()
             iter_on_off = iter_on_off + 1
@@ -91,8 +98,6 @@ def main(args=None):
 
 
     except KeyboardInterrupt:
-        get_DHTdata.get_logger().info('Keyboard Interrupt (SIGINT)')
-        get_DHTdata.destroy_node()
         if iter_on_off / 2 == 1:
             GPIO.setmode(GPIO.BCM)
             GPIO.setup(19, GPIO.OUT, initial=False)
@@ -103,9 +108,9 @@ def main(args=None):
         else:
             pass
         GPIO.cleanup()
-    finally:
+        get_DHTdata.get_logger().info('Keyboard Interrupt (SIGINT)')
         get_DHTdata.destroy_node()
-        rclpy.shutdown()
+    finally:
         if iter_on_off / 2 == 1:
             GPIO.setmode(GPIO.BCM)
             GPIO.setup(19, GPIO.OUT, initial=False)
@@ -113,6 +118,8 @@ def main(args=None):
             GPIO.output(19, True)
             time.sleep(3)
             GPIO.output(19, False)
+            get_DHTdata.destroy_node()
+            rclpy.shutdown()
         else:
             pass
         GPIO.cleanup()
