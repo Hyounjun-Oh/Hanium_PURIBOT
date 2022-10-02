@@ -60,12 +60,10 @@ class DataExport(Node):
         
         self.hum = round(msg.hum,1)
         self.temp = round(msg.temp,1)
-        self.get_logger().info('습도값은 : {0}, 온도값은 : {1}'.format(self.hum,self.temp))
         
     def get_pollu_value(self, msg):
     
         self.pollu = msg.data
-        self.get_logger().info('오염도 수치는 : {0}'.format(self.pollu))
         
     def get_space_value(self, msg):
     

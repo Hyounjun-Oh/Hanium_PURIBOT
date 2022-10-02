@@ -36,9 +36,8 @@ class GetDHTdata(Node):
         global temp
         new_hum = msg.hum
         temp = msg.temp
-        self.get_logger().info('데이터 수신 완료')
 
-class RelayControl():
+class RelayControl(Node):
     global new_hum
     global ref_hum
     def __init__(self,new_hum,ref_hum):
@@ -48,7 +47,7 @@ class RelayControl():
             GPIO.setup(19, GPIO.OUT, initial=False)
             GPIO.setwarnings(False)
 
-            print('가습기 가동 중지')
+            self.get_logger().info('가습기 가동 중지')
             GPIO.output(19, True)
             time.sleep(3)
             GPIO.output(19, False)
@@ -58,7 +57,7 @@ class RelayControl():
             GPIO.setup(19, GPIO.OUT, initial=False)
             GPIO.setwarnings(False)
 
-            print('가습기 작동을 시작합니다.')
+            self.get_logger().info('가습기 작동을 시작합니다.')
             GPIO.output(19, True)
             time.sleep(3)
             GPIO.output(19, False)
@@ -74,9 +73,6 @@ def main(args=None):
     try:
         while 1:
             rclpy.spin_once(get_DHTdata)
-            print('if문 진입')
-            print(temp)
-            print(new_hum)
             if temp >= 24.0:
                 ref_hum = 40.0
             elif temp >= 21.0:
@@ -85,16 +81,12 @@ def main(args=None):
                 ref_hum = 60.0
             else:
                 ref_hum = 70.0
-            print(ref_hum)
-            print('기준 습도 if문 시작')
             if (old_hum >= ref_hum) is not (new_hum >= ref_hum):
-                 print('릴레이 작동')
                  RelayControl(new_hum, ref_hum)
             else:
-                 print('패스')
                  pass
             old_hum = new_hum
-            print('반복 종료')
+
 
     except KeyboardInterrupt:
         get_DHTdata.get_logger().info('Keyboard Interrupt (SIGINT)')

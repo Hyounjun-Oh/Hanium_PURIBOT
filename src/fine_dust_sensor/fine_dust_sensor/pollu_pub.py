@@ -166,14 +166,12 @@ class PolluPub(Node, PMS7003):
         self.buffer = self.ser.read(1024)
     
         if(self.protocol_chk(self.buffer)):
-            self.data = self.unpack_data(self.buffer) 
-            self.get_logger().info("DATA read success")
-        
+            self.data = self.unpack_data(self.buffer)
             msg.pm10 = int(self.data[self.DUST_PM10_0_ATM])
             msg.pm2_5 = int(self.data[self.DUST_PM2_5_ATM])
             
 
-            self.get_logger().info("\n10micro : {0} 2.5micro : {1}".format(msg.pm10,msg.pm2_5))
+            self.get_logger().info("\n10micro : {0} \n2.5micro : {1}".format(msg.pm10,msg.pm2_5))
         else:
 
             self.get_logger().info("DATA read fail...")
