@@ -100,7 +100,7 @@ def main(args=None):
             GPIO.output(19, True)
             time.sleep(3)
             GPIO.output(19, False)
-        else
+        else:
             pass
         GPIO.cleanup()
     finally:
@@ -114,7 +114,7 @@ def main(args=None):
             GPIO.output(19, True)
             time.sleep(3)
             GPIO.output(19, False)
-        else
+        else:
             pass
         GPIO.cleanup()
         
