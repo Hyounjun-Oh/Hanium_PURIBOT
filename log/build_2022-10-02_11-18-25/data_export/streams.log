@@ -1,0 +1,31 @@
+[16.312s] Invoking command in '/home/ubuntu/greenai-ros/src/data_export': PYTHONPATH=/home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/hanium_interface/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/sensor_init/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/dht_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/gas_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/data_export build --build-base /home/ubuntu/greenai-ros/build/data_export/build install --prefix /home/ubuntu/greenai-ros/install/data_export --record /home/ubuntu/greenai-ros/build/data_export/install.log --single-version-externally-managed
+[19.750s] running egg_info
+[19.756s] creating ../../build/data_export/data_export.egg-info
+[19.784s] writing manifest file '../../build/data_export/data_export.egg-info/SOURCES.txt'
+[19.813s] writing manifest file '../../build/data_export/data_export.egg-info/SOURCES.txt'
+[19.815s] running build
+[19.816s] running build_py
+[19.826s] creating /home/ubuntu/greenai-ros/build/data_export/build
+[19.827s] creating /home/ubuntu/greenai-ros/build/data_export/build/lib
+[19.828s] creating /home/ubuntu/greenai-ros/build/data_export/build/lib/data_export
+[19.830s] copying data_export/__init__.py -> /home/ubuntu/greenai-ros/build/data_export/build/lib/data_export
+[19.831s] copying data_export/data_export_csv.py -> /home/ubuntu/greenai-ros/build/data_export/build/lib/data_export
+[19.832s] running install
+[19.837s] running install_lib
+[19.845s] creating /home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages/data_export
+[19.857s] byte-compiling /home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages/data_export/__init__.py to __init__.cpython-38.pyc
+[19.861s] byte-compiling /home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages/data_export/data_export_csv.py to data_export_csv.cpython-38.pyc
+[19.868s] running install_data
+[19.875s] creating /home/ubuntu/greenai-ros/install/data_export/share/ament_index
+[19.877s] creating /home/ubuntu/greenai-ros/install/data_export/share/ament_index/resource_index
+[19.879s] creating /home/ubuntu/greenai-ros/install/data_export/share/ament_index/resource_index/packages
+[19.880s] copying resource/data_export -> /home/ubuntu/greenai-ros/install/data_export/share/ament_index/resource_index/packages
+[19.891s] copying package.xml -> /home/ubuntu/greenai-ros/install/data_export/share/data_export
+[19.892s] creating /home/ubuntu/greenai-ros/install/data_export/share/data_export/launch
+[19.893s] copying launch/data_export.launch.py -> /home/ubuntu/greenai-ros/install/data_export/share/data_export/launch
+[19.895s] creating /home/ubuntu/greenai-ros/install/data_export/share/data_export/param
+[19.896s] running install_egg_info
+[19.908s] Copying ../../build/data_export/data_export.egg-info to /home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages/data_export-0.0.0-py3.8.egg-info
+[19.927s] running install_scripts
+[20.161s] writing list of installed files to '/home/ubuntu/greenai-ros/build/data_export/install.log'
+[20.421s] Invoked command in '/home/ubuntu/greenai-ros/src/data_export' returned '0': PYTHONPATH=/home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/hanium_interface/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/sensor_init/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/dht_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/gas_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/data_export build --build-base /home/ubuntu/greenai-ros/build/data_export/build install --prefix /home/ubuntu/greenai-ros/install/data_export --record /home/ubuntu/greenai-ros/build/data_export/install.log --single-version-externally-managed

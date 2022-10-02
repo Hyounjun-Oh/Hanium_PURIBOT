@@ -1,0 +1,31 @@
+[16.119s] Invoking command in '/home/ubuntu/greenai-ros/src/relay_control_pub': PYTHONPATH=/home/ubuntu/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/hanium_interface/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/sensor_init/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/dht_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/gas_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/relay_control_pub build --build-base /home/ubuntu/greenai-ros/build/relay_control_pub/build install --prefix /home/ubuntu/greenai-ros/install/relay_control_pub --record /home/ubuntu/greenai-ros/build/relay_control_pub/install.log --single-version-externally-managed
+[19.515s] running egg_info
+[19.522s] creating ../../build/relay_control_pub/relay_control_pub.egg-info
+[19.548s] writing manifest file '../../build/relay_control_pub/relay_control_pub.egg-info/SOURCES.txt'
+[19.576s] writing manifest file '../../build/relay_control_pub/relay_control_pub.egg-info/SOURCES.txt'
+[19.578s] running build
+[19.579s] running build_py
+[19.581s] creating /home/ubuntu/greenai-ros/build/relay_control_pub/build
+[19.582s] creating /home/ubuntu/greenai-ros/build/relay_control_pub/build/lib
+[19.593s] creating /home/ubuntu/greenai-ros/build/relay_control_pub/build/lib/relay_control_pub
+[19.595s] copying relay_control_pub/__init__.py -> /home/ubuntu/greenai-ros/build/relay_control_pub/build/lib/relay_control_pub
+[19.597s] copying relay_control_pub/relay_pub.py -> /home/ubuntu/greenai-ros/build/relay_control_pub/build/lib/relay_control_pub
+[19.599s] running install
+[19.622s] running install_lib
+[19.638s] creating /home/ubuntu/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages/relay_control_pub
+[19.644s] byte-compiling /home/ubuntu/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages/relay_control_pub/__init__.py to __init__.cpython-38.pyc
+[19.654s] byte-compiling /home/ubuntu/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages/relay_control_pub/relay_pub.py to relay_pub.cpython-38.pyc
+[19.656s] running install_data
+[19.661s] creating /home/ubuntu/greenai-ros/install/relay_control_pub/share/ament_index
+[19.663s] creating /home/ubuntu/greenai-ros/install/relay_control_pub/share/ament_index/resource_index
+[19.677s] creating /home/ubuntu/greenai-ros/install/relay_control_pub/share/ament_index/resource_index/packages
+[19.678s] copying resource/relay_control_pub -> /home/ubuntu/greenai-ros/install/relay_control_pub/share/ament_index/resource_index/packages
+[19.682s] copying package.xml -> /home/ubuntu/greenai-ros/install/relay_control_pub/share/relay_control_pub
+[19.696s] creating /home/ubuntu/greenai-ros/install/relay_control_pub/share/relay_control_pub/launch
+[19.697s] copying launch/relay_sensor.launch.py -> /home/ubuntu/greenai-ros/install/relay_control_pub/share/relay_control_pub/launch
+[19.700s] creating /home/ubuntu/greenai-ros/install/relay_control_pub/share/relay_control_pub/param
+[19.701s] running install_egg_info
+[19.719s] Copying ../../build/relay_control_pub/relay_control_pub.egg-info to /home/ubuntu/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages/relay_control_pub-0.0.0-py3.8.egg-info
+[19.722s] running install_scripts
+[19.938s] writing list of installed files to '/home/ubuntu/greenai-ros/build/relay_control_pub/install.log'
+[20.479s] Invoked command in '/home/ubuntu/greenai-ros/src/relay_control_pub' returned '0': PYTHONPATH=/home/ubuntu/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/hanium_interface/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/sensor_init/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/dht_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/gas_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/relay_control_pub build --build-base /home/ubuntu/greenai-ros/build/relay_control_pub/build install --prefix /home/ubuntu/greenai-ros/install/relay_control_pub --record /home/ubuntu/greenai-ros/build/relay_control_pub/install.log --single-version-externally-managed

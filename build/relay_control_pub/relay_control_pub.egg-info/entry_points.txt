@@ -1,0 +1,3 @@
+[console_scripts]
+relay_pub = relay_control_pub.relay_pub:main
+

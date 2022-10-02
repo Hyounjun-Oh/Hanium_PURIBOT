@@ -1,0 +1,31 @@
+[13.858s] Invoking command in '/home/ubuntu/greenai-ros/src/fan_pwm': PYTHONPATH=/home/ubuntu/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/fan_pwm build --build-base /home/ubuntu/greenai-ros/build/fan_pwm/build install --prefix /home/ubuntu/greenai-ros/install/fan_pwm --record /home/ubuntu/greenai-ros/build/fan_pwm/install.log --single-version-externally-managed
+[17.065s] running egg_info
+[17.071s] creating ../../build/fan_pwm/fan_pwm.egg-info
+[17.097s] writing manifest file '../../build/fan_pwm/fan_pwm.egg-info/SOURCES.txt'
+[17.122s] writing manifest file '../../build/fan_pwm/fan_pwm.egg-info/SOURCES.txt'
+[17.124s] running build
+[17.126s] running build_py
+[17.129s] creating /home/ubuntu/greenai-ros/build/fan_pwm/build
+[17.135s] creating /home/ubuntu/greenai-ros/build/fan_pwm/build/lib
+[17.138s] creating /home/ubuntu/greenai-ros/build/fan_pwm/build/lib/fan_pwm
+[17.140s] copying fan_pwm/__init__.py -> /home/ubuntu/greenai-ros/build/fan_pwm/build/lib/fan_pwm
+[17.151s] copying fan_pwm/fan_pwm.py -> /home/ubuntu/greenai-ros/build/fan_pwm/build/lib/fan_pwm
+[17.152s] running install
+[17.154s] running install_lib
+[17.155s] creating /home/ubuntu/greenai-ros/install/fan_pwm/lib/python3.8/site-packages/fan_pwm
+[17.189s] byte-compiling /home/ubuntu/greenai-ros/install/fan_pwm/lib/python3.8/site-packages/fan_pwm/__init__.py to __init__.cpython-38.pyc
+[17.190s] byte-compiling /home/ubuntu/greenai-ros/install/fan_pwm/lib/python3.8/site-packages/fan_pwm/fan_pwm.py to fan_pwm.cpython-38.pyc
+[17.205s] running install_data
+[17.210s] creating /home/ubuntu/greenai-ros/install/fan_pwm/share/ament_index
+[17.212s] creating /home/ubuntu/greenai-ros/install/fan_pwm/share/ament_index/resource_index
+[17.215s] creating /home/ubuntu/greenai-ros/install/fan_pwm/share/ament_index/resource_index/packages
+[17.216s] copying resource/fan_pwm -> /home/ubuntu/greenai-ros/install/fan_pwm/share/ament_index/resource_index/packages
+[17.217s] copying package.xml -> /home/ubuntu/greenai-ros/install/fan_pwm/share/fan_pwm
+[17.232s] creating /home/ubuntu/greenai-ros/install/fan_pwm/share/fan_pwm/launch
+[17.235s] copying launch/fan_control.launch.py -> /home/ubuntu/greenai-ros/install/fan_pwm/share/fan_pwm/launch
+[17.241s] creating /home/ubuntu/greenai-ros/install/fan_pwm/share/fan_pwm/param
+[17.245s] running install_egg_info
+[17.282s] Copying ../../build/fan_pwm/fan_pwm.egg-info to /home/ubuntu/greenai-ros/install/fan_pwm/lib/python3.8/site-packages/fan_pwm-0.0.0-py3.8.egg-info
+[17.285s] running install_scripts
+[17.445s] writing list of installed files to '/home/ubuntu/greenai-ros/build/fan_pwm/install.log'
+[17.739s] Invoked command in '/home/ubuntu/greenai-ros/src/fan_pwm' returned '0': PYTHONPATH=/home/ubuntu/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/fan_pwm build --build-base /home/ubuntu/greenai-ros/build/fan_pwm/build install --prefix /home/ubuntu/greenai-ros/install/fan_pwm --record /home/ubuntu/greenai-ros/build/fan_pwm/install.log --single-version-externally-managed

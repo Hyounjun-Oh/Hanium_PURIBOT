@@ -1,0 +1,29 @@
+running egg_info
+creating ../../build/data_export/data_export.egg-info
+writing manifest file '../../build/data_export/data_export.egg-info/SOURCES.txt'
+writing manifest file '../../build/data_export/data_export.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ubuntu/greenai-ros/build/data_export/build
+creating /home/ubuntu/greenai-ros/build/data_export/build/lib
+creating /home/ubuntu/greenai-ros/build/data_export/build/lib/data_export
+copying data_export/__init__.py -> /home/ubuntu/greenai-ros/build/data_export/build/lib/data_export
+copying data_export/data_export_csv.py -> /home/ubuntu/greenai-ros/build/data_export/build/lib/data_export
+running install
+running install_lib
+creating /home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages/data_export
+byte-compiling /home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages/data_export/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages/data_export/data_export_csv.py to data_export_csv.cpython-38.pyc
+running install_data
+creating /home/ubuntu/greenai-ros/install/data_export/share/ament_index
+creating /home/ubuntu/greenai-ros/install/data_export/share/ament_index/resource_index
+creating /home/ubuntu/greenai-ros/install/data_export/share/ament_index/resource_index/packages
+copying resource/data_export -> /home/ubuntu/greenai-ros/install/data_export/share/ament_index/resource_index/packages
+copying package.xml -> /home/ubuntu/greenai-ros/install/data_export/share/data_export
+creating /home/ubuntu/greenai-ros/install/data_export/share/data_export/launch
+copying launch/data_export.launch.py -> /home/ubuntu/greenai-ros/install/data_export/share/data_export/launch
+creating /home/ubuntu/greenai-ros/install/data_export/share/data_export/param
+running install_egg_info
+Copying ../../build/data_export/data_export.egg-info to /home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages/data_export-0.0.0-py3.8.egg-info
+running install_scripts
+writing list of installed files to '/home/ubuntu/greenai-ros/build/data_export/install.log'

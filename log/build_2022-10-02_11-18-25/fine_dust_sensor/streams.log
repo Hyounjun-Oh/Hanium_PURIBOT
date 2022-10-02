@@ -1,0 +1,33 @@
+[16.385s] Invoking command in '/home/ubuntu/greenai-ros/src/fine_dust_sensor': PYTHONPATH=/home/ubuntu/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/hanium_interface/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/sensor_init/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/dht_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/gas_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/fine_dust_sensor build --build-base /home/ubuntu/greenai-ros/build/fine_dust_sensor/build install --prefix /home/ubuntu/greenai-ros/install/fine_dust_sensor --record /home/ubuntu/greenai-ros/build/fine_dust_sensor/install.log --single-version-externally-managed
+[19.970s] running egg_info
+[19.982s] creating ../../build/fine_dust_sensor/fine_dust_sensor.egg-info
+[20.026s] writing manifest file '../../build/fine_dust_sensor/fine_dust_sensor.egg-info/SOURCES.txt'
+[20.060s] writing manifest file '../../build/fine_dust_sensor/fine_dust_sensor.egg-info/SOURCES.txt'
+[20.064s] running build
+[20.069s] running build_py
+[20.081s] creating /home/ubuntu/greenai-ros/build/fine_dust_sensor/build
+[20.090s] creating /home/ubuntu/greenai-ros/build/fine_dust_sensor/build/lib
+[20.094s] creating /home/ubuntu/greenai-ros/build/fine_dust_sensor/build/lib/fine_dust_sensor
+[20.110s] copying fine_dust_sensor/__init__.py -> /home/ubuntu/greenai-ros/build/fine_dust_sensor/build/lib/fine_dust_sensor
+[20.113s] copying fine_dust_sensor/pollu_calculator.py -> /home/ubuntu/greenai-ros/build/fine_dust_sensor/build/lib/fine_dust_sensor
+[20.117s] copying fine_dust_sensor/pollu_pub.py -> /home/ubuntu/greenai-ros/build/fine_dust_sensor/build/lib/fine_dust_sensor
+[20.145s] running install
+[20.212s] running install_lib
+[20.215s] creating /home/ubuntu/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages/fine_dust_sensor
+[20.225s] byte-compiling /home/ubuntu/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages/fine_dust_sensor/__init__.py to __init__.cpython-38.pyc
+[20.229s] byte-compiling /home/ubuntu/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages/fine_dust_sensor/pollu_calculator.py to pollu_calculator.cpython-38.pyc
+[20.232s] byte-compiling /home/ubuntu/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages/fine_dust_sensor/pollu_pub.py to pollu_pub.cpython-38.pyc
+[20.236s] running install_data
+[20.239s] creating /home/ubuntu/greenai-ros/install/fine_dust_sensor/share/ament_index
+[20.247s] creating /home/ubuntu/greenai-ros/install/fine_dust_sensor/share/ament_index/resource_index
+[20.250s] creating /home/ubuntu/greenai-ros/install/fine_dust_sensor/share/ament_index/resource_index/packages
+[20.252s] copying resource/fine_dust_sensor -> /home/ubuntu/greenai-ros/install/fine_dust_sensor/share/ament_index/resource_index/packages
+[20.253s] copying package.xml -> /home/ubuntu/greenai-ros/install/fine_dust_sensor/share/fine_dust_sensor
+[20.265s] creating /home/ubuntu/greenai-ros/install/fine_dust_sensor/share/fine_dust_sensor/launch
+[20.268s] copying launch/dust_sensor.launch.py -> /home/ubuntu/greenai-ros/install/fine_dust_sensor/share/fine_dust_sensor/launch
+[20.269s] creating /home/ubuntu/greenai-ros/install/fine_dust_sensor/share/fine_dust_sensor/param
+[20.271s] running install_egg_info
+[20.274s] Copying ../../build/fine_dust_sensor/fine_dust_sensor.egg-info to /home/ubuntu/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages/fine_dust_sensor-0.0.0-py3.8.egg-info
+[20.304s] running install_scripts
+[20.514s] writing list of installed files to '/home/ubuntu/greenai-ros/build/fine_dust_sensor/install.log'
+[20.765s] Invoked command in '/home/ubuntu/greenai-ros/src/fine_dust_sensor' returned '0': PYTHONPATH=/home/ubuntu/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/hanium_interface/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/sensor_init/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/dht_sensor/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/gas_pub/lib/python3.8/site-packages:/home/ubuntu/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/fine_dust_sensor build --build-base /home/ubuntu/greenai-ros/build/fine_dust_sensor/build install --prefix /home/ubuntu/greenai-ros/install/fine_dust_sensor --record /home/ubuntu/greenai-ros/build/fine_dust_sensor/install.log --single-version-externally-managed
