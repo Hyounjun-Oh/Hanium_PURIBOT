@@ -83,11 +83,11 @@ def main(args=None):
             old_hum = new_hum
 
     except KeyboardInterrupt:
-        relay_control.get_logger().info('Keyboard Interrupt (SIGINT)')
-        relay_control.destroy_node()
+        get_DHTdatal.get_logger().info('Keyboard Interrupt (SIGINT)')
+        get_DHTdata.destroy_node()
         GPIO.cleanup()
     finally:
-        relay_control.destroy_node()
+        get_DHTdata.destroy_node()
         rclpy.shutdown()
         GPIO.cleanup()
         
