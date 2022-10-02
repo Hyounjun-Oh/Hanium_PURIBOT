@@ -71,6 +71,7 @@ def main(args=None):
     global ref_hum
     global old_hum
     global new_hum
+    global iter_on_off
     try:
         while 1:
             rclpy.spin_once(get_DHTdata)
@@ -96,7 +97,6 @@ def main(args=None):
             GPIO.setmode(GPIO.BCM)
             GPIO.setup(19, GPIO.OUT, initial=False)
             GPIO.setwarnings(False)
-
             GPIO.output(19, True)
             time.sleep(3)
             GPIO.output(19, False)
@@ -110,7 +110,6 @@ def main(args=None):
             GPIO.setmode(GPIO.BCM)
             GPIO.setup(19, GPIO.OUT, initial=False)
             GPIO.setwarnings(False)
-
             GPIO.output(19, True)
             time.sleep(3)
             GPIO.output(19, False)
