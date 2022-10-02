@@ -51,13 +51,13 @@ class FanPwmControl(Node):
         
     def pwm_mode(self,grade):
         if grade == 0:
-            self.pwm.ChangeDutyCycle(10)
-        elif grade == 1:
             self.pwm.ChangeDutyCycle(30)
+        elif grade == 1:
+            self.pwm.ChangeDutyCycle(50)
         elif grade == 2:
-            self.pwm.ChangeDutyCycle(60)
+            self.pwm.ChangeDutyCycle(80)
         else:
-            self.pwm.ChangeDutyCycle(90)
+            self.pwm.ChangeDutyCycle(100)
 
 def main(args=None):
     rclpy.init(args=args)
