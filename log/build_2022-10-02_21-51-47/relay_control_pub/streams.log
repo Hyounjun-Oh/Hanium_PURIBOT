@@ -1,0 +1,31 @@
+[1.008s] Invoking command in '/home/ohj/greenai-ros/src/relay_control_pub': PYTHONPATH=/home/ohj/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/hanium_interface/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/sensor_init/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/dht_sensor/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/gas_pub/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/dwb_msgs/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav_2d_msgs/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_simple_commander/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_msgs/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_common/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/relay_control_pub build --build-base /home/ohj/greenai-ros/build/relay_control_pub/build install --prefix /home/ohj/greenai-ros/install/relay_control_pub --record /home/ohj/greenai-ros/build/relay_control_pub/install.log --single-version-externally-managed
+[1.176s] running egg_info
+[1.177s] creating ../../build/relay_control_pub/relay_control_pub.egg-info
+[1.179s] writing manifest file '../../build/relay_control_pub/relay_control_pub.egg-info/SOURCES.txt'
+[1.180s] writing manifest file '../../build/relay_control_pub/relay_control_pub.egg-info/SOURCES.txt'
+[1.180s] running build
+[1.180s] running build_py
+[1.180s] creating /home/ohj/greenai-ros/build/relay_control_pub/build
+[1.180s] creating /home/ohj/greenai-ros/build/relay_control_pub/build/lib
+[1.180s] creating /home/ohj/greenai-ros/build/relay_control_pub/build/lib/relay_control_pub
+[1.180s] copying relay_control_pub/__init__.py -> /home/ohj/greenai-ros/build/relay_control_pub/build/lib/relay_control_pub
+[1.180s] copying relay_control_pub/relay_pub.py -> /home/ohj/greenai-ros/build/relay_control_pub/build/lib/relay_control_pub
+[1.180s] running install
+[1.180s] running install_lib
+[1.181s] creating /home/ohj/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages/relay_control_pub
+[1.181s] byte-compiling /home/ohj/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages/relay_control_pub/__init__.py to __init__.cpython-38.pyc
+[1.181s] byte-compiling /home/ohj/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages/relay_control_pub/relay_pub.py to relay_pub.cpython-38.pyc
+[1.182s] running install_data
+[1.182s] creating /home/ohj/greenai-ros/install/relay_control_pub/share/ament_index
+[1.182s] creating /home/ohj/greenai-ros/install/relay_control_pub/share/ament_index/resource_index
+[1.182s] creating /home/ohj/greenai-ros/install/relay_control_pub/share/ament_index/resource_index/packages
+[1.182s] copying resource/relay_control_pub -> /home/ohj/greenai-ros/install/relay_control_pub/share/ament_index/resource_index/packages
+[1.183s] copying package.xml -> /home/ohj/greenai-ros/install/relay_control_pub/share/relay_control_pub
+[1.183s] creating /home/ohj/greenai-ros/install/relay_control_pub/share/relay_control_pub/launch
+[1.183s] copying launch/relay_sensor.launch.py -> /home/ohj/greenai-ros/install/relay_control_pub/share/relay_control_pub/launch
+[1.183s] creating /home/ohj/greenai-ros/install/relay_control_pub/share/relay_control_pub/param
+[1.183s] running install_egg_info
+[1.184s] Copying ../../build/relay_control_pub/relay_control_pub.egg-info to /home/ohj/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages/relay_control_pub-0.0.0-py3.8.egg-info
+[1.184s] running install_scripts
+[1.196s] writing list of installed files to '/home/ohj/greenai-ros/build/relay_control_pub/install.log'
+[1.222s] Invoked command in '/home/ohj/greenai-ros/src/relay_control_pub' returned '0': PYTHONPATH=/home/ohj/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/hanium_interface/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/sensor_init/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/dht_sensor/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/gas_pub/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/dwb_msgs/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav_2d_msgs/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_simple_commander/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_msgs/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_common/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/relay_control_pub build --build-base /home/ohj/greenai-ros/build/relay_control_pub/build install --prefix /home/ohj/greenai-ros/install/relay_control_pub --record /home/ohj/greenai-ros/build/relay_control_pub/install.log --single-version-externally-managed

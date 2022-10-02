@@ -1,0 +1,33 @@
+[1.016s] Invoking command in '/home/ohj/greenai-ros/src/fine_dust_sensor': PYTHONPATH=/home/ohj/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/hanium_interface/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/sensor_init/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/dht_sensor/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/gas_pub/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/dwb_msgs/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav_2d_msgs/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_simple_commander/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_msgs/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_common/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/fine_dust_sensor build --build-base /home/ohj/greenai-ros/build/fine_dust_sensor/build install --prefix /home/ohj/greenai-ros/install/fine_dust_sensor --record /home/ohj/greenai-ros/build/fine_dust_sensor/install.log --single-version-externally-managed
+[1.184s] running egg_info
+[1.185s] creating ../../build/fine_dust_sensor/fine_dust_sensor.egg-info
+[1.186s] writing manifest file '../../build/fine_dust_sensor/fine_dust_sensor.egg-info/SOURCES.txt'
+[1.188s] writing manifest file '../../build/fine_dust_sensor/fine_dust_sensor.egg-info/SOURCES.txt'
+[1.188s] running build
+[1.188s] running build_py
+[1.188s] creating /home/ohj/greenai-ros/build/fine_dust_sensor/build
+[1.188s] creating /home/ohj/greenai-ros/build/fine_dust_sensor/build/lib
+[1.188s] creating /home/ohj/greenai-ros/build/fine_dust_sensor/build/lib/fine_dust_sensor
+[1.188s] copying fine_dust_sensor/__init__.py -> /home/ohj/greenai-ros/build/fine_dust_sensor/build/lib/fine_dust_sensor
+[1.188s] copying fine_dust_sensor/pollu_calculator.py -> /home/ohj/greenai-ros/build/fine_dust_sensor/build/lib/fine_dust_sensor
+[1.188s] copying fine_dust_sensor/pollu_pub.py -> /home/ohj/greenai-ros/build/fine_dust_sensor/build/lib/fine_dust_sensor
+[1.188s] running install
+[1.188s] running install_lib
+[1.189s] creating /home/ohj/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages/fine_dust_sensor
+[1.189s] byte-compiling /home/ohj/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages/fine_dust_sensor/__init__.py to __init__.cpython-38.pyc
+[1.189s] byte-compiling /home/ohj/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages/fine_dust_sensor/pollu_calculator.py to pollu_calculator.cpython-38.pyc
+[1.190s] byte-compiling /home/ohj/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages/fine_dust_sensor/pollu_pub.py to pollu_pub.cpython-38.pyc
+[1.190s] running install_data
+[1.190s] creating /home/ohj/greenai-ros/install/fine_dust_sensor/share/ament_index
+[1.191s] creating /home/ohj/greenai-ros/install/fine_dust_sensor/share/ament_index/resource_index
+[1.191s] creating /home/ohj/greenai-ros/install/fine_dust_sensor/share/ament_index/resource_index/packages
+[1.191s] copying resource/fine_dust_sensor -> /home/ohj/greenai-ros/install/fine_dust_sensor/share/ament_index/resource_index/packages
+[1.191s] copying package.xml -> /home/ohj/greenai-ros/install/fine_dust_sensor/share/fine_dust_sensor
+[1.191s] creating /home/ohj/greenai-ros/install/fine_dust_sensor/share/fine_dust_sensor/launch
+[1.191s] copying launch/dust_sensor.launch.py -> /home/ohj/greenai-ros/install/fine_dust_sensor/share/fine_dust_sensor/launch
+[1.191s] creating /home/ohj/greenai-ros/install/fine_dust_sensor/share/fine_dust_sensor/param
+[1.191s] running install_egg_info
+[1.192s] Copying ../../build/fine_dust_sensor/fine_dust_sensor.egg-info to /home/ohj/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages/fine_dust_sensor-0.0.0-py3.8.egg-info
+[1.192s] running install_scripts
+[1.204s] writing list of installed files to '/home/ohj/greenai-ros/build/fine_dust_sensor/install.log'
+[1.240s] Invoked command in '/home/ohj/greenai-ros/src/fine_dust_sensor' returned '0': PYTHONPATH=/home/ohj/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/hanium_interface/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/sensor_init/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/dht_sensor/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/gas_pub/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/dwb_msgs/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav_2d_msgs/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_simple_commander/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_msgs/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_common/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/fine_dust_sensor build --build-base /home/ohj/greenai-ros/build/fine_dust_sensor/build install --prefix /home/ohj/greenai-ros/install/fine_dust_sensor --record /home/ohj/greenai-ros/build/fine_dust_sensor/install.log --single-version-externally-managed

@@ -1,0 +1,32 @@
+[1.776s] Invoking command in '/home/ohj/greenai-ros/src/STELLA_REMOTE_PC_ROS2_N2/stella_teleop': PYTHONPATH=/home/ohj/greenai-ros/install/stella_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/stella_teleop build --build-base /home/ohj/greenai-ros/build/stella_teleop/build install --prefix /home/ohj/greenai-ros/install/stella_teleop --record /home/ohj/greenai-ros/build/stella_teleop/install.log --single-version-externally-managed
+[1.979s] running egg_info
+[1.979s] creating ../../../build/stella_teleop/stella_teleop.egg-info
+[1.980s] writing manifest file '../../../build/stella_teleop/stella_teleop.egg-info/SOURCES.txt'
+[1.981s] writing manifest file '../../../build/stella_teleop/stella_teleop.egg-info/SOURCES.txt'
+[1.981s] running build
+[1.982s] running build_py
+[1.982s] creating /home/ohj/greenai-ros/build/stella_teleop/build
+[1.982s] creating /home/ohj/greenai-ros/build/stella_teleop/build/lib
+[1.982s] creating /home/ohj/greenai-ros/build/stella_teleop/build/lib/stella_teleop
+[1.982s] copying stella_teleop/__init__.py -> /home/ohj/greenai-ros/build/stella_teleop/build/lib/stella_teleop
+[1.982s] creating /home/ohj/greenai-ros/build/stella_teleop/build/lib/stella_teleop/script
+[1.982s] copying stella_teleop/script/__init__.py -> /home/ohj/greenai-ros/build/stella_teleop/build/lib/stella_teleop/script
+[1.982s] copying stella_teleop/script/teleop_keyboard.py -> /home/ohj/greenai-ros/build/stella_teleop/build/lib/stella_teleop/script
+[1.982s] running install
+[1.982s] running install_lib
+[1.983s] creating /home/ohj/greenai-ros/install/stella_teleop/lib/python3.8/site-packages/stella_teleop
+[1.983s] creating /home/ohj/greenai-ros/install/stella_teleop/lib/python3.8/site-packages/stella_teleop/script
+[1.983s] byte-compiling /home/ohj/greenai-ros/install/stella_teleop/lib/python3.8/site-packages/stella_teleop/__init__.py to __init__.cpython-38.pyc
+[1.983s] byte-compiling /home/ohj/greenai-ros/install/stella_teleop/lib/python3.8/site-packages/stella_teleop/script/__init__.py to __init__.cpython-38.pyc
+[1.984s] byte-compiling /home/ohj/greenai-ros/install/stella_teleop/lib/python3.8/site-packages/stella_teleop/script/teleop_keyboard.py to teleop_keyboard.cpython-38.pyc
+[1.984s] running install_data
+[1.985s] creating /home/ohj/greenai-ros/install/stella_teleop/share/ament_index
+[1.985s] creating /home/ohj/greenai-ros/install/stella_teleop/share/ament_index/resource_index
+[1.985s] creating /home/ohj/greenai-ros/install/stella_teleop/share/ament_index/resource_index/packages
+[1.985s] copying resource/stella_teleop -> /home/ohj/greenai-ros/install/stella_teleop/share/ament_index/resource_index/packages
+[1.985s] copying package.xml -> /home/ohj/greenai-ros/install/stella_teleop/share/stella_teleop
+[1.985s] running install_egg_info
+[1.986s] Copying ../../../build/stella_teleop/stella_teleop.egg-info to /home/ohj/greenai-ros/install/stella_teleop/lib/python3.8/site-packages/stella_teleop-2.1.2-py3.8.egg-info
+[1.986s] running install_scripts
+[1.999s] writing list of installed files to '/home/ohj/greenai-ros/build/stella_teleop/install.log'
+[2.018s] Invoked command in '/home/ohj/greenai-ros/src/STELLA_REMOTE_PC_ROS2_N2/stella_teleop' returned '0': PYTHONPATH=/home/ohj/greenai-ros/install/stella_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/stella_teleop build --build-base /home/ohj/greenai-ros/build/stella_teleop/build install --prefix /home/ohj/greenai-ros/install/stella_teleop --record /home/ohj/greenai-ros/build/stella_teleop/install.log --single-version-externally-managed

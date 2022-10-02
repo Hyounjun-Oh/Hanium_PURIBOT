@@ -1,0 +1,14 @@
+[1.822s] Invoking command in '/home/ohj/greenai-ros/src/fan_pwm': PYTHONPATH=/home/ohj/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/fan_pwm build --build-base /home/ohj/greenai-ros/build/fan_pwm/build install --prefix /home/ohj/greenai-ros/install/fan_pwm --record /home/ohj/greenai-ros/build/fan_pwm/install.log --single-version-externally-managed
+[2.018s] running egg_info
+[2.022s] writing manifest file '../../build/fan_pwm/fan_pwm.egg-info/SOURCES.txt'
+[2.022s] running build
+[2.022s] running build_py
+[2.022s] running install
+[2.022s] running install_lib
+[2.023s] running install_data
+[2.023s] running install_egg_info
+[2.024s] removing '/home/ohj/greenai-ros/install/fan_pwm/lib/python3.8/site-packages/fan_pwm-0.0.0-py3.8.egg-info' (and everything under it)
+[2.024s] Copying ../../build/fan_pwm/fan_pwm.egg-info to /home/ohj/greenai-ros/install/fan_pwm/lib/python3.8/site-packages/fan_pwm-0.0.0-py3.8.egg-info
+[2.025s] running install_scripts
+[2.038s] writing list of installed files to '/home/ohj/greenai-ros/build/fan_pwm/install.log'
+[2.060s] Invoked command in '/home/ohj/greenai-ros/src/fan_pwm' returned '0': PYTHONPATH=/home/ohj/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/fan_pwm build --build-base /home/ohj/greenai-ros/build/fan_pwm/build install --prefix /home/ohj/greenai-ros/install/fan_pwm --record /home/ohj/greenai-ros/build/fan_pwm/install.log --single-version-externally-managed

@@ -1,0 +1,8 @@
+source;share/stella_cartographer/hook/cmake_prefix_path.ps1
+source;share/stella_cartographer/hook/cmake_prefix_path.dsv
+source;share/stella_cartographer/hook/cmake_prefix_path.sh
+source;share/stella_cartographer/local_setup.bash
+source;share/stella_cartographer/local_setup.dsv
+source;share/stella_cartographer/local_setup.ps1
+source;share/stella_cartographer/local_setup.sh
+source;share/stella_cartographer/local_setup.zsh

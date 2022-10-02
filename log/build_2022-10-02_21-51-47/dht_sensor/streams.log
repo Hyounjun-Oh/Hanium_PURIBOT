@@ -1,0 +1,31 @@
+[1.022s] Invoking command in '/home/ohj/greenai-ros/src/dht_sensor': PYTHONPATH=/home/ohj/greenai-ros/install/dht_sensor/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/hanium_interface/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/sensor_init/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/dht_sensor/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/gas_pub/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/dwb_msgs/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav_2d_msgs/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_simple_commander/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_msgs/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_common/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/dht_sensor build --build-base /home/ohj/greenai-ros/build/dht_sensor/build install --prefix /home/ohj/greenai-ros/install/dht_sensor --record /home/ohj/greenai-ros/build/dht_sensor/install.log --single-version-externally-managed
+[1.194s] running egg_info
+[1.194s] creating ../../build/dht_sensor/dht_sensor.egg-info
+[1.195s] writing manifest file '../../build/dht_sensor/dht_sensor.egg-info/SOURCES.txt'
+[1.196s] writing manifest file '../../build/dht_sensor/dht_sensor.egg-info/SOURCES.txt'
+[1.196s] running build
+[1.196s] running build_py
+[1.197s] creating /home/ohj/greenai-ros/build/dht_sensor/build
+[1.197s] creating /home/ohj/greenai-ros/build/dht_sensor/build/lib
+[1.197s] creating /home/ohj/greenai-ros/build/dht_sensor/build/lib/dht_sensor
+[1.197s] copying dht_sensor/__init__.py -> /home/ohj/greenai-ros/build/dht_sensor/build/lib/dht_sensor
+[1.197s] copying dht_sensor/dht_pub.py -> /home/ohj/greenai-ros/build/dht_sensor/build/lib/dht_sensor
+[1.197s] running install
+[1.197s] running install_lib
+[1.198s] creating /home/ohj/greenai-ros/install/dht_sensor/lib/python3.8/site-packages/dht_sensor
+[1.198s] byte-compiling /home/ohj/greenai-ros/install/dht_sensor/lib/python3.8/site-packages/dht_sensor/__init__.py to __init__.cpython-38.pyc
+[1.198s] byte-compiling /home/ohj/greenai-ros/install/dht_sensor/lib/python3.8/site-packages/dht_sensor/dht_pub.py to dht_pub.cpython-38.pyc
+[1.199s] running install_data
+[1.199s] creating /home/ohj/greenai-ros/install/dht_sensor/share/ament_index
+[1.199s] creating /home/ohj/greenai-ros/install/dht_sensor/share/ament_index/resource_index
+[1.199s] creating /home/ohj/greenai-ros/install/dht_sensor/share/ament_index/resource_index/packages
+[1.199s] copying resource/dht_sensor -> /home/ohj/greenai-ros/install/dht_sensor/share/ament_index/resource_index/packages
+[1.199s] copying package.xml -> /home/ohj/greenai-ros/install/dht_sensor/share/dht_sensor
+[1.199s] creating /home/ohj/greenai-ros/install/dht_sensor/share/dht_sensor/launch
+[1.199s] copying launch/dht_sensor.launch.py -> /home/ohj/greenai-ros/install/dht_sensor/share/dht_sensor/launch
+[1.199s] creating /home/ohj/greenai-ros/install/dht_sensor/share/dht_sensor/param
+[1.199s] running install_egg_info
+[1.200s] Copying ../../build/dht_sensor/dht_sensor.egg-info to /home/ohj/greenai-ros/install/dht_sensor/lib/python3.8/site-packages/dht_sensor-0.0.1-py3.8.egg-info
+[1.200s] running install_scripts
+[1.213s] writing list of installed files to '/home/ohj/greenai-ros/build/dht_sensor/install.log'
+[1.237s] Invoked command in '/home/ohj/greenai-ros/src/dht_sensor' returned '0': PYTHONPATH=/home/ohj/greenai-ros/install/dht_sensor/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/hanium_interface/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/sensor_init/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/dht_sensor/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/gas_pub/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/dwb_msgs/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav_2d_msgs/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_simple_commander/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_msgs/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_common/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/dht_sensor build --build-base /home/ohj/greenai-ros/build/dht_sensor/build install --prefix /home/ohj/greenai-ros/install/dht_sensor --record /home/ohj/greenai-ros/build/dht_sensor/install.log --single-version-externally-managed

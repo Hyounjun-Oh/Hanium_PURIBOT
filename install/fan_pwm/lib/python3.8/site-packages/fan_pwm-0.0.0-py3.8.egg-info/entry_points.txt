@@ -1,0 +1,3 @@
+[console_scripts]
+fan_pwm = fan_pwm.fan_pwm:main
+

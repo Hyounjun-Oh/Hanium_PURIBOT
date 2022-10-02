@@ -1,0 +1,31 @@
+[1.032s] Invoking command in '/home/ohj/greenai-ros/src/data_export': PYTHONPATH=/home/ohj/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/hanium_interface/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/sensor_init/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/dht_sensor/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/gas_pub/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/dwb_msgs/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav_2d_msgs/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_simple_commander/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_msgs/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_common/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/data_export build --build-base /home/ohj/greenai-ros/build/data_export/build install --prefix /home/ohj/greenai-ros/install/data_export --record /home/ohj/greenai-ros/build/data_export/install.log --single-version-externally-managed
+[1.201s] running egg_info
+[1.202s] creating ../../build/data_export/data_export.egg-info
+[1.203s] writing manifest file '../../build/data_export/data_export.egg-info/SOURCES.txt'
+[1.205s] writing manifest file '../../build/data_export/data_export.egg-info/SOURCES.txt'
+[1.205s] running build
+[1.205s] running build_py
+[1.205s] creating /home/ohj/greenai-ros/build/data_export/build
+[1.205s] creating /home/ohj/greenai-ros/build/data_export/build/lib
+[1.205s] creating /home/ohj/greenai-ros/build/data_export/build/lib/data_export
+[1.205s] copying data_export/__init__.py -> /home/ohj/greenai-ros/build/data_export/build/lib/data_export
+[1.205s] copying data_export/data_export_csv.py -> /home/ohj/greenai-ros/build/data_export/build/lib/data_export
+[1.205s] running install
+[1.205s] running install_lib
+[1.206s] creating /home/ohj/greenai-ros/install/data_export/lib/python3.8/site-packages/data_export
+[1.206s] byte-compiling /home/ohj/greenai-ros/install/data_export/lib/python3.8/site-packages/data_export/__init__.py to __init__.cpython-38.pyc
+[1.206s] byte-compiling /home/ohj/greenai-ros/install/data_export/lib/python3.8/site-packages/data_export/data_export_csv.py to data_export_csv.cpython-38.pyc
+[1.207s] running install_data
+[1.207s] creating /home/ohj/greenai-ros/install/data_export/share/ament_index
+[1.208s] creating /home/ohj/greenai-ros/install/data_export/share/ament_index/resource_index
+[1.208s] creating /home/ohj/greenai-ros/install/data_export/share/ament_index/resource_index/packages
+[1.208s] copying resource/data_export -> /home/ohj/greenai-ros/install/data_export/share/ament_index/resource_index/packages
+[1.208s] copying package.xml -> /home/ohj/greenai-ros/install/data_export/share/data_export
+[1.208s] creating /home/ohj/greenai-ros/install/data_export/share/data_export/launch
+[1.208s] copying launch/data_export.launch.py -> /home/ohj/greenai-ros/install/data_export/share/data_export/launch
+[1.208s] creating /home/ohj/greenai-ros/install/data_export/share/data_export/param
+[1.208s] running install_egg_info
+[1.208s] Copying ../../build/data_export/data_export.egg-info to /home/ohj/greenai-ros/install/data_export/lib/python3.8/site-packages/data_export-0.0.0-py3.8.egg-info
+[1.209s] running install_scripts
+[1.221s] writing list of installed files to '/home/ohj/greenai-ros/build/data_export/install.log'
+[1.238s] Invoked command in '/home/ohj/greenai-ros/src/data_export' returned '0': PYTHONPATH=/home/ohj/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/hanium_interface/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/sensor_init/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/relay_control_pub/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/fine_dust_sensor/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/dht_sensor/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/data_export/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/gas_pub/lib/python3.8/site-packages:/home/ohj/greenai-ros/install/fan_pwm/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/dwb_msgs/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav_2d_msgs/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_simple_commander/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_msgs/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/ohj/nav2_ws/install/nav2_common/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/data_export build --build-base /home/ohj/greenai-ros/build/data_export/build install --prefix /home/ohj/greenai-ros/install/data_export --record /home/ohj/greenai-ros/build/data_export/install.log --single-version-externally-managed
