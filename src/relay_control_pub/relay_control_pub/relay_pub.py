@@ -54,7 +54,6 @@ class RelayControl(Node):
     
 def main(args=None):
     rclpy.init(args=args)
-    relay_control = RelayControl()
     get_DHTdata = GetDHTdata()
     GPIO.setmode(GPIO.BCM)
     GPIO.setup(19, GPIO.OUT, initial=GPIO.LOW)
@@ -78,7 +77,7 @@ def main(args=None):
                 ref_hum = 70.0
             
             if (old_hum >= ref_hum) is not (new_hum >= ref_hum):
-                 relay_control(new_hum, ref_hum)
+                 RelayControl(new_hum, ref_hum)
             else:
                  pass
             old_hum = new_hum
