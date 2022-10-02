@@ -19,13 +19,6 @@ class PolluCalculator(Node):
             depth=10,
             durability=QoSDurabilityPolicy.VOLATILE)
         
-        self.subscribe_gas = self.create_subscription(
-            Int16,
-            'gas_sensor_pub',
-            self.get_gas,
-            QOS_RKL10V
-        )
-
         self.subscribe_pollu = self.create_subscription(
             Pollu,
             'pollu_pub',
@@ -43,17 +36,13 @@ class PolluCalculator(Node):
         
         self.pm10 = msg.pm10
         self.pm2_5 = msg.pm2_5
-        self.get_logger().info('\npm10 값은 : {0}\npm2.5 값은 : {1}\n가스탐지 : {2}'.format(self.pm10, self.pm2_5, self.gas))
+        self.get_logger().info('\npm10 값은 : {0}\npm2.5 값은 : {1}'.format(self.pm10, self.pm2_5))
         
         self.pollu_grade_1(self.pm10, self.pm2_5)
         msg = Int16()
         msg.data = self.pollu_grade
         self.publish_grade.publish(msg)
         self.get_logger().info('\n오염도 값은 : {0}'.format(self.pollu_grade))
-
-    def get_gas(self,msg):
-        self.gas = msg.data
-        return self.gas
         
         
     def pollu_grade_1(self, result_pm10, result_pm2_5):
@@ -120,11 +109,9 @@ def main(args=None):
     try:
         rclpy.spin(pollu)
     except KeyboardInterrupt:
-        GPIO.cleanup()
         pollu.get_logger().info('Keyboard Interrupt (SIGINT)')
     finally: 
         pollu.destroy_node()
-        GPIO.cleanup()
         rclpy.shutdown() 
 
 if __name__ == '__main__':
