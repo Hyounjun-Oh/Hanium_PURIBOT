@@ -1,7 +1,0 @@
-{
-  "package_name": "hanium_interface",
-  "non_idl_tuples": [
-    "/home/ubuntu/greenai-ros/src/hanium_interface:msg/GetDht.msg",
-    "/home/ubuntu/greenai-ros/src/hanium_interface:msg/Pollu.msg"
-  ]
-}
