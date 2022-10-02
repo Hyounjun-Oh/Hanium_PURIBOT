@@ -40,16 +40,19 @@ class RelayControl(Node):
         if self.command == 1: 
             self.get_logger().info("가습을 시작합니다.")
             GPIO.setmode(GPIO.BCM)
-            GPIO.setup(19, GPIO.OUT, initial=GPIO.LOW)
+            GPIO.setup(19, GPIO.OUT, initial=GPIO.HIGH)
             GPIO.output(19, GPIO.HIGH)
+            GPIO.output(19, GPIO.LOW)
             time.sleep(3)
+            GPIO.output(19, GPIO.HIGH)
 
             
         else:
             self.get_logger().info("가습을 중단합니다.")
+            GPIO.output(19, GPIO.HIGH)
             GPIO.output(19, GPIO.LOW)
             time.sleep(3)
-            GPIO.cleanup()
+            GPIO.output(19, GPIO.HIGH)
 
     def commander(self, hum):
         if 50.0 <= hum:
