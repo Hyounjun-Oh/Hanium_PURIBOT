@@ -12,6 +12,7 @@ temp = 0.0
 ref_hum = 0.0
 old_hum = 0.0
 new_hum = 0.0
+iter_on_off = 0
 
 class GetDHTdata(Node):
     
@@ -37,31 +38,31 @@ class GetDHTdata(Node):
         new_hum = msg.hum
         temp = msg.temp
 
-class RelayControl(Node):
+class RelayControl():
     global new_hum
     global ref_hum
+    global iter_on_off
+    
     def __init__(self,new_hum,ref_hum):
 
         if new_hum >= ref_hum:
             GPIO.setmode(GPIO.BCM)
             GPIO.setup(19, GPIO.OUT, initial=False)
             GPIO.setwarnings(False)
-
-            self.get_logger().info('가습기 가동 중지')
             GPIO.output(19, True)
             time.sleep(3)
             GPIO.output(19, False)
             GPIO.cleanup()
+            iter_on_off = iter_on_off + 1
         else:
             GPIO.setmode(GPIO.BCM)
             GPIO.setup(19, GPIO.OUT, initial=False)
             GPIO.setwarnings(False)
-
-            self.get_logger().info('가습기 작동을 시작합니다.')
             GPIO.output(19, True)
             time.sleep(3)
             GPIO.output(19, False)
             GPIO.cleanup()
+            iter_on_off = iter_on_off + 1
 
 def main(args=None):
     rclpy.init(args=args)
@@ -91,10 +92,30 @@ def main(args=None):
     except KeyboardInterrupt:
         get_DHTdata.get_logger().info('Keyboard Interrupt (SIGINT)')
         get_DHTdata.destroy_node()
+        if iter_on_off / 2 == 1:
+            GPIO.setmode(GPIO.BCM)
+            GPIO.setup(19, GPIO.OUT, initial=False)
+            GPIO.setwarnings(False)
+
+            GPIO.output(19, True)
+            time.sleep(3)
+            GPIO.output(19, False)
+        else
+            pass
         GPIO.cleanup()
     finally:
         get_DHTdata.destroy_node()
         rclpy.shutdown()
+        if iter_on_off / 2 == 1:
+            GPIO.setmode(GPIO.BCM)
+            GPIO.setup(19, GPIO.OUT, initial=False)
+            GPIO.setwarnings(False)
+
+            GPIO.output(19, True)
+            time.sleep(3)
+            GPIO.output(19, False)
+        else
+            pass
         GPIO.cleanup()
         
 
