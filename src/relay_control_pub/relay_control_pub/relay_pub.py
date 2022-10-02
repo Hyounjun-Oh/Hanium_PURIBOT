@@ -6,78 +6,92 @@ from rclpy.qos import QoSDurabilityPolicy
 from rclpy.qos import QoSHistoryPolicy
 from rclpy.qos import QoSProfile
 from rclpy.qos import QoSReliabilityPolicy
-from rclpy.callback_groups import ReentrantCallbackGroup
 from hanium_interface.msg import GetDht
 
-class RelayControl(Node):
-
+class GetDHTdata(Node):
+    global new_hum
+    global temp
+    
     def __init__(self):
-        super().__init__('relay_operation')
-        self.hum = 0.0
-        GPIO.setmode(GPIO.BCM)
-        GPIO.setup(19, GPIO.OUT, initial=GPIO.LOW)
-        GPIO.setwarnings(False)
+        super().__init__('get_DHTdata')
 
+        
         QOS_RKL10V = QoSProfile(
             reliability=QoSReliabilityPolicy.RELIABLE,
             history=QoSHistoryPolicy.KEEP_LAST,
             depth=10,
             durability=QoSDurabilityPolicy.VOLATILE)
      
-        self.subscribe_hum = self.create_subscription(
+        self.subscribe_dht = self.create_subscription(
              GetDht,
              'dht_sensor',
-             self.get_hum_value,
+             self.get_dht_data,
              QOS_RKL10V
              )
-
-    def get_hum_value(self, msg):
         
-        self.hum = msg.hum
-        self.command = self.commander(self.hum)
-        self.get_logger().info('습도 값은 : {0}, 릴레이 조작값은 : {1}'.format(self.hum,self.command))
+        def get_dht_data(self, msg):
+             new_hum = msg.hum
+             temp = msg.temp
+             
+class RelayControl(Node):
+    global new_hum
+    global ref_hum
+    
+    def __init__(self,new_hum,ref_hum):
+
         
-        if self.command == 1: 
-            self.get_logger().info("가습을 시작합니다.")
-            GPIO.setmode(GPIO.BCM)
-            GPIO.setup(19, GPIO.OUT, initial=GPIO.HIGH)
+        if new_hum >= ref_hum:
+            self.get_logger.info('가습기 작동을 중단합니다.')
             GPIO.output(19, GPIO.HIGH)
-            GPIO.output(19, GPIO.LOW)
             time.sleep(3)
-            GPIO.output(19, GPIO.HIGH)
-
-            
+            GPIO.output(19, GPIO.LOW)         
         else:
-            self.get_logger().info("가습을 중단합니다.")
+            self.get_logger.info('가습기 작동을 시작합니다.')
             GPIO.output(19, GPIO.HIGH)
-            GPIO.output(19, GPIO.LOW)
             time.sleep(3)
-            GPIO.output(19, GPIO.HIGH)
-
-    def commander(self, hum):
-        if 50.0 <= hum:
-            self.command = 0
-        else:
-            self.command = 1
-        return self.command
+            GPIO.output(19, GPIO.LOW)
          
     
 def main(args=None):
     rclpy.init(args=args)
-
+    relay_control = RelayControl()
+    get_DHTdata = GetDHTdata()
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(19, GPIO.OUT, initial=GPIO.LOW)
+    GPIO.setwarnings(False)
+    
+    temp = 0.0
+    ref_hum = 0.0
+    old_hum = 0.0
+    new_hum = 0.0
+    
     try:
-        relay_control = RelayControl()
-        try:
-            rclpy.spin(relay_control)
-        except KeyboardInterrupt:
-            relay_control.get_logger().info('Keyboard Interrupt (SIGINT)')
-            GPIO.cleanup()
-        finally:
-            relay_control.destroy_node()
+        while 1:
+            rclpy.spin_once(get_DHTdata)
+            if temp >= 24.0:
+                ref_hum = 40.0
+            elif temp >= 21.0:
+                ref_hum = 50.0
+            elif temp >= 18.0:
+                ref_hum = 60.0
+            else:
+                ref_hum = 70.0
+            
+            if (old_hum >= ref_hum) is not (new_hum >= ref_hum):
+                 relay_control(new_hum, ref_hum)
+            else:
+                 pass
+            old_hum = new_hum
+
+    except KeyboardInterrupt:
+        relay_control.get_logger().info('Keyboard Interrupt (SIGINT)')
+        relay_control.destroy_node()
+        GPIO.cleanup()
     finally:
+        relay_control.destroy_node()
         rclpy.shutdown()
         GPIO.cleanup()
-
+        
 
 if __name__ == '__main__':
     main()
