@@ -45,31 +45,35 @@ class RelayControl():
     
     def __init__(self,new_hum,ref_hum):
         global iter_on_off
-        if new_hum >= ref_hum:
+        if new_hum < ref_hum:
             GPIO.setmode(GPIO.BCM)
             GPIO.setup(19, GPIO.OUT, initial=False)
             GPIO.setwarnings(False)
             GPIO.output(19, True)
-            time.sleep(1)
+            time.sleep(0.2)
             GPIO.output(19, False)
             GPIO.cleanup()
             iter_on_off = iter_on_off + 1
         else:
-            GPIO.setmode(GPIO.BCM)
-            GPIO.setup(19, GPIO.OUT, initial=False)
-            GPIO.setwarnings(False)
-            GPIO.output(19, True)
-            time.sleep(1)
-            GPIO.output(19, False)
-            GPIO.cleanup()
-            GPIO.setmode(GPIO.BCM)
-            GPIO.setup(19, GPIO.OUT, initial=False)
-            GPIO.setwarnings(False)
-            GPIO.output(19, True)
-            time.sleep(1)
-            GPIO.output(19, False)
-            GPIO.cleanup()
-            iter_on_off = iter_on_off + 1
+            if iter_on_off == 0:
+                pass
+            else:
+                GPIO.setmode(GPIO.BCM)
+                GPIO.setup(19, GPIO.OUT, initial=False)
+                GPIO.setwarnings(False)
+                GPIO.output(19, True)
+                time.sleep(0.2)
+                GPIO.output(19, False)
+                GPIO.cleanup()
+                time.sleep(0.2)
+                GPIO.setmode(GPIO.BCM)
+                GPIO.setup(19, GPIO.OUT, initial=False)
+                GPIO.setwarnings(False)
+                GPIO.output(19, True)
+                time.sleep(0.2)
+                GPIO.output(19, False)
+                GPIO.cleanup()
+                iter_on_off = iter_on_off + 1
 
 def main(args=None):
     rclpy.init(args=args)
@@ -98,32 +102,28 @@ def main(args=None):
 
 
     except KeyboardInterrupt:
-        if iter_on_off / 2 == 1:
+        if iter_on_off % 2 != 0:
             GPIO.setmode(GPIO.BCM)
             GPIO.setup(19, GPIO.OUT, initial=False)
             GPIO.setwarnings(False)
             GPIO.output(19, True)
-            time.sleep(3)
+            time.sleep(0.2)
             GPIO.output(19, False)
+            GPIO.cleanup()
+            time.sleep(0.2)
+            GPIO.setmode(GPIO.BCM)
+            GPIO.setup(19, GPIO.OUT, initial=False)
+            GPIO.setwarnings(False)
+            GPIO.output(19, True)
+            time.sleep(0.2)
+            GPIO.output(19, False)
+            GPIO.cleanup()
         else:
-            pass
-        GPIO.cleanup()
-        get_DHTdata.get_logger().info('Keyboard Interrupt (SIGINT)')
-        get_DHTdata.destroy_node()
-    finally:
-        if iter_on_off / 2 == 1:
-            GPIO.setmode(GPIO.BCM)
-            GPIO.setup(19, GPIO.OUT, initial=False)
-            GPIO.setwarnings(False)
-            GPIO.output(19, True)
-            time.sleep(3)
-            GPIO.output(19, False)
+            GPIO.cleanup()
+            get_DHTdata.get_logger().info('Keyboard Interrupt (SIGINT)')
             get_DHTdata.destroy_node()
+    finally:
             rclpy.shutdown()
-        else:
-            pass
-        GPIO.cleanup()
-        
 
 if __name__ == '__main__':
     main()
