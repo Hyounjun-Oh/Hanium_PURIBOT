@@ -41,10 +41,10 @@ class GetDHTdata(Node):
 class RelayControl():
     global new_hum
     global ref_hum
-    global iter_on_off
+
     
     def __init__(self,new_hum,ref_hum):
-
+        global iter_on_off
         if new_hum >= ref_hum:
             GPIO.setmode(GPIO.BCM)
             GPIO.setup(19, GPIO.OUT, initial=False)
