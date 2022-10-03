@@ -1,6 +1,0 @@
-source;share/dht_sensor/hook/pythonpath.ps1
-source;share/dht_sensor/hook/pythonpath.dsv
-source;share/dht_sensor/hook/pythonpath.sh
-source;share/dht_sensor/hook/ament_prefix_path.ps1
-source;share/dht_sensor/hook/ament_prefix_path.dsv
-source;share/dht_sensor/hook/ament_prefix_path.sh

@@ -1,0 +1,7 @@
+image: /home/ohj/greenai-ros/src/STELLA_REMOTE_PC_ROS2_N2/stella_navigation2/map/map.pgm
+mode: trinary
+resolution: 0.05
+origin: [-193, -109, 0]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.25
