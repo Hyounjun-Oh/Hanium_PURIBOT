@@ -31,7 +31,7 @@ def generate_launch_description():
         default=os.path.join(
             get_package_share_directory('stella_navigation2'),
             'map',
-            'lab_map.yaml'))
+            'hanium_map.yaml'))
 
     param_dir = LaunchConfiguration(
         'params_file',
@@ -45,7 +45,7 @@ def generate_launch_description():
     rviz_config_dir = os.path.join(
         get_package_share_directory('nav2_bringup'),
         'rviz',
-        'nav2_default_view.rviz')
+        'nav2_hanium_view.rviz')
 
     return LaunchDescription([
         DeclareLaunchArgument(

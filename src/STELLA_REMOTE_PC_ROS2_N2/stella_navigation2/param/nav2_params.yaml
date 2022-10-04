@@ -267,7 +267,7 @@ global_costmap:
 map_server:
   ros__parameters:
     use_sim_time: False
-    yaml_filename: "lab_map.yaml"
+    yaml_filename: "hanium_map.yaml"
 
 map_saver:
   ros__parameters:

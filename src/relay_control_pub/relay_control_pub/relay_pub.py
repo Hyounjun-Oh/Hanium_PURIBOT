@@ -45,7 +45,9 @@ class RelayControl():
     
     def __init__(self,new_hum,ref_hum):
         global iter_on_off
+        global temp
         if new_hum < ref_hum:
+            print('/n현재 온도: {0}/n적정 습도: {1}/n 현재 습도: {2}/n가습을 시작합니다.'.format(temp,ref_hum,new_hum))
             GPIO.setmode(GPIO.BCM)
             GPIO.setup(19, GPIO.OUT, initial=False)
             GPIO.setwarnings(False)
@@ -58,6 +60,7 @@ class RelayControl():
             if iter_on_off == 0:
                 pass
             else:
+                print('/n현재 온도: {0}/n적정 습도: {1}/n 현재 습도: {2}/n가습을 종료합니다.'.format(temp,ref_hum,new_hum))
                 GPIO.setmode(GPIO.BCM)
                 GPIO.setup(19, GPIO.OUT, initial=False)
                 GPIO.setwarnings(False)
