@@ -1,0 +1,3 @@
+[console_scripts]
+data_export_csv = data_export.data_export_csv:main
+
