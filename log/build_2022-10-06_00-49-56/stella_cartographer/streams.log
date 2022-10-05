@@ -1,0 +1,49 @@
+[0.641s] Invoking command in '/home/ohj/greenai-ros/build/stella_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/nav2_ws/install/nav2_simple_commander:/home/ohj/nav2_ws/install/nav2_gazebo_spawner:/home/ohj/greenai-ros/install/stella_teleop:/home/ohj/greenai-ros/install/sensor_init:/home/ohj/greenai-ros/install/relay_control_pub:/home/ohj/greenai-ros/install/fine_dust_sensor:/home/ohj/greenai-ros/install/dht_sensor:/home/ohj/greenai-ros/install/data_export:/home/ohj/greenai-ros/install/gas_pub:/home/ohj/greenai-ros/install/fan_pwm:/opt/ros/galactic /usr/bin/cmake /home/ohj/greenai-ros/src/STELLA_REMOTE_PC_ROS2_N2/stella_cartographer -DCMAKE_INSTALL_PREFIX=/home/ohj/greenai-ros/install/stella_cartographer
+[0.681s] -- The C compiler identification is GNU 9.4.0
+[0.723s] -- The CXX compiler identification is GNU 9.4.0
+[0.727s] -- Check for working C compiler: /usr/bin/cc
+[0.780s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.781s] -- Detecting C compiler ABI info
+[0.833s] -- Detecting C compiler ABI info - done
+[0.840s] -- Detecting C compile features
+[0.840s] -- Detecting C compile features - done
+[0.842s] -- Check for working CXX compiler: /usr/bin/c++
+[0.906s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.906s] -- Detecting CXX compiler ABI info
+[0.977s] -- Detecting CXX compiler ABI info - done
+[0.991s] -- Detecting CXX compile features
+[0.991s] -- Detecting CXX compile features - done
+[0.996s] -- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+[1.025s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.025s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.162s] -- Configuring done
+[1.163s] -- Generating done
+[1.163s] -- Build files have been written to: /home/ohj/greenai-ros/build/stella_cartographer
+[1.167s] Invoked command in '/home/ohj/greenai-ros/build/stella_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/nav2_ws/install/nav2_simple_commander:/home/ohj/nav2_ws/install/nav2_gazebo_spawner:/home/ohj/greenai-ros/install/stella_teleop:/home/ohj/greenai-ros/install/sensor_init:/home/ohj/greenai-ros/install/relay_control_pub:/home/ohj/greenai-ros/install/fine_dust_sensor:/home/ohj/greenai-ros/install/dht_sensor:/home/ohj/greenai-ros/install/data_export:/home/ohj/greenai-ros/install/gas_pub:/home/ohj/greenai-ros/install/fan_pwm:/opt/ros/galactic /usr/bin/cmake /home/ohj/greenai-ros/src/STELLA_REMOTE_PC_ROS2_N2/stella_cartographer -DCMAKE_INSTALL_PREFIX=/home/ohj/greenai-ros/install/stella_cartographer
+[1.169s] Invoking command in '/home/ohj/greenai-ros/build/stella_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/nav2_ws/install/nav2_simple_commander:/home/ohj/nav2_ws/install/nav2_gazebo_spawner:/home/ohj/greenai-ros/install/stella_teleop:/home/ohj/greenai-ros/install/sensor_init:/home/ohj/greenai-ros/install/relay_control_pub:/home/ohj/greenai-ros/install/fine_dust_sensor:/home/ohj/greenai-ros/install/dht_sensor:/home/ohj/greenai-ros/install/data_export:/home/ohj/greenai-ros/install/gas_pub:/home/ohj/greenai-ros/install/fan_pwm:/opt/ros/galactic /usr/bin/cmake --build /home/ohj/greenai-ros/build/stella_cartographer -- -j16 -l16
+[1.207s] Invoked command in '/home/ohj/greenai-ros/build/stella_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/nav2_ws/install/nav2_simple_commander:/home/ohj/nav2_ws/install/nav2_gazebo_spawner:/home/ohj/greenai-ros/install/stella_teleop:/home/ohj/greenai-ros/install/sensor_init:/home/ohj/greenai-ros/install/relay_control_pub:/home/ohj/greenai-ros/install/fine_dust_sensor:/home/ohj/greenai-ros/install/dht_sensor:/home/ohj/greenai-ros/install/data_export:/home/ohj/greenai-ros/install/gas_pub:/home/ohj/greenai-ros/install/fan_pwm:/opt/ros/galactic /usr/bin/cmake --build /home/ohj/greenai-ros/build/stella_cartographer -- -j16 -l16
+[1.242s] Invoking command in '/home/ohj/greenai-ros/build/stella_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/nav2_ws/install/nav2_simple_commander:/home/ohj/nav2_ws/install/nav2_gazebo_spawner:/home/ohj/greenai-ros/install/stella_teleop:/home/ohj/greenai-ros/install/sensor_init:/home/ohj/greenai-ros/install/relay_control_pub:/home/ohj/greenai-ros/install/fine_dust_sensor:/home/ohj/greenai-ros/install/dht_sensor:/home/ohj/greenai-ros/install/data_export:/home/ohj/greenai-ros/install/gas_pub:/home/ohj/greenai-ros/install/fan_pwm:/opt/ros/galactic /usr/bin/cmake --install /home/ohj/greenai-ros/build/stella_cartographer
+[1.252s] -- Install configuration: ""
+[1.253s] -- Installing: /home/ohj/greenai-ros/install/stella_cartographer/share/stella_cartographer/config
+[1.254s] -- Installing: /home/ohj/greenai-ros/install/stella_cartographer/share/stella_cartographer/config/stella.lua
+[1.254s] -- Installing: /home/ohj/greenai-ros/install/stella_cartographer/share/stella_cartographer/launch
+[1.254s] -- Installing: /home/ohj/greenai-ros/install/stella_cartographer/share/stella_cartographer/launch/cartographer.launch.py
+[1.255s] -- Installing: /home/ohj/greenai-ros/install/stella_cartographer/share/stella_cartographer/launch/occupancy_grid.launch.py
+[1.255s] -- Installing: /home/ohj/greenai-ros/install/stella_cartographer/share/stella_cartographer/rviz
+[1.255s] -- Installing: /home/ohj/greenai-ros/install/stella_cartographer/share/stella_cartographer/rviz/stella_cartographer.rviz
+[1.255s] -- Installing: /home/ohj/greenai-ros/install/stella_cartographer/share/ament_index/resource_index/package_run_dependencies/stella_cartographer
+[1.256s] -- Installing: /home/ohj/greenai-ros/install/stella_cartographer/share/ament_index/resource_index/parent_prefix_path/stella_cartographer
+[1.256s] -- Installing: /home/ohj/greenai-ros/install/stella_cartographer/share/stella_cartographer/environment/ament_prefix_path.sh
+[1.256s] -- Installing: /home/ohj/greenai-ros/install/stella_cartographer/share/stella_cartographer/environment/ament_prefix_path.dsv
+[1.256s] -- Installing: /home/ohj/greenai-ros/install/stella_cartographer/share/stella_cartographer/environment/path.sh
+[1.256s] -- Installing: /home/ohj/greenai-ros/install/stella_cartographer/share/stella_cartographer/environment/path.dsv
+[1.257s] -- Installing: /home/ohj/greenai-ros/install/stella_cartographer/share/stella_cartographer/local_setup.bash
+[1.257s] -- Installing: /home/ohj/greenai-ros/install/stella_cartographer/share/stella_cartographer/local_setup.sh
+[1.257s] -- Installing: /home/ohj/greenai-ros/install/stella_cartographer/share/stella_cartographer/local_setup.zsh
+[1.257s] -- Installing: /home/ohj/greenai-ros/install/stella_cartographer/share/stella_cartographer/local_setup.dsv
+[1.257s] -- Installing: /home/ohj/greenai-ros/install/stella_cartographer/share/stella_cartographer/package.dsv
+[1.257s] -- Installing: /home/ohj/greenai-ros/install/stella_cartographer/share/ament_index/resource_index/packages/stella_cartographer
+[1.257s] -- Installing: /home/ohj/greenai-ros/install/stella_cartographer/share/stella_cartographer/cmake/stella_cartographerConfig.cmake
+[1.257s] -- Installing: /home/ohj/greenai-ros/install/stella_cartographer/share/stella_cartographer/cmake/stella_cartographerConfig-version.cmake
+[1.257s] -- Installing: /home/ohj/greenai-ros/install/stella_cartographer/share/stella_cartographer/package.xml
+[1.261s] Invoked command in '/home/ohj/greenai-ros/build/stella_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/nav2_ws/install/nav2_simple_commander:/home/ohj/nav2_ws/install/nav2_gazebo_spawner:/home/ohj/greenai-ros/install/stella_teleop:/home/ohj/greenai-ros/install/sensor_init:/home/ohj/greenai-ros/install/relay_control_pub:/home/ohj/greenai-ros/install/fine_dust_sensor:/home/ohj/greenai-ros/install/dht_sensor:/home/ohj/greenai-ros/install/data_export:/home/ohj/greenai-ros/install/gas_pub:/home/ohj/greenai-ros/install/fan_pwm:/opt/ros/galactic /usr/bin/cmake --install /home/ohj/greenai-ros/build/stella_cartographer

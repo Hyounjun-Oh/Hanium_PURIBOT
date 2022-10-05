@@ -1,0 +1,31 @@
+[1.273s] Invoking command in '/home/ohj/greenai-ros/src/gas_pub': PYTHONPATH=/home/ohj/greenai-ros/install/gas_pub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/gas_pub build --build-base /home/ohj/greenai-ros/build/gas_pub/build install --prefix /home/ohj/greenai-ros/install/gas_pub --record /home/ohj/greenai-ros/build/gas_pub/install.log --single-version-externally-managed
+[1.463s] running egg_info
+[1.464s] creating ../../build/gas_pub/gas_pub.egg-info
+[1.465s] writing manifest file '../../build/gas_pub/gas_pub.egg-info/SOURCES.txt'
+[1.467s] writing manifest file '../../build/gas_pub/gas_pub.egg-info/SOURCES.txt'
+[1.467s] running build
+[1.467s] running build_py
+[1.467s] creating /home/ohj/greenai-ros/build/gas_pub/build
+[1.467s] creating /home/ohj/greenai-ros/build/gas_pub/build/lib
+[1.467s] creating /home/ohj/greenai-ros/build/gas_pub/build/lib/gas_pub
+[1.467s] copying gas_pub/__init__.py -> /home/ohj/greenai-ros/build/gas_pub/build/lib/gas_pub
+[1.467s] copying gas_pub/gas_pub.py -> /home/ohj/greenai-ros/build/gas_pub/build/lib/gas_pub
+[1.467s] running install
+[1.468s] running install_lib
+[1.468s] creating /home/ohj/greenai-ros/install/gas_pub/lib/python3.8/site-packages/gas_pub
+[1.468s] byte-compiling /home/ohj/greenai-ros/install/gas_pub/lib/python3.8/site-packages/gas_pub/__init__.py to __init__.cpython-38.pyc
+[1.469s] byte-compiling /home/ohj/greenai-ros/install/gas_pub/lib/python3.8/site-packages/gas_pub/gas_pub.py to gas_pub.cpython-38.pyc
+[1.469s] running install_data
+[1.469s] creating /home/ohj/greenai-ros/install/gas_pub/share/ament_index
+[1.469s] creating /home/ohj/greenai-ros/install/gas_pub/share/ament_index/resource_index
+[1.470s] creating /home/ohj/greenai-ros/install/gas_pub/share/ament_index/resource_index/packages
+[1.470s] copying resource/gas_pub -> /home/ohj/greenai-ros/install/gas_pub/share/ament_index/resource_index/packages
+[1.470s] copying package.xml -> /home/ohj/greenai-ros/install/gas_pub/share/gas_pub
+[1.470s] creating /home/ohj/greenai-ros/install/gas_pub/share/gas_pub/launch
+[1.470s] copying launch/gas_sensor.launch.py -> /home/ohj/greenai-ros/install/gas_pub/share/gas_pub/launch
+[1.470s] creating /home/ohj/greenai-ros/install/gas_pub/share/gas_pub/param
+[1.470s] running install_egg_info
+[1.471s] Copying ../../build/gas_pub/gas_pub.egg-info to /home/ohj/greenai-ros/install/gas_pub/lib/python3.8/site-packages/gas_pub-0.0.0-py3.8.egg-info
+[1.471s] running install_scripts
+[1.484s] writing list of installed files to '/home/ohj/greenai-ros/build/gas_pub/install.log'
+[1.522s] Invoked command in '/home/ohj/greenai-ros/src/gas_pub' returned '0': PYTHONPATH=/home/ohj/greenai-ros/install/gas_pub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/gas_pub build --build-base /home/ohj/greenai-ros/build/gas_pub/build install --prefix /home/ohj/greenai-ros/install/gas_pub --record /home/ohj/greenai-ros/build/gas_pub/install.log --single-version-externally-managed
