@@ -62,7 +62,7 @@
     <collision>
       <origin xyz="0.0 0.0 0.082" rpy="0.0 0.0 0.0"/>
       <geometry>
-        <box size="0.240 0.250 0.610"/>
+        <box size="0.17 0.207 0.164"/>
       </geometry>
     </collision>
     
@@ -78,7 +78,7 @@
   <joint name="imu_joint" type="fixed">
     <parent link="base_link"/>
     <child link="imu_link"/>
-    <origin xyz="-0.06 0.0 0.610" rpy="0.0 0.0 0.0"/>
+    <origin xyz="-0.06 0.0 0.063" rpy="0.0 0.0 0.0"/>
   </joint>
 
   <link name="imu_link"/>
@@ -86,7 +86,7 @@
   <joint name="scan_joint" type="fixed">
     <parent link="base_link"/>
     <child link="base_scan"/>
-    <origin xyz="0.06 0.0 0.710" rpy="0.0 0.0 0.0"/>
+    <origin xyz="0.06 0.0 0.159" rpy="0.0 0.0 0.0"/>
   </joint>
 
   <link name="base_scan" />

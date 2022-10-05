@@ -1,9 +1,0 @@
-/home/ohj/greenai-ros/build/stella_description/CMakeFiles/install/strip.dir
-/home/ohj/greenai-ros/build/stella_description/CMakeFiles/install/local.dir
-/home/ohj/greenai-ros/build/stella_description/CMakeFiles/edit_cache.dir
-/home/ohj/greenai-ros/build/stella_description/CMakeFiles/test.dir
-/home/ohj/greenai-ros/build/stella_description/CMakeFiles/install.dir
-/home/ohj/greenai-ros/build/stella_description/CMakeFiles/list_install_components.dir
-/home/ohj/greenai-ros/build/stella_description/CMakeFiles/rebuild_cache.dir
-/home/ohj/greenai-ros/build/stella_description/CMakeFiles/stella_description_uninstall.dir
-/home/ohj/greenai-ros/build/stella_description/CMakeFiles/uninstall.dir

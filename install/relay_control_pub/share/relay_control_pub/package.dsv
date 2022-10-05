@@ -1,6 +1,0 @@
-source;share/relay_control_pub/hook/pythonpath.ps1
-source;share/relay_control_pub/hook/pythonpath.dsv
-source;share/relay_control_pub/hook/pythonpath.sh
-source;share/relay_control_pub/hook/ament_prefix_path.ps1
-source;share/relay_control_pub/hook/ament_prefix_path.dsv
-source;share/relay_control_pub/hook/ament_prefix_path.sh

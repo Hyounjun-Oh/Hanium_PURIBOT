@@ -1,4 +1,0 @@
-[console_scripts]
-pollu_calculator = fine_dust_sensor.pollu_calculator:main
-pollu_pub = fine_dust_sensor.pollu_pub:main
-

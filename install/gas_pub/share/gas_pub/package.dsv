@@ -1,6 +1,0 @@
-source;share/gas_pub/hook/pythonpath.ps1
-source;share/gas_pub/hook/pythonpath.dsv
-source;share/gas_pub/hook/pythonpath.sh
-source;share/gas_pub/hook/ament_prefix_path.ps1
-source;share/gas_pub/hook/ament_prefix_path.dsv
-source;share/gas_pub/hook/ament_prefix_path.sh
