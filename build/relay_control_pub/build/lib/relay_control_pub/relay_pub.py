@@ -67,20 +67,15 @@ class RelayControl():
                 print('\n현재 온도: {0}\n적정 습도: {1}\n현재 습도: {2}\n가습을 종료합니다.'.format(temp,ref_hum,new_hum))
                 
                 GPIO.setmode(GPIO.BCM)
-                GPIO.setwarnings(False)
                 GPIO.setup(pin_num, GPIO.OUT, initial=False)
+                GPIO.setwarnings(False)
                 GPIO.setwarnings(False)
                 GPIO.output(pin_num, True)
                 time.sleep(0.2)
                 GPIO.output(pin_num, False)
-                GPIO.cleanup()
                 
                 time.sleep(0.2)
                 
-                GPIO.setmode(GPIO.BCM)
-                GPIO.setwarnings(False)
-                GPIO.setup(pin_num, GPIO.OUT, initial=False)
-                GPIO.setwarnings(False)
                 GPIO.output(pin_num, True)
                 time.sleep(0.2)
                 GPIO.output(pin_num, False)
@@ -134,11 +129,9 @@ def main(args=None):
             GPIO.output(pin_num, True)
             time.sleep(0.2)
             GPIO.output(pin_num, False)
-            GPIO.cleanup()
+            
             time.sleep(0.2)
-            GPIO.setmode(GPIO.BCM)
-            GPIO.setup(pin_num, GPIO.OUT, initial=False)
-            GPIO.setwarnings(False)
+            
             GPIO.output(pin_num, True)
             time.sleep(0.2)
             GPIO.output(pin_num, False)

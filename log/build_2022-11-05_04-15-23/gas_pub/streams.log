@@ -1,0 +1,21 @@
+[1.768s] Invoking command in '/home/ohj/greenai-ros/src/gas_pub': PYTHONPATH=/home/ohj/greenai-ros/install/gas_pub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/gas_pub build --build-base /home/ohj/greenai-ros/build/gas_pub/build install --prefix /home/ohj/greenai-ros/install/gas_pub --record /home/ohj/greenai-ros/build/gas_pub/install.log --single-version-externally-managed
+[1.920s] running egg_info
+[1.921s] writing ../../build/gas_pub/gas_pub.egg-info/PKG-INFO
+[1.921s] writing dependency_links to ../../build/gas_pub/gas_pub.egg-info/dependency_links.txt
+[1.921s] writing entry points to ../../build/gas_pub/gas_pub.egg-info/entry_points.txt
+[1.921s] writing requirements to ../../build/gas_pub/gas_pub.egg-info/requires.txt
+[1.922s] writing top-level names to ../../build/gas_pub/gas_pub.egg-info/top_level.txt
+[1.958s] reading manifest file '../../build/gas_pub/gas_pub.egg-info/SOURCES.txt'
+[1.958s] writing manifest file '../../build/gas_pub/gas_pub.egg-info/SOURCES.txt'
+[1.958s] running build
+[1.958s] running build_py
+[1.958s] running install
+[1.959s] running install_lib
+[1.960s] running install_data
+[1.961s] running install_egg_info
+[1.963s] removing '/home/ohj/greenai-ros/install/gas_pub/lib/python3.8/site-packages/gas_pub-0.0.0-py3.8.egg-info' (and everything under it)
+[1.963s] Copying ../../build/gas_pub/gas_pub.egg-info to /home/ohj/greenai-ros/install/gas_pub/lib/python3.8/site-packages/gas_pub-0.0.0-py3.8.egg-info
+[1.964s] running install_scripts
+[1.982s] Installing gas_pub script to /home/ohj/greenai-ros/install/gas_pub/lib/gas_pub
+[1.982s] writing list of installed files to '/home/ohj/greenai-ros/build/gas_pub/install.log'
+[2.005s] Invoked command in '/home/ohj/greenai-ros/src/gas_pub' returned '0': PYTHONPATH=/home/ohj/greenai-ros/install/gas_pub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/gas_pub build --build-base /home/ohj/greenai-ros/build/gas_pub/build install --prefix /home/ohj/greenai-ros/install/gas_pub --record /home/ohj/greenai-ros/build/gas_pub/install.log --single-version-externally-managed
