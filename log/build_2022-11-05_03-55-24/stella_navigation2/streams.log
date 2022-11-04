@@ -1,0 +1,55 @@
+[0.480s] Invoking command in '/home/ohj/greenai-ros/build/stella_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/greenai-driving/install/nav2_simple_commander:/home/ohj/greenai-driving/install/nav2_gazebo_spawner:/home/ohj/greenai-ros/install/stella_teleop:/home/ohj/greenai-ros/install/sensor_init:/home/ohj/greenai-ros/install/relay_control_pub:/home/ohj/greenai-ros/install/fine_dust_sensor:/home/ohj/greenai-ros/install/dht_sensor:/home/ohj/greenai-ros/install/data_export:/home/ohj/greenai-ros/install/gas_pub:/home/ohj/greenai-ros/install/fan_pwm:/opt/ros/galactic /usr/bin/cmake /home/ohj/greenai-ros/src/stella_navigation2 -DCMAKE_INSTALL_PREFIX=/home/ohj/greenai-ros/install/stella_navigation2
+[0.530s] -- The C compiler identification is GNU 9.4.0
+[0.577s] -- The CXX compiler identification is GNU 9.4.0
+[0.584s] -- Check for working C compiler: /usr/bin/cc
+[0.657s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.657s] -- Detecting C compiler ABI info
+[0.725s] -- Detecting C compiler ABI info - done
+[0.738s] -- Detecting C compile features
+[0.739s] -- Detecting C compile features - done
+[0.741s] -- Check for working CXX compiler: /usr/bin/c++
+[0.834s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.835s] -- Detecting CXX compiler ABI info
+[0.904s] -- Detecting CXX compiler ABI info - done
+[0.913s] -- Detecting CXX compile features
+[0.914s] -- Detecting CXX compile features - done
+[0.917s] -- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.943s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.943s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.092s] -- Configuring done
+[1.095s] -- Generating done
+[1.096s] -- Build files have been written to: /home/ohj/greenai-ros/build/stella_navigation2
+[1.099s] Invoked command in '/home/ohj/greenai-ros/build/stella_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/greenai-driving/install/nav2_simple_commander:/home/ohj/greenai-driving/install/nav2_gazebo_spawner:/home/ohj/greenai-ros/install/stella_teleop:/home/ohj/greenai-ros/install/sensor_init:/home/ohj/greenai-ros/install/relay_control_pub:/home/ohj/greenai-ros/install/fine_dust_sensor:/home/ohj/greenai-ros/install/dht_sensor:/home/ohj/greenai-ros/install/data_export:/home/ohj/greenai-ros/install/gas_pub:/home/ohj/greenai-ros/install/fan_pwm:/opt/ros/galactic /usr/bin/cmake /home/ohj/greenai-ros/src/stella_navigation2 -DCMAKE_INSTALL_PREFIX=/home/ohj/greenai-ros/install/stella_navigation2
+[1.103s] Invoking command in '/home/ohj/greenai-ros/build/stella_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/greenai-driving/install/nav2_simple_commander:/home/ohj/greenai-driving/install/nav2_gazebo_spawner:/home/ohj/greenai-ros/install/stella_teleop:/home/ohj/greenai-ros/install/sensor_init:/home/ohj/greenai-ros/install/relay_control_pub:/home/ohj/greenai-ros/install/fine_dust_sensor:/home/ohj/greenai-ros/install/dht_sensor:/home/ohj/greenai-ros/install/data_export:/home/ohj/greenai-ros/install/gas_pub:/home/ohj/greenai-ros/install/fan_pwm:/opt/ros/galactic /usr/bin/cmake --build /home/ohj/greenai-ros/build/stella_navigation2 -- -j16 -l16
+[1.160s] Invoked command in '/home/ohj/greenai-ros/build/stella_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/greenai-driving/install/nav2_simple_commander:/home/ohj/greenai-driving/install/nav2_gazebo_spawner:/home/ohj/greenai-ros/install/stella_teleop:/home/ohj/greenai-ros/install/sensor_init:/home/ohj/greenai-ros/install/relay_control_pub:/home/ohj/greenai-ros/install/fine_dust_sensor:/home/ohj/greenai-ros/install/dht_sensor:/home/ohj/greenai-ros/install/data_export:/home/ohj/greenai-ros/install/gas_pub:/home/ohj/greenai-ros/install/fan_pwm:/opt/ros/galactic /usr/bin/cmake --build /home/ohj/greenai-ros/build/stella_navigation2 -- -j16 -l16
+[1.222s] Invoking command in '/home/ohj/greenai-ros/build/stella_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/greenai-driving/install/nav2_simple_commander:/home/ohj/greenai-driving/install/nav2_gazebo_spawner:/home/ohj/greenai-ros/install/stella_teleop:/home/ohj/greenai-ros/install/sensor_init:/home/ohj/greenai-ros/install/relay_control_pub:/home/ohj/greenai-ros/install/fine_dust_sensor:/home/ohj/greenai-ros/install/dht_sensor:/home/ohj/greenai-ros/install/data_export:/home/ohj/greenai-ros/install/gas_pub:/home/ohj/greenai-ros/install/fan_pwm:/opt/ros/galactic /usr/bin/cmake --install /home/ohj/greenai-ros/build/stella_navigation2
+[1.232s] -- Install configuration: ""
+[1.232s] -- Installing: /home/ohj/greenai-ros/install/stella_navigation2/share/stella_navigation2/launch
+[1.233s] -- Installing: /home/ohj/greenai-ros/install/stella_navigation2/share/stella_navigation2/launch/navigation2.launch.py
+[1.233s] -- Installing: /home/ohj/greenai-ros/install/stella_navigation2/share/stella_navigation2/launch/navigation_launch.py
+[1.233s] -- Installing: /home/ohj/greenai-ros/install/stella_navigation2/share/stella_navigation2/map
+[1.233s] -- Installing: /home/ohj/greenai-ros/install/stella_navigation2/share/stella_navigation2/map/stella_world.pgm
+[1.233s] -- Installing: /home/ohj/greenai-ros/install/stella_navigation2/share/stella_navigation2/map/map.yaml
+[1.233s] -- Installing: /home/ohj/greenai-ros/install/stella_navigation2/share/stella_navigation2/map/stella_world.yaml
+[1.233s] -- Installing: /home/ohj/greenai-ros/install/stella_navigation2/share/stella_navigation2/map/map.pgm
+[1.233s] -- Installing: /home/ohj/greenai-ros/install/stella_navigation2/share/stella_navigation2/param
+[1.233s] -- Installing: /home/ohj/greenai-ros/install/stella_navigation2/share/stella_navigation2/param/stella.yaml
+[1.233s] -- Installing: /home/ohj/greenai-ros/install/stella_navigation2/share/stella_navigation2/param/nav2_params.yaml
+[1.233s] -- Installing: /home/ohj/greenai-ros/install/stella_navigation2/share/stella_navigation2/rviz
+[1.233s] -- Installing: /home/ohj/greenai-ros/install/stella_navigation2/share/stella_navigation2/rviz/stella_navigation2.rviz
+[1.234s] -- Installing: /home/ohj/greenai-ros/install/stella_navigation2/share/ament_index/resource_index/package_run_dependencies/stella_navigation2
+[1.234s] -- Installing: /home/ohj/greenai-ros/install/stella_navigation2/share/ament_index/resource_index/parent_prefix_path/stella_navigation2
+[1.234s] -- Installing: /home/ohj/greenai-ros/install/stella_navigation2/share/stella_navigation2/environment/ament_prefix_path.sh
+[1.235s] -- Installing: /home/ohj/greenai-ros/install/stella_navigation2/share/stella_navigation2/environment/ament_prefix_path.dsv
+[1.236s] -- Installing: /home/ohj/greenai-ros/install/stella_navigation2/share/stella_navigation2/environment/path.sh
+[1.236s] -- Installing: /home/ohj/greenai-ros/install/stella_navigation2/share/stella_navigation2/environment/path.dsv
+[1.236s] -- Installing: /home/ohj/greenai-ros/install/stella_navigation2/share/stella_navigation2/local_setup.bash
+[1.236s] -- Installing: /home/ohj/greenai-ros/install/stella_navigation2/share/stella_navigation2/local_setup.sh
+[1.236s] -- Installing: /home/ohj/greenai-ros/install/stella_navigation2/share/stella_navigation2/local_setup.zsh
+[1.236s] -- Installing: /home/ohj/greenai-ros/install/stella_navigation2/share/stella_navigation2/local_setup.dsv
+[1.236s] -- Installing: /home/ohj/greenai-ros/install/stella_navigation2/share/stella_navigation2/package.dsv
+[1.236s] -- Installing: /home/ohj/greenai-ros/install/stella_navigation2/share/ament_index/resource_index/packages/stella_navigation2
+[1.236s] -- Installing: /home/ohj/greenai-ros/install/stella_navigation2/share/stella_navigation2/cmake/stella_navigation2Config.cmake
+[1.236s] -- Installing: /home/ohj/greenai-ros/install/stella_navigation2/share/stella_navigation2/cmake/stella_navigation2Config-version.cmake
+[1.236s] -- Installing: /home/ohj/greenai-ros/install/stella_navigation2/share/stella_navigation2/package.xml
+[1.240s] Invoked command in '/home/ohj/greenai-ros/build/stella_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ohj/greenai-driving/install/nav2_simple_commander:/home/ohj/greenai-driving/install/nav2_gazebo_spawner:/home/ohj/greenai-ros/install/stella_teleop:/home/ohj/greenai-ros/install/sensor_init:/home/ohj/greenai-ros/install/relay_control_pub:/home/ohj/greenai-ros/install/fine_dust_sensor:/home/ohj/greenai-ros/install/dht_sensor:/home/ohj/greenai-ros/install/data_export:/home/ohj/greenai-ros/install/gas_pub:/home/ohj/greenai-ros/install/fan_pwm:/opt/ros/galactic /usr/bin/cmake --install /home/ohj/greenai-ros/build/stella_navigation2

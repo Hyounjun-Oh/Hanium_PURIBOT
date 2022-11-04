@@ -1,0 +1,40 @@
+running egg_info
+creating ../../build/stella_teleop/stella_teleop.egg-info
+writing ../../build/stella_teleop/stella_teleop.egg-info/PKG-INFO
+writing dependency_links to ../../build/stella_teleop/stella_teleop.egg-info/dependency_links.txt
+writing entry points to ../../build/stella_teleop/stella_teleop.egg-info/entry_points.txt
+writing requirements to ../../build/stella_teleop/stella_teleop.egg-info/requires.txt
+writing top-level names to ../../build/stella_teleop/stella_teleop.egg-info/top_level.txt
+writing manifest file '../../build/stella_teleop/stella_teleop.egg-info/SOURCES.txt'
+reading manifest file '../../build/stella_teleop/stella_teleop.egg-info/SOURCES.txt'
+writing manifest file '../../build/stella_teleop/stella_teleop.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ohj/greenai-ros/build/stella_teleop/build
+creating /home/ohj/greenai-ros/build/stella_teleop/build/lib
+creating /home/ohj/greenai-ros/build/stella_teleop/build/lib/stella_teleop
+copying stella_teleop/__init__.py -> /home/ohj/greenai-ros/build/stella_teleop/build/lib/stella_teleop
+creating /home/ohj/greenai-ros/build/stella_teleop/build/lib/stella_teleop/script
+copying stella_teleop/script/teleop_keyboard.py -> /home/ohj/greenai-ros/build/stella_teleop/build/lib/stella_teleop/script
+copying stella_teleop/script/__init__.py -> /home/ohj/greenai-ros/build/stella_teleop/build/lib/stella_teleop/script
+running install
+running install_lib
+creating /home/ohj/greenai-ros/install/stella_teleop/lib/python3.8/site-packages/stella_teleop
+creating /home/ohj/greenai-ros/install/stella_teleop/lib/python3.8/site-packages/stella_teleop/script
+copying /home/ohj/greenai-ros/build/stella_teleop/build/lib/stella_teleop/script/teleop_keyboard.py -> /home/ohj/greenai-ros/install/stella_teleop/lib/python3.8/site-packages/stella_teleop/script
+copying /home/ohj/greenai-ros/build/stella_teleop/build/lib/stella_teleop/script/__init__.py -> /home/ohj/greenai-ros/install/stella_teleop/lib/python3.8/site-packages/stella_teleop/script
+copying /home/ohj/greenai-ros/build/stella_teleop/build/lib/stella_teleop/__init__.py -> /home/ohj/greenai-ros/install/stella_teleop/lib/python3.8/site-packages/stella_teleop
+byte-compiling /home/ohj/greenai-ros/install/stella_teleop/lib/python3.8/site-packages/stella_teleop/script/teleop_keyboard.py to teleop_keyboard.cpython-38.pyc
+byte-compiling /home/ohj/greenai-ros/install/stella_teleop/lib/python3.8/site-packages/stella_teleop/script/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/ohj/greenai-ros/install/stella_teleop/lib/python3.8/site-packages/stella_teleop/__init__.py to __init__.cpython-38.pyc
+running install_data
+creating /home/ohj/greenai-ros/install/stella_teleop/share/ament_index
+creating /home/ohj/greenai-ros/install/stella_teleop/share/ament_index/resource_index
+creating /home/ohj/greenai-ros/install/stella_teleop/share/ament_index/resource_index/packages
+copying resource/stella_teleop -> /home/ohj/greenai-ros/install/stella_teleop/share/ament_index/resource_index/packages
+copying package.xml -> /home/ohj/greenai-ros/install/stella_teleop/share/stella_teleop
+running install_egg_info
+Copying ../../build/stella_teleop/stella_teleop.egg-info to /home/ohj/greenai-ros/install/stella_teleop/lib/python3.8/site-packages/stella_teleop-2.1.2-py3.8.egg-info
+running install_scripts
+Installing teleop_keyboard script to /home/ohj/greenai-ros/install/stella_teleop/lib/stella_teleop
+writing list of installed files to '/home/ohj/greenai-ros/build/stella_teleop/install.log'
