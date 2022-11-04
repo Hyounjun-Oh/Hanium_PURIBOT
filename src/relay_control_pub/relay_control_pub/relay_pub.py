@@ -14,7 +14,7 @@ old_hum = 0.0
 new_hum = 0.0
 iter_on_off = 0
 iter_run = 0
-
+pin_num = 24
 class GetDHTdata(Node):
     
     def __init__(self):
@@ -47,15 +47,16 @@ class RelayControl():
     def __init__(self,new_hum,ref_hum):
         global iter_on_off
         global temp
+        global pin_num
         if new_hum < ref_hum:
             print('\n현재 온도: {0}\n적정 습도: {1}\n현재 습도: {2}\n가습을 시작합니다.'.format(temp,ref_hum,new_hum))
             GPIO.setmode(GPIO.BCM)
             GPIO.setwarnings(False)
-            GPIO.setup(19, GPIO.OUT, initial=False)
+            GPIO.setup(pin_num, GPIO.OUT, initial=False)
             GPIO.setwarnings(False)
-            GPIO.output(19, True)
+            GPIO.output(pin_num, True)
             time.sleep(0.2)
-            GPIO.output(19, False)
+            GPIO.output(pin_num, False)
             GPIO.cleanup()
             print("가습기 ON")
             iter_on_off = iter_on_off + 1
@@ -67,22 +68,22 @@ class RelayControl():
                 
                 GPIO.setmode(GPIO.BCM)
                 GPIO.setwarnings(False)
-                GPIO.setup(19, GPIO.OUT, initial=False)
+                GPIO.setup(pin_num, GPIO.OUT, initial=False)
                 GPIO.setwarnings(False)
-                GPIO.output(19, True)
+                GPIO.output(pin_num, True)
                 time.sleep(0.2)
-                GPIO.output(19, False)
+                GPIO.output(pin_num, False)
                 GPIO.cleanup()
                 
                 time.sleep(0.2)
                 
                 GPIO.setmode(GPIO.BCM)
                 GPIO.setwarnings(False)
-                GPIO.setup(19, GPIO.OUT, initial=False)
+                GPIO.setup(pin_num, GPIO.OUT, initial=False)
                 GPIO.setwarnings(False)
-                GPIO.output(19, True)
+                GPIO.output(pin_num, True)
                 time.sleep(0.2)
-                GPIO.output(19, False)
+                GPIO.output(pin_num, False)
                 GPIO.cleanup()
                 print("가습기 OFF")
                 
@@ -97,10 +98,7 @@ def main(args=None):
     global new_hum
     global iter_on_off
     global iter_run
-    GPIO.setmode(GPIO.BCM)
-    GPIO.setup(19, GPIO.OUT, initial=False)
-    GPIO.setwarnings(False)
-    GPIO.output(19, True)
+    global pin_num
     try:
         while 1:
             rclpy.spin_once(get_DHTdata)
@@ -131,19 +129,19 @@ def main(args=None):
         if iter_on_off % 2 != 0:
             print("ON상태 가습기 종료")
             GPIO.setmode(GPIO.BCM)
-            GPIO.setup(19, GPIO.OUT, initial=False)
+            GPIO.setup(pin_num, GPIO.OUT, initial=False)
             GPIO.setwarnings(False)
-            GPIO.output(19, True)
+            GPIO.output(pin_num, True)
             time.sleep(0.2)
-            GPIO.output(19, False)
+            GPIO.output(pin_num, False)
             GPIO.cleanup()
             time.sleep(0.2)
             GPIO.setmode(GPIO.BCM)
-            GPIO.setup(19, GPIO.OUT, initial=False)
+            GPIO.setup(pin_num, GPIO.OUT, initial=False)
             GPIO.setwarnings(False)
-            GPIO.output(19, True)
+            GPIO.output(pin_num, True)
             time.sleep(0.2)
-            GPIO.output(19, False)
+            GPIO.output(pin_num, False)
             GPIO.cleanup()
         else:
             print("가습기 종료")
