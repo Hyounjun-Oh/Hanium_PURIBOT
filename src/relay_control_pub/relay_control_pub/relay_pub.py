@@ -93,6 +93,10 @@ def main(args=None):
     global new_hum
     global iter_on_off
     global iter_run
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(19, GPIO.OUT, initial=False)
+    GPIO.setwarnings(False)
+    GPIO.output(19, True)
     try:
         while 1:
             rclpy.spin_once(get_DHTdata)
