@@ -14,7 +14,7 @@ old_hum = 0.0
 new_hum = 0.0
 iter_on_off = 0
 iter_run = 0
-pin_num = 24
+pin_num = 22
 class GetDHTdata(Node):
     
     def __init__(self):
@@ -58,7 +58,7 @@ class RelayControl():
             time.sleep(0.2)
             GPIO.output(pin_num, False)
             GPIO.cleanup()
-            GPIO.cleanup()
+            time.sleep(2)
             print("가습기 ON")
             iter_on_off = iter_on_off + 1
         else:
@@ -79,7 +79,7 @@ class RelayControl():
                 time.sleep(0.2)
                 GPIO.output(pin_num, False)
                 GPIO.cleanup()
-                GPIO.cleanup()
+                time.sleep(2)
                 print("가습기 OFF")
                 
                 iter_on_off = iter_on_off + 1
