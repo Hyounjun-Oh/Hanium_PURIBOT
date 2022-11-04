@@ -13,6 +13,7 @@ ref_hum = 0.0
 old_hum = 0.0
 new_hum = 0.0
 iter_on_off = 0
+iter_run = 0
 
 class GetDHTdata(Node):
     
@@ -89,6 +90,7 @@ def main(args=None):
     global old_hum
     global new_hum
     global iter_on_off
+    global iter_run
     try:
         while 1:
             rclpy.spin_once(get_DHTdata)
@@ -100,11 +102,19 @@ def main(args=None):
                 ref_hum = 60.0
             else:
                 ref_hum = 70.0
-            if (old_hum >= ref_hum) is not (new_hum >= ref_hum):
-                 RelayControl(new_hum, ref_hum)
+                 
+            if iter_run == 0:
+                if new_hum < ref_hum:
+                    RelayControl(new_hum, ref_hum)
+                    iter_run = iter_run + 1
             else:
-                 pass
+                if (old_hum >= ref_hum) is not (new_hum >= ref_hum):
+                    RelayControl(new_hum, ref_hum)
+                else:
+                    pass
+            
             old_hum = new_hum
+            
 
 
     except KeyboardInterrupt:
