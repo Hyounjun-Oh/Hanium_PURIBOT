@@ -29,7 +29,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'relay_pub = relay_control_pub.relay_pub:main'
+            'relay_pub = relay_control_pub.relay_pub:main',
+            'relay_pub_2 = relay_control_pub.relay_pub_2:main'
         ],
     },
 )
