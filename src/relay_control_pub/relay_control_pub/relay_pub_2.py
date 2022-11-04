@@ -49,9 +49,9 @@ class RelayControl():
         global temp
         if new_hum < ref_hum:
             self.get_logger().info('\n현재 온도: {0}\n적정 습도: {1}\n현재 습도: {2}\n가습을 시작합니다.'.format(temp,ref_hum,new_hum))
-            GPIO.output(19, False)
-            time.sleep(0.2)
             GPIO.output(19, True)
+            time.sleep(0.2)
+            GPIO.output(19, False)
             print("가습기 ON")
             iter_on_off = iter_on_off + 1
         else:
@@ -60,16 +60,15 @@ class RelayControl():
             else:
                 self.get_logger().info('\n현재 온도: {0}\n적정 습도: {1}\n현재 습도: {2}\n가습을 종료합니다.'.format(temp,ref_hum,new_hum))
                 
-                GPIO.output(19, False)
-                time.sleep(0.2)
                 GPIO.output(19, True)
+                time.sleep(0.2)
+                GPIO.output(19, False)
                 
                 time.sleep(0.2)
                 
-                GPIO.output(19, False)
-                time.sleep(0.2)
                 GPIO.output(19, True)
-
+                time.sleep(0.2)
+                GPIO.output(19, False)
                 print("가습기 OFF")
                 
                 iter_on_off = iter_on_off + 1
@@ -84,9 +83,8 @@ def main(args=None):
     global iter_on_off
     global iter_run
     GPIO.setmode(GPIO.BCM)
-    GPIO.setup(19, True, initial=False)
+    GPIO.setup(19, GPIO.OUT, initial=False)
     GPIO.setwarnings(False)
-    GPIO.output(19, True)
     try:
         while 1:
             rclpy.spin_once(get_DHTdata)
@@ -116,15 +114,15 @@ def main(args=None):
     except KeyboardInterrupt:
         if iter_on_off % 2 != 0:
             print("ON상태 가습기 종료")
-            GPIO.output(19, False)
-            time.sleep(0.2)
             GPIO.output(19, True)
+            time.sleep(0.2)
+            GPIO.output(19, False)
             
             time.sleep(0.2)
             
-            GPIO.output(19, False)
-            time.sleep(0.2)
             GPIO.output(19, True)
+            time.sleep(0.2)
+            GPIO.output(19, False)
             GPIO.cleanup()
         else:
             print("가습기 종료")
