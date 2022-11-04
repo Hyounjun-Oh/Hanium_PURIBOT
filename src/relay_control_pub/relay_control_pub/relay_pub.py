@@ -57,6 +57,7 @@ class RelayControl():
             time.sleep(0.2)
             GPIO.output(19, False)
             GPIO.cleanup()
+            print("가습기 ON")
             iter_on_off = iter_on_off + 1
         else:
             if iter_on_off == 0:
@@ -80,6 +81,7 @@ class RelayControl():
                 time.sleep(0.2)
                 GPIO.output(19, False)
                 GPIO.cleanup()
+                print("가습기 OFF")
                 iter_on_off = iter_on_off + 1
 
 def main(args=None):
@@ -119,6 +121,7 @@ def main(args=None):
 
     except KeyboardInterrupt:
         if iter_on_off % 2 != 0:
+            print("ON상태 가습기 종료")
             GPIO.setmode(GPIO.BCM)
             GPIO.setup(19, GPIO.OUT, initial=False)
             GPIO.setwarnings(False)
@@ -135,6 +138,7 @@ def main(args=None):
             GPIO.output(19, False)
             GPIO.cleanup()
         else:
+            print("가습기 종료")
             GPIO.cleanup()
             get_DHTdata.get_logger().info('Keyboard Interrupt (SIGINT)')
             get_DHTdata.destroy_node()
