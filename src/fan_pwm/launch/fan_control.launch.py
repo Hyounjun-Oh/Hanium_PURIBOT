@@ -16,7 +16,7 @@ def generate_launch_description():
     launch_description = LaunchDescription()
 
     fan_node = Node(
-        package='fan_pwm',
+        package='fan_pwm_2',
         executable='fan_pwm',
         name='fan_pwm',
         output='screen')
