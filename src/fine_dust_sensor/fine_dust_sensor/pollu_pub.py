@@ -182,7 +182,7 @@ class PolluPub(Node, PMS7003):
 
 def main(args=None):
     rclpy.init(args=args)
-    UART = '/dev/ttyAMA1'
+    UART = '/dev/ttyAMA2'
     SERIAL_PORT = UART
     Speed = 9600
     #serial setting 
