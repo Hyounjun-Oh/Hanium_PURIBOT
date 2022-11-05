@@ -50,13 +50,13 @@ class FanPwmControl(Node):
             self.get_logger().info('유해가스가 감지되어 팬이 터보모드로 작동합니다.')
         elif self.gas_grade < 2:
           
-            if grade == 0:
+            if pollu_grade == 0:
                 self.pwm.ChangeDutyCycle(30)
                 self.get_logger().info('팬이 저속모드 입니다.')
-            elif grade == 1:
+            elif pollu_grade == 1:
                 self.pwm.ChangeDutyCycle(50)
                 self.get_logger().info('팬이 중속모드 입니다.')
-            elif grade == 2:
+            elif pollu_grade == 2:
                 self.pwm.ChangeDutyCycle(80)
                 self.get_logger().info('팬이 고속모드 입니다.')
             else:

@@ -1,3 +1,0 @@
-[console_scripts]
-dht_pub = dht_sensor.dht_pub:main
-

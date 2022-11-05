@@ -1,3 +1,0 @@
-[console_scripts]
-teleop_keyboard = stella_teleop.script.teleop_keyboard:main
-
