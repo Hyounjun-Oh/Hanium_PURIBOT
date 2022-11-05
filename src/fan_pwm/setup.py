@@ -29,7 +29,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'fan_pwm = fan_pwm.fan_pwm:main'
+            'fan_pwm = fan_pwm.fan_pwm:main',
+            'fan_pwm_2 = fan_pwm.fan_pwm_2:main'
         ],
     },
 )
