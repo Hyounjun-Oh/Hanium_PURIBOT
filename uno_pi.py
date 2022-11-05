@@ -1,19 +1,16 @@
 #!/usr/bin/env python3
 import serial
+import time
 
-if __name__ == '__main__':
+# 'COM3' 부분에 환경에 맞는 포트 입력
+
+
+while True:
     ser = serial.Serial("/dev/ttyACM0", 9600, timeout=1)
-    data = []
-    data_split = []
-    while True:
-        res = ser.readline()
-        line = res.decode('utf-8')
-        data_split = line.split(' ',2)
-        if len(data_split) ==1:
-            pass
-        else:
-            data = [int(float(data_split[0])), int(float(data_split[1]))]
 
-        print(data)
-        data = []
-        data_split = []
+    if ser.readable():
+        print(ser.readline().decode())
+        
+
+        
+
