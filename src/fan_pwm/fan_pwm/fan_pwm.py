@@ -43,14 +43,12 @@ class FanPwmControl(Node):
         self.pollu_grade = msg.data
         
     def get_gas_grade(self,msg):
-        self.gas_grade = msg.data       
-
-    def pwm_mode(self,grade):
-    
-        if self.gas_grade > 2:
+        self.gas_grade = msg.data
+        
+        if self.gas_grade == 2:
             self.pwm.ChangeDutyCycle(100)
             self.get_logger().info('유해가스가 감지되어 팬이 터보모드로 작동합니다.')
-        else:
+        elif self.gas_grade < 2:
           
             if grade == 0:
                 self.pwm.ChangeDutyCycle(30)
@@ -63,7 +61,8 @@ class FanPwmControl(Node):
                 self.get_logger().info('팬이 고속모드 입니다.')
             else:
                 self.pwm.ChangeDutyCycle(100)
-                self.get_logger().info('팬이 터보모드 입니다.') 
+                self.get_logger().info('팬이 터보모드 입니다.')      
+
 
 def main(args=None):
     rclpy.init(args=args)

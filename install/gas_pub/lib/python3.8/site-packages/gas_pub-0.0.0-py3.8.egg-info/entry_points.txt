@@ -1,0 +1,3 @@
+[console_scripts]
+gas_pub = gas_pub.gas_pub:main
+

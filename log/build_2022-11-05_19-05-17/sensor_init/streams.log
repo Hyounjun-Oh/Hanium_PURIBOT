@@ -1,0 +1,36 @@
+[1.355s] Invoking command in '/home/ohj/greenai-ros/src/sensor_init': PYTHONPATH=/home/ohj/greenai-ros/install/sensor_init/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/sensor_init build --build-base /home/ohj/greenai-ros/build/sensor_init/build install --prefix /home/ohj/greenai-ros/install/sensor_init --record /home/ohj/greenai-ros/build/sensor_init/install.log --single-version-externally-managed
+[1.648s] running egg_info
+[1.649s] creating ../../build/sensor_init/sensor_init.egg-info
+[1.649s] writing ../../build/sensor_init/sensor_init.egg-info/PKG-INFO
+[1.649s] writing dependency_links to ../../build/sensor_init/sensor_init.egg-info/dependency_links.txt
+[1.649s] writing entry points to ../../build/sensor_init/sensor_init.egg-info/entry_points.txt
+[1.649s] writing requirements to ../../build/sensor_init/sensor_init.egg-info/requires.txt
+[1.649s] writing top-level names to ../../build/sensor_init/sensor_init.egg-info/top_level.txt
+[1.649s] writing manifest file '../../build/sensor_init/sensor_init.egg-info/SOURCES.txt'
+[1.705s] reading manifest file '../../build/sensor_init/sensor_init.egg-info/SOURCES.txt'
+[1.705s] writing manifest file '../../build/sensor_init/sensor_init.egg-info/SOURCES.txt'
+[1.705s] running build
+[1.706s] running build_py
+[1.706s] creating /home/ohj/greenai-ros/build/sensor_init/build
+[1.707s] creating /home/ohj/greenai-ros/build/sensor_init/build/lib
+[1.707s] creating /home/ohj/greenai-ros/build/sensor_init/build/lib/sensor_init
+[1.708s] copying sensor_init/__init__.py -> /home/ohj/greenai-ros/build/sensor_init/build/lib/sensor_init
+[1.708s] running install
+[1.708s] running install_lib
+[1.708s] creating /home/ohj/greenai-ros/install/sensor_init/lib/python3.8/site-packages/sensor_init
+[1.709s] copying /home/ohj/greenai-ros/build/sensor_init/build/lib/sensor_init/__init__.py -> /home/ohj/greenai-ros/install/sensor_init/lib/python3.8/site-packages/sensor_init
+[1.709s] byte-compiling /home/ohj/greenai-ros/install/sensor_init/lib/python3.8/site-packages/sensor_init/__init__.py to __init__.cpython-38.pyc
+[1.709s] running install_data
+[1.709s] creating /home/ohj/greenai-ros/install/sensor_init/share/ament_index
+[1.710s] creating /home/ohj/greenai-ros/install/sensor_init/share/ament_index/resource_index
+[1.710s] creating /home/ohj/greenai-ros/install/sensor_init/share/ament_index/resource_index/packages
+[1.710s] copying resource/sensor_init -> /home/ohj/greenai-ros/install/sensor_init/share/ament_index/resource_index/packages
+[1.710s] copying package.xml -> /home/ohj/greenai-ros/install/sensor_init/share/sensor_init
+[1.710s] creating /home/ohj/greenai-ros/install/sensor_init/share/sensor_init/launch
+[1.710s] copying launch/sensor_init.launch.py -> /home/ohj/greenai-ros/install/sensor_init/share/sensor_init/launch
+[1.710s] creating /home/ohj/greenai-ros/install/sensor_init/share/sensor_init/param
+[1.710s] running install_egg_info
+[1.712s] Copying ../../build/sensor_init/sensor_init.egg-info to /home/ohj/greenai-ros/install/sensor_init/lib/python3.8/site-packages/sensor_init-0.0.0-py3.8.egg-info
+[1.713s] running install_scripts
+[1.728s] writing list of installed files to '/home/ohj/greenai-ros/build/sensor_init/install.log'
+[1.751s] Invoked command in '/home/ohj/greenai-ros/src/sensor_init' returned '0': PYTHONPATH=/home/ohj/greenai-ros/install/sensor_init/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/sensor_init build --build-base /home/ohj/greenai-ros/build/sensor_init/build install --prefix /home/ohj/greenai-ros/install/sensor_init --record /home/ohj/greenai-ros/build/sensor_init/install.log --single-version-externally-managed
