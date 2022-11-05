@@ -14,7 +14,7 @@ class FanPwmControl(Node):
         super().__init__('FanPwm')
         self.channel = channel
         GPIO.setwarnings(False)
-        GPIO.setmode(GPIO.BOARD)
+        GPIO.setmode(GPIO.BCM)
         GPIO.setup(self.channel,GPIO.OUT)
         self.pwm = GPIO.PWM(self.channel,2)
         self.pwm.start(10)
@@ -62,7 +62,7 @@ class FanPwmControl(Node):
 def main(args=None):
     rclpy.init(args=args)
     try:
-        channel = 12
+        channel = 18
         fan_mode = FanPwmControl(channel)
         try:
             rclpy.spin(fan_mode)
