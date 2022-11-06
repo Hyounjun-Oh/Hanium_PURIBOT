@@ -45,12 +45,12 @@ def generate_launch_description():
         default=os.path.join(
             get_package_share_directory('stella_navigation2'),
             'map',
-            'map.yaml'))
+            'room_map.yaml'))
 
     rviz_config_dir = os.path.join(
         get_package_share_directory('nav2_bringup'),
         'rviz',
-        'nav2_default_view.rviz')
+        'hanium_test_rviz.rviz')
             
     lifecycle_nodes = ['controller_server',
                        'planner_server',
