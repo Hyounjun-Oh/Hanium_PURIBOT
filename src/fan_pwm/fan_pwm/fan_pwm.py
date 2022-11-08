@@ -18,6 +18,7 @@ class FanPwmControl(Node):
         GPIO.setup(self.channel,GPIO.OUT)
         self.pwm = GPIO.PWM(self.channel,2)
         self.pwm.start(10)
+        self.gas_grade = 0
         
         QOS_RKL10V = QoSProfile(
             reliability=QoSReliabilityPolicy.RELIABLE,
